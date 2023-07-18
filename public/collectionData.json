@@ -1,0 +1,22 @@
+[
+  {
+    "name": "LUXURY",
+    "location": ["Dhaka"],
+    "photo": "https://i.imgur.com/Ly0Xo6C.jpg"
+  },
+  {
+    "name": "CLASSIC",
+    "location": ["Dhaka", "Chattogram"],
+    "photo": "https://i.imgur.com/dwRFqxY.jpg"
+  },
+  {
+    "name": "WELLNESS",
+    "location": ["Dhaka", "Chattogram"],
+    "photo": "https://i.imgur.com/vpDDkdD.jpg"
+  },
+  {
+    "name": "COMMERCIAL",
+    "location": ["Dhaka", "Chattogram"],
+    "photo": "https://i.imgur.com/U3mNdK1.jpg"
+  }
+]
