@@ -1,9 +1,11 @@
 import { FaHouse, FaSearchengin } from "react-icons/fa6";
 import ReactReadMoreReadLess from "react-read-more-read-less";
+import quote from "../../../src/assets/quote.png";
+import dream from "../../../src/assets/penguin.png";
 const IntroDuction = () => {
   return (
-    <div className="mb-5">
-      <div className="md:max-w-5xl sm:max-w-full md:px-0 px-[25px] mx-auto flex justify-between py-4">
+    <div className="mb-5 md:max-w-5xl sm:max-w-full md:px-0 px-[25px] mx-auto">
+      <div className="flex items-center justify-between py-4">
         <div className="flex items-center gap-2">
           <FaHouse size={50}></FaHouse>
           <p className="text-3xl font-bold">Find a property</p>
@@ -29,6 +31,7 @@ const IntroDuction = () => {
       </div>
       <div className="flex gap-[30px] w-full items-center justify-center mt-7 md:max-w-5xl sm:max-w-full mx-auto">
         <div className="w-1/2">
+          <h1 className="text-xl font-semibold mb-2">Introductions Matter</h1>
           <ReactReadMoreReadLess
             charLimit={400}
             readMoreText={"Read more ▼"}
@@ -231,6 +234,39 @@ const IntroDuction = () => {
               </p>
             </form>
           </dialog>
+        </div>
+      </div>
+      {/* Dream with us */}
+      <div className="flex mt-[50px] mx-auto">
+        <div className="w-1/2">
+          {/* Quote div */}
+          <h1 className="text-xl font-semibold mb-2">
+            Dream with us, partner with us
+          </h1>
+          <p>
+            Relax and reap the benefits of owning property in Bangladesh. See
+            your property transform as per your dreams, sooner than you
+            anticipated!
+          </p>
+          {/* Quote Div */}
+          <div className="flex">
+            <div className="border-l-[5px] border-blue-300 mt-[35px]">
+              <div className="ml-5">
+                <img className="w-[64px]" src={quote} alt="" />
+                <p className="text-xl italic mb-3">
+                  In all of my years, I have rarely come across a company as
+                  professional as bti. bti is truly a trustworthy name in the
+                  real estate sector of Bangladesh.
+                </p>
+                <h1>Dr. Kabirul Islam</h1>
+                <p>Landowner, My Forte</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="w-1/2 flex justify-end">
+          {/* Image div */}
+          <img className="w-[296px]" src={dream} alt="" />
         </div>
       </div>
     </div>
