@@ -2,21 +2,21 @@
   {
     "name": "LUXURY",
     "location": ["Dhaka"],
-    "photo": "https://i.imgur.com/Ly0Xo6C.jpg"
+    "photo": "https://i.imgur.com/cf2vzaL.jpg"
   },
   {
     "name": "CLASSIC",
     "location": ["Dhaka", "Chattogram"],
-    "photo": "https://i.imgur.com/dwRFqxY.jpg"
+    "photo": "https://i.imgur.com/OJcHpVI.jpg"
   },
   {
     "name": "WELLNESS",
     "location": ["Dhaka", "Chattogram"],
-    "photo": "https://i.imgur.com/vpDDkdD.jpg"
+    "photo": "https://i.imgur.com/Ef2lQwn.jpg"
   },
   {
     "name": "COMMERCIAL",
     "location": ["Dhaka", "Chattogram"],
-    "photo": "https://i.imgur.com/U3mNdK1.jpg"
+    "photo": "https://i.imgur.com/FSXqcVP.jpg"
   }
 ]
