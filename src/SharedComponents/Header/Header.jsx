@@ -25,17 +25,11 @@ const Header = () => {
             tabIndex={0}
             className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
           >
-            <Link>About Us</Link>
             <li>
-              <a>Properties</a>
-              <ul className="p-2">
-                <li>
-                  <Link>Dhaka</Link>
-                </li>
-                <li>
-                  <Link>Chattogram</Link>
-                </li>
-              </ul>
+              <Link>About Us</Link>
+            </li>
+            <li>
+              <Link>Properties</Link>
             </li>
             <li>
               <Link>Landowners</Link>
@@ -55,18 +49,8 @@ const Header = () => {
           <li>
             <Link>About Us</Link>
           </li>
-          <li tabIndex={0}>
-            <details>
-              <summary>Properties</summary>
-              <ul className="p-2">
-                <li>
-                  <Link>Dhaka</Link>
-                </li>
-                <li>
-                  <Link>Chattogram</Link>
-                </li>
-              </ul>
-            </details>
+          <li>
+            <Link>Properties</Link>
           </li>
           <li>
             <Link>Landowners</Link>
