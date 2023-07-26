@@ -6,7 +6,7 @@ import SwipeBanner from "../SwipeBanner/SwipeBanner";
 
 const Home = () => {
   return (
-    <div className="bg-black overflow-hidden">
+    <div className="bg-[#28282B] overflow-hidden">
       <div className="float-left">
         <FloatingButton></FloatingButton>
       </div>

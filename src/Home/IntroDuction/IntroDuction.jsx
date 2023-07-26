@@ -4,7 +4,7 @@ import quote from "../../../src/assets/quote.png";
 import dream from "../../../src/assets/penguin.png";
 const IntroDuction = () => {
   return (
-    <div className="mb-5 md:max-w-5xl sm:max-w-full md:px-0 px-[25px] mx-auto mt-[35px] bg-black text-white">
+    <div className="mb-5 md:max-w-5xl sm:max-w-full md:px-0 px-[25px] mx-auto mt-[35px] bg-[#28282B] text-white">
       <div className="flex md:flex-row flex-col md:gap-[60px] gap-4 w-full items-center  mt-7 md:max-w-5xl sm:w-full mx-auto">
         <div className="md:w-1/2 justify-end">
           <h1 className="text-xl font-semibold mb-2">WHO WE ARE?</h1>

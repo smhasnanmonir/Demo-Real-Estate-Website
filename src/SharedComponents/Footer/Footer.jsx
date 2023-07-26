@@ -5,7 +5,7 @@ import instagram from "../../../src/assets/instagram.png";
 const Footer = () => {
   return (
     <div className="text-white">
-      <footer className="footer py-10 md:px-[250px] px-[25px] bg-black text-white justify-center items-start">
+      <footer className="footer py-10 md:px-[250px] px-[25px] bg-[#28282B] text-white justify-center items-start">
         <div className="space-y-3">
           <img className="w-1/2" src="https://i.imgur.com/HjdPT5k.png" />
           <p className="">

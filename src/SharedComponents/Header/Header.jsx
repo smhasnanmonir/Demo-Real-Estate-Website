@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import logo from "../../../src/assets/whiteLogo.png";
 const Header = () => {
   return (
-    <div className="navbar bg-black justify-between py-[12px] px-[95px] text-red-400">
+    <div className="navbar bg-[#28282B] justify-between py-[12px] px-[95px] text-red-400">
       <div className="">
         <div className="dropdown">
           <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -42,7 +42,7 @@ const Header = () => {
             </li>
           </ul>
         </div>
-        <img className="w-[95px] md:ml-0 ml-[45px]" src={logo} alt="logo" />
+        <img className="w-[165px] md:ml-0 ml-[45px]" src={logo} alt="logo" />
       </div>
       <div className="hidden lg:flex w-3/4 gap-[10px]">
         <ul className="menu menu-horizontal space-x-[25px] flex px-1 w-full justify-end text-[16px]">
