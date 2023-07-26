@@ -19,7 +19,8 @@ const CollectionDetails = ({ building }) => {
       bottom: "auto",
       marginRight: "-50%",
       transform: "translate(-50%, -50%)",
-      display: "relative",
+      display: "block",
+      zIndex: "99",
     },
   };
   let subtitle;
@@ -81,9 +82,9 @@ const CollectionDetails = ({ building }) => {
         >
           Close
         </button>
-        <form className="md:w-[700px] md:h-[500px] w-full h-[290px] grid place-items-center p-0 m-0">
+        <form className="md:w-[700px] md:h-[500px] w-full h-[290px] grid place-items-center p-0 m-0 -z-10 relative">
           <iframe
-            className="w-full h-[70%]"
+            className="w-full h-[70%] "
             src="https://www.youtube.com/embed/7EHnQ0VM4KY"
             title="Cinematic Real estate video tour example 4K | Laowa 12mm &amp; Sony A7III"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"

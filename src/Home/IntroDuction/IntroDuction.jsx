@@ -213,7 +213,7 @@ const IntroDuction = () => {
             </form>
           </dialog>
         </div> */}
-        <div className="w-1/2 flex justify-end">
+        <div className="md:w-1/2 flex md:justify-end justify-center">
           <img
             className="w-[79%] rounded-md "
             src="https://i.imgur.com/wqPdKxT.jpg"

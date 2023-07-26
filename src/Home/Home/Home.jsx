@@ -6,8 +6,10 @@ import SwipeBanner from "../SwipeBanner/SwipeBanner";
 
 const Home = () => {
   return (
-    <div className="bg-black">
-      <FloatingButton></FloatingButton>
+    <div className="bg-black overflow-hidden">
+      <div className="float-left">
+        <FloatingButton></FloatingButton>
+      </div>
       <SwipeBanner></SwipeBanner>
       <IntroDuction></IntroDuction>
       <CollectionType></CollectionType>
