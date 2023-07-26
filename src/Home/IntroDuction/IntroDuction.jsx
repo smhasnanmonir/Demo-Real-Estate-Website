@@ -4,53 +4,31 @@ import quote from "../../../src/assets/quote.png";
 import dream from "../../../src/assets/penguin.png";
 const IntroDuction = () => {
   return (
-    <div className="mb-5 md:max-w-5xl sm:max-w-full md:px-0 px-[25px] mx-auto">
-      <div className="flex items-center justify-between py-4">
-        <div className="flex items-center gap-2">
-          <FaHouse size={50}></FaHouse>
-          <p className="text-3xl font-bold">Find a property</p>
-        </div>
-        <div className="flex gap-3">
-          <div>
-            <select className="select select-info w-full max-w-xs">
-              <option disabled selected>
-                Select Location
-              </option>
-              <option>Adabor</option>
-              <option>Aftabnagar</option>
-              <option>Bashundhara</option>
-            </select>
-          </div>
-          <div>
-            <button className="btn btn-outline">
-              <FaSearchengin></FaSearchengin>
-              Search Property
-            </button>
-          </div>
-        </div>
-      </div>
-      <div className="flex gap-[30px] w-full items-center justify-center mt-7 md:max-w-5xl sm:max-w-full mx-auto">
-        <div className="w-1/2">
-          <h1 className="text-xl font-semibold mb-2">Introductions Matter</h1>
+    <div className="mb-5 md:max-w-5xl sm:max-w-full md:px-0 px-[25px] mx-auto mt-[35px]">
+      <div className="flex md:flex-row flex-col md:gap-[30px] gap-4 w-full items-center justify-center mt-7 md:max-w-5xl sm:w-full mx-auto">
+        <div className="md:w-1/2">
+          <h1 className="text-xl font-semibold mb-2">WHO WE ARE?</h1>
           <ReactReadMoreReadLess
+            className=""
             charLimit={400}
             readMoreText={"Read more ▼"}
             readLessText={"Read less ▲"}
           >
-            "Having designed, built, and delivered residential and commercial
-            addresses for almost 4 decades, bti is a well-known and highly
-            reputed real estate company in Bangladesh. Our success is based on
-            our track record of reliability and customer-centricity. Till date,
-            we have completed and handed over more than 400 projects across
-            Dhaka and Chattogram. Check out our impressive portfolio of over
-            7000 happy customers. Click here to learn about our successful
-            journey through the years. Choose which collection suits your
-            lifestyle from our Classic Collection, Wellness Communities, Luxury
-            Collection & Commercial Collection. Buy from us or let us be
-            partners in developing your land! "
+            A powerful portfolio of the country’s most distinctive and selective
+            developments, with an excellent reputation in the Real Estate
+            market, and enviable relationships that give our clients exclusive
+            access to the ultimate in luxury apartments and exquisite commercial
+            spaces, all in prime locations of Dhaka city. Our promise remains to
+            develop a portfolio of luxury spaces and offer investors as well as
+            buyers an unparalleled quality of service, inimitable by
+            competitors. It is the commitment to both impeccably high standards
+            and attention to detail that drive us to our success. Besides
+            building beyond expectation, SHL moreover sets standards for itself,
+            for you and for others, which is why we proudly declare our driving
+            philosophy to be “Setting Standards”.
           </ReactReadMoreReadLess>
         </div>
-        <div className="grid grid-cols-3 w-1/2 gap-3">
+        <div className="grid md:grid-cols-3 grid-cols-2 md:w-1/2 gap-3">
           <button
             onClick={() => window.my_modal_3.showModal()}
             className="btn btn-outline"
@@ -237,8 +215,8 @@ const IntroDuction = () => {
         </div>
       </div>
       {/* Dream with us */}
-      <div className="flex mt-[50px] mx-auto">
-        <div className="w-1/2">
+      <div className="flex md:flex-row flex-col mt-[50px] mx-auto">
+        <div className="md:w-1/2">
           {/* Quote div */}
           <h1 className="text-xl font-semibold mb-2">
             Dream with us, partner with us
@@ -264,7 +242,7 @@ const IntroDuction = () => {
             </div>
           </div>
         </div>
-        <div className="w-1/2 flex justify-end">
+        <div className="w-1/2 md:flex hidden justify-end">
           {/* Image div */}
           <img className="w-[296px]" src={dream} alt="" />
         </div>

@@ -1,30 +1,37 @@
-import { Carousel } from "react-responsive-carousel";
-import classic from "../../../src/assets/classic.jpg";
-import commercial from "../../../src/assets/commercial.jpg";
-import luxury from "../../../src/assets/luxery.jpg";
-import community from "../../../src/assets/community.jpg";
+// import classic from "../../../src/assets/classic.jpg";
+// import commercial from "../../../src/assets/commercial.jpg";
+// import luxury from "../../../src/assets/luxery.jpg";
+// import community from "../../../src/assets/community.jpg";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
+import "./SwiperBanner.css";
+import { useEffect, useState } from "react";
+
 const SwipeBanner = () => {
+  const [activeId, setActiveId] = useState(1);
+  const [data, setData] = useState([]);
+  const onClick = (id) => {
+    setActiveId(id);
+  };
+  useEffect(() => {
+    fetch("./CardData.json")
+      .then((res) => res.json())
+      .then((data) => {
+        setData(data);
+      });
+  }, []);
   return (
-    <div className="z-20">
-      <Carousel infiniteLoop stopOnHover>
-        <div>
-          <img src={classic} />
-          <p className="legend text-[25px] md:mb-[200px]">Classic</p>
+    <div className="container">
+      {data.map((card) => (
+        <div
+          key={card.id}
+          className={`panel ${activeId === card.id ? "active" : ""}`}
+          onClick={() => onClick(card.id)}
+          onMouseEnter={() => onClick(card.id)}
+          style={{ backgroundImage: `url(${card.url})` }}
+        >
+          <h3>{card.title}</h3>
         </div>
-        <div>
-          <img src={commercial} />
-          <p className="legend text-[25px] md:mb-[200px]">Commercial</p>
-        </div>
-        <div>
-          <img src={luxury} />
-          <p className="legend text-[25px] md:mb-[200px]">Luxury</p>
-        </div>
-        <div>
-          <img src={community} />
-          <p className="legend text-[25px] md:mb-[200px]">Community</p>
-        </div>
-      </Carousel>
+      ))}
     </div>
   );
 };

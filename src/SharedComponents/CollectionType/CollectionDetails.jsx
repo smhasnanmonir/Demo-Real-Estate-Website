@@ -5,14 +5,14 @@ const CollectionDetails = ({ building }) => {
     <div>
       <div className="bg-black text-white p-6">
         <div className="flex justify-between items-center max-w-5xl mx-auto ">
-          <h1 className="text-2xl font-semibold">
+          <h1 className="md:text-2xl text-[14px] font-semibold md:w-full w-[120px]">
             {building[0]?.name} COLLECTION
           </h1>
           <div className="flex gap-3">
             {building[0]?.location.map((loc) => (
               <Link
                 key={building[0].name}
-                className="btn btn-outline text-white"
+                className="btn md:btn-md btn-sm btn-outline text-white"
               >
                 {loc}
               </Link>
