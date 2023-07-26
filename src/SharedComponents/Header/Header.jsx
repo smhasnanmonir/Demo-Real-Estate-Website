@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom";
-import logo from "../../../src/assets/Universe__group__logo-01.png";
+import logo from "../../../src/assets/whiteLogo.png";
 const Header = () => {
   return (
-    <div className="navbar bg-black justify-between py-[12px] px-[95px]">
+    <div className="navbar bg-black justify-between py-[12px] px-[95px] text-red-400">
       <div className="">
         <div className="dropdown">
           <label tabIndex={0} className="btn btn-ghost lg:hidden">

@@ -4,9 +4,9 @@ import quote from "../../../src/assets/quote.png";
 import dream from "../../../src/assets/penguin.png";
 const IntroDuction = () => {
   return (
-    <div className="mb-5 md:max-w-5xl sm:max-w-full md:px-0 px-[25px] mx-auto mt-[35px]">
-      <div className="flex md:flex-row flex-col md:gap-[30px] gap-4 w-full items-center justify-center mt-7 md:max-w-5xl sm:w-full mx-auto">
-        <div className="md:w-1/2">
+    <div className="mb-5 md:max-w-5xl sm:max-w-full md:px-0 px-[25px] mx-auto mt-[35px] bg-black text-white">
+      <div className="flex md:flex-row flex-col md:gap-[60px] gap-4 w-full items-center  mt-7 md:max-w-5xl sm:w-full mx-auto">
+        <div className="md:w-1/2 justify-end">
           <h1 className="text-xl font-semibold mb-2">WHO WE ARE?</h1>
           <ReactReadMoreReadLess
             className=""
@@ -28,15 +28,15 @@ const IntroDuction = () => {
             philosophy to be “Setting Standards”.
           </ReactReadMoreReadLess>
         </div>
-        <div className="grid md:grid-cols-3 grid-cols-2 md:w-1/2 gap-3">
+        {/* <div className="grid md:grid-cols-3 grid-cols-2 md:w-1/2 gap-3 text-white">
           <button
             onClick={() => window.my_modal_3.showModal()}
-            className="btn btn-outline"
+            className="btn btn-outline text-white"
           >
             TRUSTWORTHY AND RELIABLE
           </button>
           <dialog id="my_modal_3" className="modal">
-            <form method="dialog" className="modal-box">
+            <form method="dialog" className="modal-box bg-black">
               <button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">
                 ✕
               </button>
@@ -51,7 +51,7 @@ const IntroDuction = () => {
           </dialog>
           <button
             onClick={() => window.my_modal_4.showModal()}
-            className="btn btn-outline"
+            className="btn btn-outline text-white"
           >
             HIGH-GRADE CONSTRUCTION
           </button>
@@ -72,7 +72,7 @@ const IntroDuction = () => {
           </dialog>
           <button
             onClick={() => window.my_modal_5.showModal()}
-            className="btn btn-outline"
+            className="btn btn-outline text-white"
           >
             {" "}
             MODERN DESIGN
@@ -93,7 +93,7 @@ const IntroDuction = () => {
           </dialog>
           <button
             onClick={() => window.my_modal_6.showModal()}
-            className="btn btn-outline"
+            className="btn btn-outline text-white"
           >
             RANGE OF CHOICES
           </button>
@@ -115,7 +115,7 @@ const IntroDuction = () => {
           </dialog>
           <button
             onClick={() => window.my_modal_7.showModal()}
-            className="btn btn-outline"
+            className="btn btn-outline text-white"
           >
             UNCOMPROMISED SAFETY
           </button>
@@ -135,7 +135,7 @@ const IntroDuction = () => {
           </dialog>
           <button
             onClick={() => window.my_modal_8.showModal()}
-            className="btn btn-outline"
+            className="btn btn-outline text-white"
           >
             AFTER-SALES SERVICES
           </button>
@@ -156,7 +156,7 @@ const IntroDuction = () => {
           </dialog>
           <button
             onClick={() => window.my_modal_9.showModal()}
-            className="btn btn-outline"
+            className="btn btn-outline text-white"
           >
             GOING THE EXTRA MILE
           </button>
@@ -177,7 +177,7 @@ const IntroDuction = () => {
           </dialog>
           <button
             onClick={() => window.my_modal_10.showModal()}
-            className="btn btn-outline"
+            className="btn btn-outline text-white"
           >
             {" "}
             OUR CREDENTIALS
@@ -193,7 +193,7 @@ const IntroDuction = () => {
           </dialog>
           <button
             onClick={() => window.my_modal_11.showModal()}
-            className="btn btn-outline"
+            className="btn btn-outline text-white"
           >
             AND MORE!
           </button>
@@ -212,10 +212,17 @@ const IntroDuction = () => {
               </p>
             </form>
           </dialog>
+        </div> */}
+        <div className="w-1/2 flex justify-end">
+          <img
+            className="w-[79%] rounded-md "
+            src="https://i.imgur.com/wqPdKxT.jpg"
+            alt=""
+          />
         </div>
       </div>
       {/* Dream with us */}
-      <div className="flex md:flex-row flex-col mt-[50px] mx-auto">
+      <div className="flex md:flex-row flex-col mt-[50px] mx-auto items-center justify-center md:max-w-5xl">
         <div className="md:w-1/2">
           {/* Quote div */}
           <h1 className="text-xl font-semibold mb-2">
@@ -231,20 +238,27 @@ const IntroDuction = () => {
             <div className="border-l-[5px] border-blue-300 mt-[35px]">
               <div className="ml-5">
                 <img className="w-[64px]" src={quote} alt="" />
-                <p className="text-xl italic mb-3">
-                  In all of my years, I have rarely come across a company as
-                  professional as bti. bti is truly a trustworthy name in the
-                  real estate sector of Bangladesh.
+                <p className="text-[18px] italic mb-3">
+                  “We are all constructed out of our self-dialogue.” — BRYANT
+                  MCGILL Claritas est etiam processus dynamicus, qui sequitur
+                  mutationem consuetudium lectorum. Mirum est notare quam
+                  littera gothica, quam nunc putamus parum claram, anteposuerit
+                  litterarum formas humanitatis per seacula quarta decima et
+                  quinta decima. Eodem modo typi, qui nunc nobis videntur parum
+                  clari, fiant sollemnes in futurum.
                 </p>
-                <h1>Dr. Kabirul Islam</h1>
-                <p>Landowner, My Forte</p>
+                <h1>Harunur Rashid, Doctor</h1>
               </div>
             </div>
           </div>
         </div>
-        <div className="w-1/2 md:flex hidden justify-end">
+        <div className="md:w-1/2 md:flex hidden justify-end">
           {/* Image div */}
-          <img className="w-[296px]" src={dream} alt="" />
+          <img
+            className="w-3/4 rounded-lg"
+            src="https://i.imgur.com/tg7uNgu.jpg"
+            alt=""
+          />
         </div>
       </div>
     </div>
