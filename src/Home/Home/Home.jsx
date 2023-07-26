@@ -1,6 +1,7 @@
 import CollectionType from "../../SharedComponents/CollectionType/CollectionType";
 import FloatingButton from "../FloatingButton/FloatingButton";
 import IntroDuction from "../IntroDuction/IntroDuction";
+import OurProjectSection from "../OurProjectSection/OurProjectSection";
 import SwipeBanner from "../SwipeBanner/SwipeBanner";
 
 const Home = () => {
@@ -10,6 +11,7 @@ const Home = () => {
       <SwipeBanner></SwipeBanner>
       <IntroDuction></IntroDuction>
       <CollectionType></CollectionType>
+      <OurProjectSection></OurProjectSection>
     </div>
   );
 };
