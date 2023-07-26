@@ -36,6 +36,7 @@
 @media (max-width: 400px) {
   .container {
     width: 100vw;
+    height: 30vh;
   }
 
   .panel:nth-of-type(5) {
@@ -55,7 +56,7 @@
 
   .panel.active {
     height: 250px;
-    flex: 0.95;
+    flex: 1.2;
   }
 
   .panel h3 {
