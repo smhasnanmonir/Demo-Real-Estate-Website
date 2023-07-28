@@ -25,8 +25,8 @@ const Header = () => {
             tabIndex={0}
             className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-black  rounded-box w-52"
           >
-            <li className="text-white hover:text-red-400">
-              <Link>About Us</Link>
+            <li className="text-white hover:text-red-400 visited:bg-red-500 active:bg-red-800">
+              <Link to="/about">About Us</Link>
             </li>
             <li className="text-white hover:text-red-400">
               <Link>Properties</Link>
@@ -46,8 +46,11 @@ const Header = () => {
       </div>
       <div className="hidden lg:flex w-3/4 gap-[10px]">
         <ul className="menu menu-horizontal space-x-[25px] flex px-1 w-full justify-end text-[16px]">
-          <li className="text-white ">
-            <Link className="hover:text-red-400 hover:scale-105 transition-all duration-500 ease-in-out">
+          <li className="text-white visited:bg-red-500 active:bg-red-800">
+            <Link
+              to="/about"
+              className="hover:text-red-400 hover:scale-105 transition-all duration-500 ease-in-out text-white  "
+            >
               About Us
             </Link>
           </li>
