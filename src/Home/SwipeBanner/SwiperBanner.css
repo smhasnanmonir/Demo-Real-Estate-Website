@@ -8,7 +8,6 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 70vh;
   color: #fff;
   cursor: pointer;
   flex: 0.5;
@@ -19,7 +18,6 @@
 }
 
 .panel h3 {
-  font-size: 20px;
   position: absolute;
   bottom: 0px;
   left: 0px;
@@ -28,7 +26,7 @@
 }
 
 .panel.active {
-  flex: 2;
+  flex: 4;
 }
 
 .panel.active h3 {
@@ -38,35 +36,32 @@
 
 @media (max-width: 400px) {
   .container {
-    width: 100vw;
-    height: 30vh;
+    display: flex;
+    max-width: 100vw !important;
+    width: 100%;
   }
 
-  .panel:nth-of-type(5) {
-    display: none;
-  }
   .panel {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 250px;
-    width: 200px;
-    color: #fff;
     cursor: pointer;
     position: relative;
     transition: flex 0.7s ease-in;
   }
 
+  .panel:nth-of-type(5) {
+    display: none;
+  }
+
   .panel.active {
-    height: 250px;
-    flex: 1;
+    flex: 7;
   }
 
   .panel h3 {
-    font-size: 14px;
     position: absolute;
-    bottom: 0px;
-    left: 0px;
+    bottom: -1px;
+    left: -1px;
     padding: 0;
     margin: 0;
     opacity: 1;
