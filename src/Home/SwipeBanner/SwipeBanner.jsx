@@ -7,7 +7,7 @@ import "./SwiperBanner.css";
 import { useEffect, useState } from "react";
 
 const SwipeBanner = () => {
-  const [activeId, setActiveId] = useState(1);
+  const [activeId, setActiveId] = useState(10);
   const [data, setData] = useState([]);
   const onClick = (id) => {
     setActiveId(id);
