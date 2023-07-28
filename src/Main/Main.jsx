@@ -7,9 +7,9 @@ const Main = () => {
   const noNavBar = location.pathname.includes("about");
   return (
     <div>
-      {noNavBar || <Header></Header>}
+      <Header></Header>
       <Outlet></Outlet>
-      <Footer></Footer>
+      {noNavBar || <Footer></Footer>}
     </div>
   );
 };
