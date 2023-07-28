@@ -17,7 +17,7 @@ const CollectionType = () => {
   const wellness = items.filter((item) => item.name === "WELLNESS");
 
   return (
-    <div className="mt-[65px]">
+    <div className="">
       <CollectionDetails building={luxury}></CollectionDetails>
       <CollectionDetails building={classic}></CollectionDetails>
       <CollectionDetails building={commercial}></CollectionDetails>

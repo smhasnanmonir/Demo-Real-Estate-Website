@@ -29,7 +29,9 @@ const SwipeBanner = () => {
           onMouseEnter={() => onClick(card.id)}
           style={{ backgroundImage: `url(${card.url})` }}
         >
-          <h3>{card.title}</h3>
+          <h3 className="bg-black p-2 font-semibold text-[14px]">
+            {card.title}
+          </h3>
         </div>
       ))}
     </div>
