@@ -20,11 +20,11 @@ const SwipeBanner = () => {
       });
   }, []);
   return (
-    <div className="container">
+    <div className="container ">
       {data.map((card) => (
         <div
           key={card.id}
-          className={`panel ${
+          className={`panel z-0 ${
             activeId === card.id ? "active" : ""
           } md:h-[550px] h-[270px]`}
           onClick={() => onClick(card.id)}
