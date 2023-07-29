@@ -23,6 +23,7 @@
     "react-read-more-read-less": "^1.0.7",
     "react-responsive-carousel": "^3.2.23",
     "react-router-dom": "^6.14.2",
+    "react-scroll": "^1.8.9",
     "read-more-react": "^1.0.10",
     "sort-by": "^1.2.0",
     "swiper": "^10.0.4"
