@@ -5,35 +5,44 @@
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import "./SwiperBanner.css";
 import { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 const SwipeBanner = () => {
+  const navigate = useNavigate();
   const [activeId, setActiveId] = useState(10);
   const [data, setData] = useState([]);
   const onClick = (id) => {
     setActiveId(id);
   };
   useEffect(() => {
-    fetch("./CardData.json")
+    fetch("./OurProject.json")
       .then((res) => res.json())
       .then((data) => {
         setData(data);
       });
   }, []);
+  const nevigateToProperty = (id) => {
+    navigate(`/properties/${id}`);
+  };
   return (
     <div className="container ">
       {data.map((card) => (
         <div
-          key={card.id}
+          key={card.numberId}
           className={`panel z-0 ${
-            activeId === card.id ? "active" : ""
+            activeId === card?.numberId ? "active" : ""
           } md:h-[550px] h-[270px]`}
-          onClick={() => onClick(card.id)}
-          onMouseEnter={() => onClick(card.id)}
-          onMouseLeave={() => onClick(card.id === 100)}
-          style={{ backgroundImage: `url(${card.url})` }}
+          // onClick={() => onClick(card.id)}
+          onClick={() => {
+            onClick(card?.numberId);
+            nevigateToProperty(card?.id);
+          }}
+          onMouseEnter={() => onClick(card.numberId)}
+          onMouseLeave={() => onClick(card.numberId === 100)}
+          style={{ backgroundImage: `url(${card?.img})` }}
         >
           <h3 className="bg-black p-2 font-semibold md:text-[18px] text-[8px] w-full">
-            {card.title}
+            {card?.name}
           </h3>
         </div>
       ))}

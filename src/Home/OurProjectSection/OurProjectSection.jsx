@@ -9,6 +9,7 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 const OurProjectSection = () => {
   const [datas, setData] = useState([]);
   useEffect(() => {
@@ -46,9 +47,12 @@ const OurProjectSection = () => {
                 <h1 className="text-[16px] font-semibold mt-3 md:block hidden">
                   {data?.name}
                 </h1>
-                <button className="btn btn-outline btn-sm text-white mt-3">
+                <Link
+                  to={`/properties/${data?.id}`}
+                  className="btn btn-outline btn-sm text-white mt-3"
+                >
                   Show Details
-                </button>
+                </Link>
               </div>
             </SwiperSlide>
           ))}
