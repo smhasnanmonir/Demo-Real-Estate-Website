@@ -1,10 +1,14 @@
-import { useLoaderData } from "react-router-dom";
+import { useLoaderData, useParams } from "react-router-dom";
 import FloatingButton from "../../Home/FloatingButton/FloatingButton";
 import ReadMoreReact from "read-more-react/dist/components/ReadMoreReact";
+import UseData from "../Hooks/UseData";
 
 const PropertiesDetail = () => {
-  const data = useLoaderData();
-  console.log(data);
+  const { id } = useParams();
+  console.log(id);
+  const [datas] = UseData();
+  let dataPro = datas.filter((datas) => datas.id === id);
+  console.log(dataPro);
   const descriptionText = (
     <>
       <h1 className="text-[17px]">
@@ -18,8 +22,8 @@ const PropertiesDetail = () => {
         caring & sharing neighbors throughout the year, is a dream coming true
         by the grace of heavenly initiative called Unveiling the imaginations of
         urban dwellers and introducing the eco-friendly environment,{" "}
-        <span className="font-bold">{data?.name}</span> Town was developed with
-        significant & dynamic aspects of green architecture which was
+        <span className="font-bold">{dataPro[0]?.name}</span> Town was developed
+        with significant & dynamic aspects of green architecture which was
         meticulously planned and perfectly designed. The Best Brand of Living
         was flawlessly designed for the cream de la cream of societies finest.
         The architecture here is in creating spaces that interrelates, provokes
@@ -36,15 +40,17 @@ const PropertiesDetail = () => {
         <div className="pt-[35px]">
           <img
             className="w-full md:h-[450px] h-[250px] object-cover mx-auto rounded-2xl"
-            src={data.img}
-            alt={data.id}
+            src={dataPro[0].img}
+            alt={dataPro[0].id}
           />
         </div>
         <div className="space-y-5">
-          <h1 className="md:text-3xl text-2xl font-semibold">{data?.name}</h1>
+          <h1 className="md:text-3xl text-2xl font-semibold">
+            {dataPro[0]?.name}
+          </h1>
           <iframe
             className="w-full h-[250px] rounded-2xl"
-            src={data?.iframe}
+            src={dataPro[0]?.iframe}
           ></iframe>
         </div>
         <div className="md:block hidden">{descriptionText}</div>
@@ -58,15 +64,26 @@ const PropertiesDetail = () => {
           </div>
         </div>
         <div className="grid md:grid-cols-4 grid-cols-2 gap-2 ">
-          {data?.insideImages.map((img) => (
-            <div key={data.id}>
-              <img
-                className="rounded-2xl cursor-pointer transition-all ease-in-out duration-500 hover:scale-105 hover:z-10"
-                src={img}
-                alt=""
-              />
-            </div>
-          ))}
+          <img
+            className="rounded-2xl cursor-pointer transition-all ease-in-out duration-500 hover:scale-105 hover:z-10"
+            src={dataPro[0]?.insideImage1}
+            alt=""
+          />
+          <img
+            className="rounded-2xl cursor-pointer transition-all ease-in-out duration-500 hover:scale-105 hover:z-10"
+            src={dataPro[0]?.insideImage3}
+            alt=""
+          />
+          <img
+            className="rounded-2xl cursor-pointer transition-all ease-in-out duration-500 hover:scale-105 hover:z-10"
+            src={dataPro[0]?.insideImage4}
+            alt=""
+          />
+          <img
+            className="rounded-2xl cursor-pointer transition-all ease-in-out duration-500 hover:scale-105 hover:z-10"
+            src={dataPro[0]?.insideImage2}
+            alt=""
+          />
         </div>
       </div>
     </div>

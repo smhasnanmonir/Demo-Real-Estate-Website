@@ -6,27 +6,22 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import "./SwiperBanner.css";
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
+import UseData from "../../Components/Hooks/UseData";
 
 const SwipeBanner = () => {
   const navigate = useNavigate();
   const [activeId, setActiveId] = useState(10);
-  const [data, setData] = useState([]);
+  const [datas] = UseData();
   const onClick = (id) => {
     setActiveId(id);
   };
-  useEffect(() => {
-    fetch("./OurProject.json")
-      .then((res) => res.json())
-      .then((data) => {
-        setData(data);
-      });
-  }, []);
-  const nevigateToProperty = (id) => {
+
+  const navigateToProperty = (id) => {
     navigate(`/properties/${id}`);
   };
   return (
     <div className="container ">
-      {data.map((card) => (
+      {datas.map((card) => (
         <div
           key={card.numberId}
           className={`panel z-0 ${
@@ -35,7 +30,7 @@ const SwipeBanner = () => {
           // onClick={() => onClick(card.id)}
           onClick={() => {
             onClick(card?.numberId);
-            nevigateToProperty(card?.id);
+            navigateToProperty(card?.id);
           }}
           onMouseEnter={() => onClick(card.numberId)}
           onMouseLeave={() => onClick(card.numberId === 100)}

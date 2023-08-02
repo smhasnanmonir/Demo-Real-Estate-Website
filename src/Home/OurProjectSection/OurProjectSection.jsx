@@ -10,15 +10,9 @@ import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import UseData from "../../Components/Hooks/UseData";
 const OurProjectSection = () => {
-  const [datas, setData] = useState([]);
-  useEffect(() => {
-    fetch("./OurProject.json")
-      .then((res) => res.json())
-      .then((data) => {
-        setData(data);
-      });
-  });
+  const [datas] = UseData();
   return (
     <div className="z-[0] relative">
       <h1 className="OurProjects text-center text-3xl font-semibold text-white md:my-[45px] my-[25px]">

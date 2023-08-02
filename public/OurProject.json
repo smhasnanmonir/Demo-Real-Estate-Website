@@ -22,12 +22,10 @@
       "Parks",
       "Clubs"
     ],
-    "insideImages": [
-      "https://i.imgur.com/NQN4WBz.jpg",
-      "https://i.imgur.com/bxST9bC.jpg",
-      "https://i.imgur.com/zb867Xu.jpg",
-      "https://i.imgur.com/1w7L2c4.jpg"
-    ]
+    "insideImage1": "https://i.imgur.com/NQN4WBz.jpg",
+    "insideImage2": "https://i.imgur.com/bxST9bC.jpg",
+    "insideImage3": "https://i.imgur.com/zb867Xu.jpg",
+    "insideImage4": "https://i.imgur.com/1w7L2c4.jpg"
   },
   {
     "name": "Nishorgo Valley",
@@ -52,12 +50,10 @@
       "Parks",
       "Clubs"
     ],
-    "insideImages": [
-      "https://i.imgur.com/NQN4WBz.jpg",
-      "https://i.imgur.com/bxST9bC.jpg",
-      "https://i.imgur.com/zb867Xu.jpg",
-      "https://i.imgur.com/1w7L2c4.jpg"
-    ]
+    "insideImage1": "https://i.imgur.com/NQN4WBz.jpg",
+    "insideImage2": "https://i.imgur.com/bxST9bC.jpg",
+    "insideImage3": "https://i.imgur.com/zb867Xu.jpg",
+    "insideImage4": "https://i.imgur.com/1w7L2c4.jpg"
   },
   {
     "name": "Mayakunjo Model Town",
@@ -82,12 +78,10 @@
       "Parks",
       "Clubs"
     ],
-    "insideImages": [
-      "https://i.imgur.com/NQN4WBz.jpg",
-      "https://i.imgur.com/bxST9bC.jpg",
-      "https://i.imgur.com/zb867Xu.jpg",
-      "https://i.imgur.com/1w7L2c4.jpg"
-    ]
+    "insideImage1": "https://i.imgur.com/NQN4WBz.jpg",
+    "insideImage2": "https://i.imgur.com/bxST9bC.jpg",
+    "insideImage3": "https://i.imgur.com/zb867Xu.jpg",
+    "insideImage4": "https://i.imgur.com/1w7L2c4.jpg"
   },
   {
     "name": "Dream Square Model Town",
@@ -112,11 +106,9 @@
       "Parks",
       "Clubs"
     ],
-    "insideImages": [
-      "https://i.imgur.com/NQN4WBz.jpg",
-      "https://i.imgur.com/bxST9bC.jpg",
-      "https://i.imgur.com/zb867Xu.jpg",
-      "https://i.imgur.com/1w7L2c4.jpg"
-    ]
+    "insideImage1": "https://i.imgur.com/NQN4WBz.jpg",
+    "insideImage2": "https://i.imgur.com/bxST9bC.jpg",
+    "insideImage3": "https://i.imgur.com/zb867Xu.jpg",
+    "insideImage4": "https://i.imgur.com/1w7L2c4.jpg"
   }
 ]

@@ -1,15 +1,9 @@
 import { Link, NavLink } from "react-router-dom";
 import logo from "../../../src/assets/whiteLogo.png";
 import { useEffect, useState } from "react";
+import UseData from "../../Components/Hooks/UseData";
 const Header = () => {
-  const [datas, setDatas] = useState([]);
-  useEffect(() => {
-    fetch("/OurProject.json")
-      .then((res) => res.json())
-      .then((data) => {
-        setDatas(data);
-      });
-  }, []);
+  const [datas, refetch] = UseData();
   const commonNav = (
     <>
       <li className="text-white">
@@ -42,13 +36,13 @@ const Header = () => {
             </button>
             <ul className="dropdown-menu md:absolute hidden text-gray-700 p-[35px] group-hover:block  space-y-4 bg-black rounded-lg z-50 relative dropdown-left">
               {datas.map((data) => (
-                <li key={data.id}>
-                  <a
-                    className="rounded-t bg-gray-200 hover:bg-gray-400 md:py-3 md:px-2 block"
-                    href="#"
+                <li key={data?.id}>
+                  <Link
+                    to={`/properties/${data?.id}`}
+                    className="btn btn-outline btn-sm text-white mt-3 hover:text-red-500"
                   >
-                    {data.name}
-                  </a>
+                    {data?.name}
+                  </Link>
                 </li>
               ))}
             </ul>
