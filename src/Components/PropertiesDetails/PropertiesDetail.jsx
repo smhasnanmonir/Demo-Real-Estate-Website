@@ -1,14 +1,11 @@
-import { useLoaderData, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import FloatingButton from "../../Home/FloatingButton/FloatingButton";
-import ReadMoreReact from "read-more-react/dist/components/ReadMoreReact";
 import UseData from "../Hooks/UseData";
 
 const PropertiesDetail = () => {
   const { id } = useParams();
-  console.log(id);
   const [datas] = UseData();
   let dataPro = datas.filter((datas) => datas.id === id);
-  console.log(dataPro);
   const descriptionText = (
     <>
       <h1 className="text-[17px]">
@@ -40,8 +37,8 @@ const PropertiesDetail = () => {
         <div className="pt-[35px]">
           <img
             className="w-full md:h-[450px] h-[250px] object-cover mx-auto rounded-2xl"
-            src={dataPro[0].img}
-            alt={dataPro[0].id}
+            src={dataPro[0]?.img}
+            alt={dataPro[0]?.id}
           />
         </div>
         <div className="space-y-5">

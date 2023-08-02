@@ -19,12 +19,6 @@ const router = createBrowserRouter([
       {
         path: "/properties/:id",
         element: <PropertiesDetail></PropertiesDetail>,
-        loader: async ({ params }) => {
-          const res = await fetch("/OurProject.json");
-          const data = await res.json();
-          const property = data.find((info) => info.id == params.id);
-          return property;
-        },
       },
     ],
   },
