@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 import "./AboutUs.css";
-import { Animated } from "react-animated-css";
 
 const AboutUs = () => {
   return (

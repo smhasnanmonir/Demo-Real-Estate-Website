@@ -10,10 +10,9 @@
   background-repeat: no-repeat;
   color: #fff;
   cursor: pointer;
-  flex: 0.5;
+  flex: 0.25;
   position: relative;
   transition: flex 0.7s ease-in;
-  flex: 1;
   box-shadow: 0 3px 50px rgb(0 0 0 / 20);
 }
 
@@ -26,7 +25,8 @@
 }
 
 .panel.active {
-  flex: 7;
+  flex: 1.75;
+  width: 100%;
 }
 
 .panel.active h3 {

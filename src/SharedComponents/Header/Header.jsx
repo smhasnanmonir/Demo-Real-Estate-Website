@@ -39,8 +39,8 @@ const Header = () => {
       </li>
       <li className="text-white navBarCustom group">
         <NavLink
-          className={"navBarCustom"}
           to="/allproperties"
+          className={"navBarCustom"}
           style={({ isActive, isPending }) => {
             return {
               fontWeight: isActive ? "bold" : "",
@@ -52,11 +52,10 @@ const Header = () => {
             <button className=" text-white font-semibold rounded inline-flex items-center group">
               <span className="mr-1">Properties</span>
             </button>
-            <ul className="px-10 py-10 dropdown-menu md:absolute hidden text-gray-700 p-[35px] group-hover:block  space-y-4 bg-black rounded-lg z-50 relative">
-              <div className=" text-white grid grid-cols-3 w-[370px] h-[120px]">
+            <ul className="px-20 py-12 dropdown-menu md:absolute hidden text-gray-700 group-hover:block  space-y-4 bg-black rounded-lg z-50 relative">
+              <div className=" text-white grid grid-cols-3 w-[380px] h-[140px]">
                 <div className="space-y-4 ">
                   <h1 className="font-semibold">Phase</h1>
-
                   <p className="hover:text-red-400 font-normal">Ongoing</p>
                   <p className="hover:text-red-400 font-normal">Upcoming</p>
                   <p className="hover:text-red-400 font-normal">Completed</p>
@@ -72,6 +71,12 @@ const Header = () => {
                   <p className="hover:text-red-400 font-normal">Aftabnagar</p>
                   <p className="hover:text-red-400 font-normal">Basundhara</p>
                   <p className="hover:text-red-400 font-normal">Mohakhali</p>
+                  <Link
+                    to="/allproperties"
+                    className="font-normal hover:text-red-500 block ml-[45px]"
+                  >
+                    All Properties
+                  </Link>
                 </div>
               </div>
             </ul>

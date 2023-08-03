@@ -8,7 +8,6 @@ import "swiper/css/bundle";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
-import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import UseData from "../../Components/Hooks/UseData";
 const OurProjectSection = () => {

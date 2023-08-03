@@ -36,7 +36,7 @@ const PropertiesDetail = () => {
       <div className="space-y-5 md:px-[50px] px-[25px] pb-8">
         <div className="pt-[35px]">
           <img
-            className="w-full md:h-[450px] h-[250px] object-cover mx-auto rounded-2xl"
+            className="w-10/12 mx-auto object-fit rounded-2xl"
             src={dataPro[0]?.img}
             alt={dataPro[0]?.id}
           />
@@ -46,7 +46,7 @@ const PropertiesDetail = () => {
             {dataPro[0]?.name}
           </h1>
           <iframe
-            className="w-full h-[250px] rounded-2xl"
+            className="w-full h-[310px] rounded-2xl"
             src={dataPro[0]?.iframe}
           ></iframe>
         </div>
@@ -60,7 +60,7 @@ const PropertiesDetail = () => {
             <div className="collapse-content bg-black">{descriptionText}</div>
           </div>
         </div>
-        <div className="grid md:grid-cols-4 grid-cols-2 gap-2 ">
+        {/* <div className="grid md:grid-cols-4 grid-cols-2 gap-2 ">
           <img
             className="rounded-2xl cursor-pointer transition-all ease-in-out duration-500 hover:scale-105 hover:z-10"
             src={dataPro[0]?.insideImage1}
@@ -81,7 +81,7 @@ const PropertiesDetail = () => {
             src={dataPro[0]?.insideImage2}
             alt=""
           />
-        </div>
+        </div> */}
       </div>
     </div>
   );
