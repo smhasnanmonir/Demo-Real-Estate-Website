@@ -10,7 +10,6 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@emotion/react": "^11.11.1",
     "@fullpage/react-fullpage": "^0.1.40",
     "@tanstack/react-query": "^4.32.1",
     "axios": "^1.4.0",
@@ -18,14 +17,13 @@
     "localforage": "^1.10.0",
     "match-sorter": "^6.3.1",
     "react": "^18.2.0",
-    "react-awesome-reveal": "^4.2.5",
+    "react-animated-css": "^1.2.1",
     "react-dom": "^18.2.0",
     "react-icons": "^4.10.1",
     "react-modal": "^3.16.1",
     "react-read-more-read-less": "^1.0.7",
     "react-responsive-carousel": "^3.2.23",
     "react-router-dom": "^6.14.2",
-    "react-scroll": "^1.8.9",
     "read-more-react": "^1.0.10",
     "sort-by": "^1.2.0",
     "swiper": "^10.0.4"

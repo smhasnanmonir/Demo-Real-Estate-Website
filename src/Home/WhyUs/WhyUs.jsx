@@ -11,6 +11,7 @@ const WhyUs = () => {
         Get us Now!
       </h1>
       <button className="button-contact">Contact us</button>
+      {/* You can open the modal using ID.showModal() method */}
     </div>
   );
 };

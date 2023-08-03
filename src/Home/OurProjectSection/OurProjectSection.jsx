@@ -18,18 +18,14 @@ const OurProjectSection = () => {
       <h1 className="OurProjects text-center text-3xl font-semibold text-white md:my-[45px] my-[25px]">
         Our Projects
       </h1>
-      <div className="max-w-6xl mx-auto md:px-0 px-[25px]">
+      <div className="max-w-7xl mx-auto md:px-0 px-[25px]">
         <Swiper
-          className="rounded-lg"
-          effect="fade"
+          className="rounded-lg p-8"
+          effect="card"
           modules={[Navigation, Pagination, Scrollbar, A11y]}
           spaceBetween={10}
           slidesPerView={2}
-          navigation
-          pagination={{ clickable: true }}
-          scrollbar={{ draggable: true }}
-          onSwiper={(swiper) => console.log(swiper)}
-          onSlideChange={() => console.log("slide change")}
+          navigation={true}
         >
           {datas.map((data) => (
             <SwiperSlide className=" md:p-6 rounded-lg" key={data?.img}>
