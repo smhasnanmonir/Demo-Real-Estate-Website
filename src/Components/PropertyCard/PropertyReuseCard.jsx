@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 const PropertyReuseCard = ({ data }) => {
   return (
-    <div className="card md:w-96 w-full h-[545px] bg-black hover:shadow-xl hover:shadow-cyan-600 duration-500 transition-all ease-in-out cursor-pointer rounded-none">
+    <div className="card md:w-[350px] w-[425px] h-[490px] bg-black hover:shadow-xl hover:shadow-cyan-600 duration-500 transition-all ease-in-out cursor-pointer rounded-none">
       <figure className="">
         <img className="max-w-[745px]" src={data?.img} alt={data?.name} />
       </figure>

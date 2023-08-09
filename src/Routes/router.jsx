@@ -23,12 +23,12 @@ const router = createBrowserRouter([
         element: <PropertyCard></PropertyCard>,
       },
       {
-        path: "/properties/:id",
-        element: <PropertiesDetail></PropertiesDetail>,
+        path: "/allproperties/:selectedValue",
+        element: <PropertiesLocation></PropertiesLocation>,
       },
       {
-        path: "/location/:selectedValue",
-        element: <PropertiesLocation></PropertiesLocation>,
+        path: "/properties/:id",
+        element: <PropertiesDetail></PropertiesDetail>,
       },
     ],
   },

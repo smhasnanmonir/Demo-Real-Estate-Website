@@ -1,12 +1,14 @@
-import { Link } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import UseData from "../Hooks/UseData";
 import PropertyReuseCard from "./PropertyReuseCard";
+import IntroDuctionWhite from "../../Home/IntroDuction/IntroductionWhite";
 
 const PropertyCard = () => {
   const [datas] = UseData();
-  console.log(datas);
   return (
-    <>
+    <div className="bg-[#e9ecef] text-black">
+      <img src="https://i.imgur.com/BnlkC6F.jpg" alt="" />
+      <IntroDuctionWhite></IntroDuctionWhite>
       <h1 className="font-semibold text-center text-2xl py-8">
         Our Properties
       </h1>
@@ -15,7 +17,7 @@ const PropertyCard = () => {
           <PropertyReuseCard key={data?.id} data={data}></PropertyReuseCard>
         ))}
       </div>
-    </>
+    </div>
   );
 };
 

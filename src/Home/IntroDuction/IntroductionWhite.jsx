@@ -5,7 +5,7 @@ import dream from "../../../src/assets/penguin.png";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import UseData from "../../Components/Hooks/UseData";
-const IntroDuction = () => {
+const IntroDuctionWhite = () => {
   const [datas] = UseData();
   console.log(datas);
   const [selectedValue, setSelectedValue] = useState("");
@@ -17,7 +17,7 @@ const IntroDuction = () => {
   console.log(selectedValue);
 
   return (
-    <div className="mb-5  sm:max-w-full md:px-[450px] px-[25px] mx-auto bg-[#28282B] text-white">
+    <div className="sm:max-w-full md:px-[450px] px-[25px] mx-auto bg-[#e9ecef] text-black">
       <div className="flex items-center justify-between py-4 md:flex-row flex-col">
         <div className="flex items-center gap-2">
           <FaHouse size={50}></FaHouse>
@@ -40,7 +40,7 @@ const IntroDuction = () => {
           <>
             <Link
               to={`/allproperties/${selectedValue}`}
-              className="btn btn-outline md:text-[16px] text-white hover:bg-slate-100 hover:text-black w-[150px]"
+              className="btn btn-outline md:text-[16px] text-black  w-[150px]"
             >
               <FaSearchengin></FaSearchengin>
               Search
@@ -52,4 +52,4 @@ const IntroDuction = () => {
   );
 };
 
-export default IntroDuction;
+export default IntroDuctionWhite;

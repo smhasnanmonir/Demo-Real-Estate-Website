@@ -83,34 +83,6 @@ const Header = () => {
           </div>
         </NavLink>
       </li>
-      <li className="text-white ">
-        <NavLink
-          className={"navBarCustom"}
-          to="/landowners"
-          style={({ isActive, isPending }) => {
-            return {
-              fontWeight: isActive ? "bold" : "",
-              color: isPending ? "red" : "white",
-            };
-          }}
-        >
-          Landowners
-        </NavLink>
-      </li>
-      <li className="text-white ">
-        <NavLink
-          className={"navBarCustom"}
-          to="/update"
-          style={({ isActive, isPending }) => {
-            return {
-              fontWeight: isActive ? "bold" : "",
-              color: isPending ? "red" : "white",
-            };
-          }}
-        >
-          Real Estate Update
-        </NavLink>
-      </li>
       <li className="text-white navBarCustom group">
         <NavLink
           className={"navBarCustom"}
