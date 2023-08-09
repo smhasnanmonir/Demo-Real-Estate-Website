@@ -40,7 +40,7 @@ const IntroDuction = () => {
           <>
             <Link
               to={`/allproperties/${selectedValue}`}
-              className="btn btn-outline md:text-[16px] text-white hover:bg-slate-100 hover:text-black w-[150px]"
+              className="btn btn-outline md:text-[16px] text-white hover:bg-slate-100 hover:text-black md:w-[150px] w-[75px]"
             >
               <FaSearchengin></FaSearchengin>
               Search
