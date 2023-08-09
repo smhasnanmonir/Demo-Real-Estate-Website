@@ -1,5 +1,6 @@
 import CollectionType from "../../SharedComponents/CollectionType/CollectionType";
 import FloatingButton from "../FloatingButton/FloatingButton";
+import IntroDuction from "../IntroDuction/IntroDuction";
 import OurProjectSection from "../OurProjectSection/OurProjectSection";
 import SwipeBanner from "../SwipeBanner/SwipeBanner";
 import WhyUs from "../WhyUs/WhyUs";
@@ -11,7 +12,7 @@ const Home = () => {
         <FloatingButton></FloatingButton>
       </div>
       <SwipeBanner></SwipeBanner>
-      {/* <IntroDuction></IntroDuction> */}
+      <IntroDuction></IntroDuction>
       <CollectionType></CollectionType>
       <OurProjectSection></OurProjectSection>
       <WhyUs></WhyUs>

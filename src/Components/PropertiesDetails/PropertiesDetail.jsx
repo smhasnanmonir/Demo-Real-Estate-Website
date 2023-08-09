@@ -36,7 +36,7 @@ const PropertiesDetail = () => {
       <div className="space-y-5 md:px-[50px] px-[25px] pb-8">
         <div className="pt-[35px]">
           <img
-            className="w-10/12 mx-auto object-fit rounded-2xl"
+            className="md:w-10/12 mx-auto object-fit rounded-2xl"
             src={dataPro[0]?.img}
             alt={dataPro[0]?.id}
           />

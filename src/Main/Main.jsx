@@ -6,13 +6,13 @@ const Main = () => {
   const location = useLocation();
   const noNavBar = location.pathname.includes("about");
   return (
-    <div>
+    <>
       <div className="md:block hidden">
         <Header></Header>
       </div>
       <Outlet></Outlet>
       {noNavBar || <Footer></Footer>}
-    </div>
+    </>
   );
 };
 

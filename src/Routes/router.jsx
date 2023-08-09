@@ -4,6 +4,7 @@ import Home from "../Home/Home/Home";
 import PropertiesDetail from "../Components/PropertiesDetails/PropertiesDetail";
 import AboutUs from "../Components/AboutUs";
 import PropertyCard from "../Components/PropertyCard/PropertyCard";
+import PropertiesLocation from "../Components/Location/PropertiesLocation";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -24,6 +25,10 @@ const router = createBrowserRouter([
       {
         path: "/properties/:id",
         element: <PropertiesDetail></PropertiesDetail>,
+      },
+      {
+        path: "/location/:selectedValue",
+        element: <PropertiesLocation></PropertiesLocation>,
       },
     ],
   },

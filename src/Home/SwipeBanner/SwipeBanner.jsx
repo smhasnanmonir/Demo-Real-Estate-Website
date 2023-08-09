@@ -20,7 +20,7 @@ const SwipeBanner = () => {
     navigate(`/properties/${id}`);
   };
   return (
-    <div className="container ">
+    <div className="container pb-[25px]">
       {datas.map((card) => (
         <div
           key={card.numberId}

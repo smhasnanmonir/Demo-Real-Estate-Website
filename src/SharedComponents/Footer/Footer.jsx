@@ -4,7 +4,7 @@ const Footer = () => {
   const [datas] = UseData();
   return (
     <div className="text-white ">
-      <footer className="footer grid md:grid-cols-4 grid-cols-1 gap-5 py-10 md:px-[150px]  px-[25px] bg-[#28282B] text-white place-items-center">
+      <footer className="footer grid md:grid-cols-4 grid-cols-1 gap-5 py-10 md:px-[150px]  px-[25px] bg-[#28282B] text-white md:place-items-center">
         <div className="">
           <h1 className="text-[16px] font-semibold">Contact Information</h1>
           <div className="space-y-4">
