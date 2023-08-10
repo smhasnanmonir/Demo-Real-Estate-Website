@@ -48,7 +48,7 @@ const CollectionDetails = ({ building }) => {
           <div className="flex gap-3">
             {building[0]?.location.map((loc) => (
               <Link
-                key={building[0].name}
+                key={building[0]?.id}
                 className="btn md:btn-md btn-sm btn-outline text-white"
               >
                 {loc}

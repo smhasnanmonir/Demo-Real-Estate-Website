@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "title": "A Dream Come True!",
+    "review": "I recently purchased a plot of land in the Dream Square Model Town, and I am happy with my decision. The entire process, from initial inquiries to the final paperwork, was smooth and well-organized. The location is absolutely stunning, offering breathtaking views of the  lush greenery. The amenities provided are top-notch, with well-maintained roads, proper drainage systems, and easy access to essential utilities. The sales team was incredibly helpful and patient in addressing all my queries, guiding me through the purchase process step by step. I'm excited to build my dream home here and be a part of this wonderful community. Thank you, Universe Group, for making my dream a reality!",
+    "star": 5
+  },
+  {
+    "id": 2,
+    "title": "A Serene Oasis Close to the City",
+    "review": "My experience with the Dream Square land project has been mostly positive. The location is perfect for those who seek a peaceful retreat while still being within reasonable distance to the city. The landscape is beautifully designed, featuring all the facilities and well-maintained parks. The community here is friendly, and I appreciate the efforts the developers have put into creating a cohesive neighborhood feel. My only minor concern is the availability of certain amenities promised initially, which could be improved. Nonetheless, I am excited about the future prospects of this project and looking forward to building my new home in this serene oasis.",
+    "star": 4
+  },
+  {
+    "id": 3,
+    "title": "Extremely satisfied",
+    "review": "I'm extremely satisfied with my investment in the Universe Group land project named Mayakunjo Model Town. From the beginning, the sales team has been exceptionally helpful and accommodating. They listened to my preferences and helped me find the perfect plot that matches my requirements. The location is fantastic, with easy access to schools, hospitals, and shopping centers. Moreover, the developers are working diligently to ensure the project is progressing smoothly. I can already envision the future value of this property, and I'm confident that it will be an excellent asset in the long run. I highly recommend the  Universe Group to anyone looking for a reliable and promising investment opportunity.",
+    "star": 5
+  },
+  {
+    "id": 4,
+    "title": "Lovely Apartment",
+    "review": "I recently moved into the Dream's Paradise Apartment Project, and overall, I'm quite satisfied. The apartment itself is lovely, with modern appliances and a comfortable layout. The community spaces, like the lounge and basement area, are well-designed and maintained. However, I did encounter a few minor issues during the move-in process, such as a delay in getting my parking pass and some confusion with the move-in date. The management team was responsive and addressed these concerns, but it would have been better if these hiccups were avoided altogether. Despite these initial challenges, I'm looking forward to enjoying my time here.",
+    "star": 5
+  }
+]

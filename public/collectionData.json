@@ -1,20 +1,24 @@
 [
   {
+    "id": "1",
     "name": "LUXURY",
     "location": ["Dhaka"],
     "photo": "https://i.imgur.com/cf2vzaL.jpg"
   },
   {
+    "id": "2",
     "name": "CLASSIC",
     "location": ["Dhaka", "Chattogram"],
     "photo": "https://i.imgur.com/OJcHpVI.jpg"
   },
   {
+    "id": "3",
     "name": "WELLNESS",
     "location": ["Dhaka", "Chattogram"],
     "photo": "https://i.imgur.com/Ef2lQwn.jpg"
   },
   {
+    "id": "4",
     "name": "COMMERCIAL",
     "location": ["Dhaka", "Chattogram"],
     "photo": "https://i.imgur.com/FSXqcVP.jpg"
