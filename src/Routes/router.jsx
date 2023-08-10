@@ -7,6 +7,9 @@ import PropertyCard from "../Components/PropertyCard/PropertyCard";
 import PropertiesLocation from "../Components/Location/PropertiesLocation";
 import ContactForm from "../Components/ContactForm/ContactForm";
 import ResidentialSection from "../Components/TypeOfApartment/ResidentialSection";
+import CommercialSection from "../Components/TypeOfApartment/CommercialSection";
+import PropertyReuseStructure from "../Components/PropertyCard/PropertyReuseStructure";
+import Intregrated from "../Components/TypeOfApartment/Intregrated";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -22,7 +25,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/allproperties",
-        element: <PropertyCard></PropertyCard>,
+        element: <PropertyReuseStructure></PropertyReuseStructure>,
       },
       {
         path: "/allproperties/:selectedValue",
@@ -37,8 +40,16 @@ const router = createBrowserRouter([
         element: <ContactForm></ContactForm>,
       },
       {
-        path: "/residential",
+        path: "/allproperties/residential",
         element: <ResidentialSection></ResidentialSection>,
+      },
+      {
+        path: "/allproperties/commercial",
+        element: <CommercialSection></CommercialSection>,
+      },
+      {
+        path: "/allproperties/integrated",
+        element: <Intregrated></Intregrated>,
       },
     ],
   },

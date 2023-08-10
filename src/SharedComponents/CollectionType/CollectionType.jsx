@@ -10,7 +10,6 @@ const CollectionType = () => {
         setItems(data);
       });
   }, []);
-  console.log(items);
   const luxury = items.filter((item) => item.name === "LUXURY");
   const classic = items.filter((item) => item.name === "CLASSIC");
   const commercial = items.filter((item) => item.name === "COMMERCIAL");

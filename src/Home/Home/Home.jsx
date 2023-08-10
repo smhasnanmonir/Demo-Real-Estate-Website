@@ -1,3 +1,4 @@
+import UseData from "../../Components/Hooks/UseData";
 import CollectionType from "../../SharedComponents/CollectionType/CollectionType";
 import CustomerReview from "../CustomerReview/CustomerReview";
 import FloatingButton from "../FloatingButton/FloatingButton";
