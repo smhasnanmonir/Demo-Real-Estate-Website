@@ -30,7 +30,7 @@ const CustomerReview = () => {
   console.log(data);
   return (
     <>
-      <h1 className="text-3xl font-semibold text-center py-[30px]">
+      <h1 className="text-3xl font-semibold text-center pt-[30px]">
         Customer Reviews
       </h1>
       <div className=" text-white px-[25px] md:px-[50px] mb-[25px]">
@@ -48,7 +48,6 @@ const CustomerReview = () => {
           ]}
           spaceBetween={10}
           slidesPerView={1}
-          navigation={true}
           autoplay={{ delay: 3000 }}
           pagination={{ clickable: true }}
         >

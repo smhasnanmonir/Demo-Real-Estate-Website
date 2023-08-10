@@ -1,5 +1,6 @@
 import "./WhyUs.css";
 import bg from "../../../src/assets/SimpleShiny.svg";
+import { Link } from "react-router-dom";
 const WhyUs = () => {
   return (
     <div className="bg-whyUS md:px-[250px] md:py-[170px] px-[50px] py-[90px] grid place-items-center space-y-3 mt-[50px]">
@@ -10,8 +11,9 @@ const WhyUs = () => {
         {" "}
         Get us Now!
       </h1>
-      <button className="button-contact">Contact us</button>
-      {/* You can open the modal using ID.showModal() method */}
+      <Link to="/contact" className="button-contact">
+        Contact us
+      </Link>
     </div>
   );
 };

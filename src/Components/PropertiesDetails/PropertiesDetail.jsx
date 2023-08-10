@@ -31,7 +31,7 @@ const PropertiesDetail = () => {
     </>
   );
   return (
-    <div className="">
+    <div className="bgColorGray2">
       <FloatingButton></FloatingButton>
       <div className="space-y-5 md:px-[50px] px-[25px] pb-8">
         <div className="pt-[35px]">

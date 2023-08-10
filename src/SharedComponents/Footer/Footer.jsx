@@ -8,7 +8,7 @@ import instagram from "../../../src/assets/instagram.png";
 const Footer = () => {
   const [datas] = UseData();
   return (
-    <div className="text-white ">
+    <div className="text-white font-FontRubic">
       <footer className="footer grid md:grid-cols-4 grid-cols-1 gap-5 py-10 md:px-[150px]  px-[25px] bg-[#28282B] text-white md:place-items-center">
         <>
           <img className="w-3/4" src={logo} alt="Logo" />

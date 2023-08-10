@@ -5,6 +5,7 @@ import PropertiesDetail from "../Components/PropertiesDetails/PropertiesDetail";
 import AboutUs from "../Components/AboutUs";
 import PropertyCard from "../Components/PropertyCard/PropertyCard";
 import PropertiesLocation from "../Components/Location/PropertiesLocation";
+import ContactForm from "../Components/ContactForm/ContactForm";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -27,8 +28,8 @@ const router = createBrowserRouter([
         element: <PropertiesLocation></PropertiesLocation>,
       },
       {
-        path: "/properties/:id",
-        element: <PropertiesDetail></PropertiesDetail>,
+        path: "/contact",
+        element: <ContactForm></ContactForm>,
       },
     ],
   },

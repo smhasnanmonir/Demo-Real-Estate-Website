@@ -21,7 +21,7 @@ const IntroDuction = () => {
       <div className="flex items-center justify-between py-4 md:flex-row flex-col">
         <div className="flex items-center gap-2">
           <FaHouse size={50}></FaHouse>
-          <p className="text-3xl font-bold">Find a property</p>
+          <p className="text-3xl font-semibold">Find a property</p>
         </div>
         <div className="flex gap-3 md:mt-0 mt-[20px]">
           <>
