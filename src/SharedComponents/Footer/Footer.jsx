@@ -58,11 +58,22 @@ const Footer = () => {
         </div>
         <div>
           <h1 className="text-[16px] font-semibold">Important Links</h1>
-          <div className="">
-            <h1>Important link 1</h1>
-            <h1>Important link 2</h1>
-            <h1>Important link 3</h1>
-            <h1>Important link 4</h1>
+          <div className="flex flex-col gap-2">
+            <a
+              target="blank"
+              className="hover:underline underline-offset-2"
+              href="https://www.termsfeed.com/live/9e6539f1-d993-41f5-946b-2d08827d2364"
+            >
+              Terms and Conditions
+            </a>
+            <a
+              target="blank"
+              className="hover:underline underline-offset-2"
+              href="https://www.termsfeed.com/live/c8ec69be-45a8-46fe-8195-c68d2359e9c2"
+            >
+              Privacy Policy
+            </a>
+
             <div className="grid md:grid-cols-4 grid-cols-2 mt-2 gap-1">
               <img
                 onClick={() =>

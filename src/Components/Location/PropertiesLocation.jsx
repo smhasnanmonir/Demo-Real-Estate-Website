@@ -16,7 +16,7 @@ const PropertiesLocation = () => {
     selectedValue.charAt(0).toUpperCase() + selectedValue.slice(1);
   return (
     <div className="bg-[#e9ecef] mx-auto md:pb-[40px] px-[25px] md:px-0 min-h-[80vh] text-black overflow-hidden">
-      <img src="https://i.imgur.com/BnlkC6F.jpg" alt="" />
+      <img src="https://i.imgur.com/FtFw0nN.jpg" alt="" />
       <IntroDuctionWhite></IntroDuctionWhite>
       {filterSelectedValue.length > 0 ? (
         <h1 className="text-center md:text-3xl text-xl font-semibold mt-[12px]">

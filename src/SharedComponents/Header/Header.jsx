@@ -9,14 +9,16 @@ const Header = () => {
   const [datas] = UseData();
   const commonNav = (
     <>
-      <li className="text-white">
+      <li className="text-white hover:border-0 border-0">
         <NavLink
           className={"navBarCustom"}
           to="/"
-          style={({ isActive, isPending }) => {
+          style={({ isActive }) => {
             return {
-              fontWeight: isActive ? "bold" : "",
-              color: isPending ? "red" : "white",
+              fontWeight: isActive ? "" : "",
+              background: isActive ? "none" : "none",
+              textDecoration: isActive ? "underline" : "none",
+              textUnderlineOffset: isActive ? "6px" : "",
             };
           }}
         >
@@ -27,10 +29,12 @@ const Header = () => {
         <NavLink
           className={"navBarCustom"}
           to="/about"
-          style={({ isActive, isPending }) => {
+          style={({ isActive }) => {
             return {
-              fontWeight: isActive ? "bold" : "",
-              color: isPending ? "red" : "white",
+              fontWeight: isActive ? "" : "",
+              background: isActive ? "none" : "none",
+              textDecoration: isActive ? "underline" : "none",
+              textUnderlineOffset: isActive ? "6px" : "",
             };
           }}
         >
@@ -41,44 +45,75 @@ const Header = () => {
         <NavLink
           to="/allproperties"
           className={"navBarCustom"}
-          style={({ isActive, isPending }) => {
+          style={({ isActive }) => {
             return {
-              fontWeight: isActive ? "bold" : "",
-              color: isPending ? "red" : "white",
+              fontWeight: isActive ? "" : "",
+              background: isActive ? "none" : "none",
+              textDecoration: isActive ? "underline" : "none",
+              textUnderlineOffset: isActive ? "6px" : "",
             };
           }}
         >
-          <div className="dropdown ">
-            <button className=" text-white font-semibold rounded inline-flex items-center group">
-              <span className="mr-1">Properties</span>
-            </button>
-            <ul className="px-20 py-12 dropdown-menu md:absolute hidden text-gray-700 group-hover:block  space-y-4 bg-black rounded-lg z-50 relative">
-              <div className=" text-white grid grid-cols-3 w-[380px] h-[140px]">
-                <div className="space-y-4 ">
-                  <h1 className="font-semibold">Phase</h1>
-                  <p className="hover:text-red-400 font-normal">Ongoing</p>
-                  <p className="hover:text-red-400 font-normal">Upcoming</p>
-                  <p className="hover:text-red-400 font-normal">Completed</p>
+          <div className="dropdown dropdown-hover dropdown-left">
+            <label tabIndex={0} className="">
+              Properties
+            </label>
+            <ul
+              tabIndex={0}
+              className="dropdown-content z-[1] menu rounded-box w-52"
+            >
+              <ul className="px-20 py-12 md:absolute hidden text-gray-700 group-hover:block mt-[15px] space-y-4 bg-black rounded-lg z-50 relative ">
+                <div className=" text-white grid grid-cols-3 w-[380px] h-[140px]">
+                  <div className="space-y-4 ">
+                    <h1 className="font-semibold">Phase</h1>
+                    <p className="hover:text-red-400 font-normal">Ongoing</p>
+                    <p className="hover:text-red-400 font-normal">Upcoming</p>
+                    <p className="hover:text-red-400 font-normal">Completed</p>
+                  </div>
+                  <div className="space-y-4 ">
+                    <h1 className="font-semibold">Types</h1>
+                    <p className="hover:text-red-400 font-normal">
+                      Residential
+                    </p>
+                    <p className="hover:text-red-400 font-normal">Commercial</p>
+                    <p className="hover:text-red-400 font-normal">Integrated</p>
+                  </div>
+                  <div className="flex flex-col gap-4">
+                    <h1 className="font-semibold">Location</h1>
+                    <Link
+                      to="/allproperties/dhanmondi"
+                      className="hover:text-red-400 font-normal"
+                    >
+                      Dhanmondi
+                    </Link>
+                    <Link
+                      to="/allproperties/keraniganj"
+                      className="hover:text-red-400 font-normal"
+                    >
+                      Keraniganj
+                    </Link>
+                    <Link
+                      to="/allproperties/mohammadpur"
+                      className="hover:text-red-400 font-normal"
+                    >
+                      Mohammadpur
+                    </Link>
+                    <div className="flex group">
+                      <img
+                        className="ml-0 group-hover:ml-3"
+                        src="https://i.ibb.co/Cv26NmB/right.png"
+                        alt=""
+                      />
+                      <Link
+                        to="/allproperties"
+                        className="font-normal text-white hover:text-red-500 inline-block "
+                      >
+                        All properties
+                      </Link>
+                    </div>
+                  </div>
                 </div>
-                <div className="space-y-4 ">
-                  <h1 className="font-semibold">Types</h1>
-                  <p className="hover:text-red-400 font-normal">Residential</p>
-                  <p className="hover:text-red-400 font-normal">Commercial</p>
-                  <p className="hover:text-red-400 font-normal">Integrated</p>
-                </div>
-                <div className="space-y-4 ">
-                  <h1 className="font-semibold">Location</h1>
-                  <p className="hover:text-red-400 font-normal">Aftabnagar</p>
-                  <p className="hover:text-red-400 font-normal">Basundhara</p>
-                  <p className="hover:text-red-400 font-normal">Mohakhali</p>
-                  <Link
-                    to="/allproperties"
-                    className="font-normal hover:text-red-500 block ml-[45px]"
-                  >
-                    All Properties
-                  </Link>
-                </div>
-              </div>
+              </ul>
             </ul>
           </div>
         </NavLink>
@@ -87,10 +122,12 @@ const Header = () => {
         <NavLink
           className={"navBarCustom"}
           to="/media"
-          style={({ isActive, isPending }) => {
+          style={({ isActive }) => {
             return {
-              fontWeight: isActive ? "bold" : "",
-              color: isPending ? "red" : "white",
+              fontWeight: isActive ? "" : "",
+              background: isActive ? "none" : "none",
+              textDecoration: isActive ? "underline" : "none",
+              textUnderlineOffset: isActive ? "4px" : "",
             };
           }}
         >
@@ -114,10 +151,12 @@ const Header = () => {
         <NavLink
           className={"navBarCustom"}
           to="/contact"
-          style={({ isActive, isPending }) => {
+          style={({ isActive }) => {
             return {
-              fontWeight: isActive ? "bold" : "",
-              color: isPending ? "red" : "white",
+              fontWeight: isActive ? "" : "",
+              background: isActive ? "none" : "none",
+              textDecoration: isActive ? "underline" : "none",
+              textUnderlineOffset: isActive ? "4px" : "",
             };
           }}
         >

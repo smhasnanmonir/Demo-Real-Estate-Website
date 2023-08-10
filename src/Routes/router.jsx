@@ -6,6 +6,7 @@ import AboutUs from "../Components/AboutUs";
 import PropertyCard from "../Components/PropertyCard/PropertyCard";
 import PropertiesLocation from "../Components/Location/PropertiesLocation";
 import ContactForm from "../Components/ContactForm/ContactForm";
+import ResidentialSection from "../Components/TypeOfApartment/ResidentialSection";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -34,6 +35,10 @@ const router = createBrowserRouter([
       {
         path: "/contact",
         element: <ContactForm></ContactForm>,
+      },
+      {
+        path: "/residential",
+        element: <ResidentialSection></ResidentialSection>,
       },
     ],
   },

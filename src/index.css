@@ -21,7 +21,7 @@
     @apply md:text-4xl text-xl mt-[26px] border-y-[6px] md:py-[50px] py-[30px] text-center leading-[35px];
   }
   .navBarCustom {
-    @apply hover:text-red-400 hover:scale-105 transition-all duration-500 ease-in-out text-white;
+    @apply hover:text-red-400 hover:scale-105 border-none border-black hover:border-black transition-all duration-500 ease-in-out text-white hover:border-none;
   }
 }
 

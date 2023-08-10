@@ -1,6 +1,8 @@
 [
   {
     "name": "Mayakunjo Model Town",
+    "type2": "commercial",
+    "type1": "residential",
     "location": "keraniganj",
     "numberId": 3,
     "id": "Mayakunjo-Model-Town",
@@ -30,6 +32,7 @@
     "insideImage4": "https://i.imgur.com/gsotfWA.jpg"
   },
   {
+    "type2": "commercial",
     "name": "Dream Square Model Town",
     "location": "keraniganj",
     "id": "Dream-Square-Model-Town",
