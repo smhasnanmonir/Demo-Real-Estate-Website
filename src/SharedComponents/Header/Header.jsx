@@ -1,15 +1,12 @@
 import { Link, NavLink } from "react-router-dom";
 import logo from "../../../src/assets/whiteLogo.png";
-import { useEffect, useState } from "react";
 import UseData from "../../Components/Hooks/UseData";
-import arrow from "../../../src/assets/right-arrow.png";
-import phone from "../../../src/assets/phone-call.png";
-import home from "../../../src/assets/home.png";
+import "./Header.css";
 const Header = () => {
   const [datas] = UseData();
   const commonNav = (
     <>
-      <li className="text-white hover:border-0 border-0">
+      <li className="text-white hover:border-0 border-0 none navBarCustom">
         <NavLink
           className={"navBarCustom"}
           to="/"
@@ -17,15 +14,14 @@ const Header = () => {
             return {
               fontWeight: isActive ? "" : "",
               background: isActive ? "none" : "none",
-              textDecoration: isActive ? "underline" : "none",
-              textUnderlineOffset: isActive ? "6px" : "",
+              textDecoration: isActive ? "none" : "none",
             };
           }}
         >
           Home
         </NavLink>
       </li>
-      <li className="text-white">
+      <li className="text-white navBarCustom">
         <NavLink
           className={"navBarCustom"}
           to="/about"
@@ -33,24 +29,37 @@ const Header = () => {
             return {
               fontWeight: isActive ? "" : "",
               background: isActive ? "none" : "none",
-              textDecoration: isActive ? "underline" : "none",
-              textUnderlineOffset: isActive ? "6px" : "",
+              textDecoration: isActive ? "none" : "none",
             };
           }}
         >
           About Us
         </NavLink>
-      </li>
-      <li className="text-white navBarCustom group">
+      </li>{" "}
+      <li className="text-white navBarCustom">
         <NavLink
-          to="/allproperties"
           className={"navBarCustom"}
+          to="/business"
           style={({ isActive }) => {
             return {
               fontWeight: isActive ? "" : "",
               background: isActive ? "none" : "none",
-              textDecoration: isActive ? "underline" : "none",
-              textUnderlineOffset: isActive ? "6px" : "",
+              textDecoration: isActive ? "none" : "none",
+            };
+          }}
+        >
+          Business
+        </NavLink>
+      </li>
+      <li className="text-white navBarCustom group">
+        <NavLink
+          className={"navBarCustom"}
+          to="/allproperties"
+          style={({ isActive }) => {
+            return {
+              fontWeight: isActive ? "" : "",
+              background: isActive ? "none" : "none",
+              textDecoration: isActive ? "none" : "none",
             };
           }}
         >
@@ -83,12 +92,6 @@ const Header = () => {
                       className="hover:text-red-400 font-normal"
                     >
                       Commercial
-                    </Link>
-                    <Link
-                      to="/allproperties/integrated"
-                      className="hover:text-red-400 font-normal"
-                    >
-                      Integrated
                     </Link>
                   </div>
                   <div className="flex flex-col gap-4">
@@ -139,16 +142,16 @@ const Header = () => {
             return {
               fontWeight: isActive ? "" : "",
               background: isActive ? "none" : "none",
-              textDecoration: isActive ? "underline" : "none",
-              textUnderlineOffset: isActive ? "4px" : "",
+              textDecoration: isActive ? "none" : "none",
             };
           }}
         >
-          <div className="dropdown inline-block">
-            <button className=" text-white font-semibold rounded inline-flex items-center group">
-              <span className="mr-1">Media</span>
-            </button>
-            <ul className="px-10 py-10 dropdown-menu  md:absolute hidden text-gray-700 p-[35px] group-hover:block  space-y-4 bg-black rounded-lg z-50 relative">
+          <div className="dropdown inline-block dropdown-hover dropdown-bottom">
+            <label tabIndex={0} className="navBarCustom">
+              Media
+            </label>
+
+            <ul className="px-[70px] py-10 dropdown-menu  md:absolute hidden text-gray-700 group-hover:block  space-y-4 bg-black rounded-lg z-50 relative">
               <div className=" text-white">
                 <div className="space-y-4 px-5">
                   <p className="hover:text-red-500 navBarCustom">Blog</p>
@@ -160,7 +163,37 @@ const Header = () => {
           </div>
         </NavLink>
       </li>{" "}
-      <li className="text-white ">
+      <li className="text-white navBarCustom">
+        <NavLink
+          className={"navBarCustom"}
+          to="/service"
+          style={({ isActive }) => {
+            return {
+              fontWeight: isActive ? "" : "",
+              background: isActive ? "none" : "none",
+              textDecoration: isActive ? "none" : "none",
+            };
+          }}
+        >
+          Service
+        </NavLink>
+      </li>
+      <li className="text-white navBarCustom">
+        <NavLink
+          className={"navBarCustom"}
+          to="/career"
+          style={({ isActive }) => {
+            return {
+              fontWeight: isActive ? "" : "",
+              background: isActive ? "none" : "none",
+              textDecoration: isActive ? "none" : "none",
+            };
+          }}
+        >
+          Career
+        </NavLink>
+      </li>{" "}
+      <li className="text-white navBarCustom">
         <NavLink
           className={"navBarCustom"}
           to="/contact"
@@ -168,21 +201,12 @@ const Header = () => {
             return {
               fontWeight: isActive ? "" : "",
               background: isActive ? "none" : "none",
-              textDecoration: isActive ? "underline" : "none",
-              textUnderlineOffset: isActive ? "4px" : "",
+              textDecoration: isActive ? "none" : "none",
             };
           }}
         >
           Contact
         </NavLink>
-      </li>
-      <li className="text-white group">
-        <div className="flex justify-center items-center">
-          <img className="w-[25px]" src={phone} alt="" />
-          <div className="space-y-1">
-            <p className="group-hover:text-red-600">+8801799993555</p>
-          </div>
-        </div>
       </li>
     </>
   );

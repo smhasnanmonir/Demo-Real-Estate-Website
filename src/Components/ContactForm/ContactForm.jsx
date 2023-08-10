@@ -1,6 +1,7 @@
 import { useRef } from "react";
 import Swal from "sweetalert2";
 import emailjs from "@emailjs/browser";
+import FloatingButton from "../../Home/FloatingButton/FloatingButton";
 
 const ContactForm = () => {
   const form = useRef();
@@ -38,6 +39,7 @@ const ContactForm = () => {
   };
   return (
     <div className="bgColorGray2 py-5">
+      <FloatingButton></FloatingButton>
       <h1 className="text-[45px] text-center py-[25px]">Contact Us</h1>
       <div className="md:px-0 px-[25px] mb-14 flex md:flex-row flex-col md:gap-[55px] gap-[35px] justify-center items-center">
         <div className="grid place-items-center w-full">
@@ -47,7 +49,7 @@ const ContactForm = () => {
             onSubmit={sendEmail}
             className="md:w-1/2 w-3/4"
           >
-            <div className="field w-full">
+            <div className="field mb-[12px]">
               <label>Name</label>
               <input
                 placeholder="Your Name"
@@ -57,7 +59,7 @@ const ContactForm = () => {
                 id="from_name"
               />
             </div>
-            <div className="field">
+            <div className="field mb-[12px]">
               <label>Number</label>
               <input
                 placeholder="Your Phone Number"
@@ -67,7 +69,7 @@ const ContactForm = () => {
                 id="number"
               />
             </div>
-            <div className="field">
+            <div className="field mb-[12px]">
               <label>Email</label>
               <input
                 placeholder="Your Email Address"
@@ -77,7 +79,7 @@ const ContactForm = () => {
                 id="reply_to"
               />
             </div>
-            <div className="field">
+            <div className="field mb-[12px]">
               <label>Message</label>
               <input
                 placeholder="Your Message"

@@ -1,0 +1,8 @@
+.active {
+  background-color: none !important;
+}
+
+li:hover {
+  border: none !important;
+  border-color: none !important;
+}

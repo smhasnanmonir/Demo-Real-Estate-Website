@@ -9,40 +9,40 @@ const Footer = () => {
   const [datas] = UseData();
   return (
     <div className="text-white font-FontRubic">
-      <footer className="footer grid md:grid-cols-4 grid-cols-1 gap-5 py-10 md:px-[150px]  px-[25px] bg-[#28282B] text-white md:place-items-center">
+      <footer className="footer grid md:grid-cols-4 grid-cols-1 gap-5 py-[150px] md:px-[50px]  px-[25px] bg-[#28282B] text-white md:place-content-start">
         <>
           <img className="w-3/4" src={logo} alt="Logo" />
         </>
         <div className="">
-          <h1 className="text-[16px] font-semibold">Contact Information</h1>
+          <h1 className="text-[22px] font-semibold">Contact Information</h1>
           <div className="space-y-4">
             <h1>
               Office: Orchid Plaza, Level #4, Plot #2 Road #28 (Old), 15
               (New),Dhanmondi, Dhaka-1209.
             </h1>
-            <p>Phone: +8801799993555 </p>
-            <p>Email: info@migbd.com </p>
+            <p className="text-[17px]">Phone: +8801799993555 </p>
+            <p className="text-[17px]">Email: info@migbd.com </p>
           </div>
         </div>
-        <div>
-          <h1 className="text-[16px] font-semibold">Latest News</h1>
+        <div className="lg:ml-[70px]">
+          <h1 className=" text-[22px] font-semibold">Latest News</h1>
           <div className="grid grid-cols-1 gap-x-2">
             <div className="border-b-2 p-1">
-              <h1>News 1</h1>
+              <h1 className="text-[17px]">News 1</h1>
             </div>
             <div className="border-b-2 p-1">
-              <h1>News 2</h1>
+              <h1 className="text-[17px]">News 2</h1>
             </div>
             <div className="border-b-2 p-1">
-              <h1>News 3</h1>
+              <h1 className="text-[17px]">News 3</h1>
             </div>
             <div className="border-b-2 p-1">
-              <h1>News 4</h1>
+              <h1 className="text-[17px]">News 4</h1>
             </div>
           </div>
         </div>
         <div>
-          <h1 className="text-[16px] font-semibold">Properties Shortcut</h1>
+          <h1 className="text-[22px] font-semibold">Properties Shortcut</h1>
           <div className="grid grid-cols-1 gap-x-2">
             {datas?.map((data) => (
               <div className="border-b-2 p-1" key={data?.id}>
@@ -57,18 +57,18 @@ const Footer = () => {
           </div>
         </div>
         <div>
-          <h1 className="text-[16px] font-semibold">Important Links</h1>
+          <h1 className="text-[22px] font-semibold">Important Links</h1>
           <div className="flex flex-col gap-2">
             <a
+              className="text-[17px] hover:underline underline-offset-2"
               target="blank"
-              className="hover:underline underline-offset-2"
               href="https://www.termsfeed.com/live/9e6539f1-d993-41f5-946b-2d08827d2364"
             >
               Terms and Conditions
             </a>
             <a
+              className="text-[17px] hover:underline underline-offset-2"
               target="blank"
-              className="hover:underline underline-offset-2"
               href="https://www.termsfeed.com/live/c8ec69be-45a8-46fe-8195-c68d2359e9c2"
             >
               Privacy Policy

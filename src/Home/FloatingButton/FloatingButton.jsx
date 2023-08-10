@@ -1,6 +1,13 @@
 const FloatingButton = () => {
   return (
-    <div className="fixed z-40 md:mt-[69vh] mt-[65vh] flex flex-col gap-3 md:ml-[40px] ml-[20px]">
+    <div className="fixed z-40 md:mt-[55vh] mt-[65vh] flex flex-col gap-3 md:ml-[40px] ml-[20px]">
+      <a href="tel:+8801799993555">
+        <img
+          className="md:w-[45px] w-[40px] cursor-pointer"
+          src="https://i.ibb.co/C9g9Q4x/call.png"
+          alt=""
+        />
+      </a>
       <img
         onClick={() =>
           window.open("https://wa.me/message/WIHZ4DQK2MGTO1", "_blank")

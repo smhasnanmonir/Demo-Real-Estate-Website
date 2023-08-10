@@ -1,13 +1,13 @@
 import PropertyReuseCard from "./PropertyReuseCard";
 import IntroDuctionWhite from "../../Home/IntroDuction/IntroductionWhite";
 import UseData from "../Hooks/UseData";
+import FloatingButton from "../../Home/FloatingButton/FloatingButton";
+import { useParams } from "react-router-dom";
 
 const PropertyCard = ({ type2Data, heading }) => {
-  const [datas] = UseData();
-  console.log(type2Data);
-  console.log(datas);
   return (
     <div className="bg-[#e9ecef] text-black">
+      <FloatingButton></FloatingButton>
       <img src="https://i.imgur.com/FtFw0nN.jpg" alt="" />
       <IntroDuctionWhite></IntroDuctionWhite>
       {heading ? (

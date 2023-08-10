@@ -2,6 +2,7 @@
   {
     "name": "Mayakunjo Model Town",
     "type2": "commercial",
+    "phase": "ongoing",
     "type1": "residential",
     "location": "keraniganj",
     "numberId": 3,
@@ -32,7 +33,9 @@
     "insideImage4": "https://i.imgur.com/gsotfWA.jpg"
   },
   {
+    "phase": "ongoing",
     "type2": "commercial",
+    "type1": "residential",
     "name": "Dream Square Model Town",
     "location": "keraniganj",
     "id": "Dream-Square-Model-Town",
@@ -68,6 +71,8 @@
   },
   {
     "name": "Dream's Paradise",
+    "phase": "ongoing",
+    "type1": "residential",
     "location": "dhanmondi",
     "id": "Dreams-Paradise",
     "numberId": 1,
@@ -96,7 +101,10 @@
   },
   {
     "name": "Nishorgo Valley",
+    "phase": "ongoing",
+    "type1": "residential",
     "id": "Nishorgo-Valley",
+    "location": "nai",
     "numberId": 2,
     "img": "https://i.imgur.com/vIWIyVS.jpg",
     "slideimg": "https://i.imgur.com/vIWIyVS.jpg",
