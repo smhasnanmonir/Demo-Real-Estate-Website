@@ -46,7 +46,7 @@ const PropertiesDetail = () => {
             {dataPro[0]?.name}
           </h1>
           <iframe
-            className="w-full h-[310px] rounded-2xl"
+            className="w-full h-[310px] rounded-2xl border-[1px] border-black"
             src={dataPro[0]?.iframe}
           ></iframe>
         </div>
@@ -60,10 +60,16 @@ const PropertiesDetail = () => {
             <div className="collapse-content bg-black">{descriptionText}</div>
           </div>
         </div>
-        {/* <div className="grid md:grid-cols-4 grid-cols-2 gap-2 ">
+        <h1 className=" py-[20px] text-3xl font-semibold">Image Gallery</h1>
+        <div className="grid md:grid-cols-4 grid-cols-2 gap-2 place-items-center">
           <img
             className="rounded-2xl cursor-pointer transition-all ease-in-out duration-500 hover:scale-105 hover:z-10"
             src={dataPro[0]?.insideImage1}
+            alt=""
+          />
+          <img
+            className="rounded-2xl cursor-pointer transition-all ease-in-out duration-500 hover:scale-105 hover:z-10"
+            src={dataPro[0]?.insideImage2}
             alt=""
           />
           <img
@@ -78,10 +84,25 @@ const PropertiesDetail = () => {
           />
           <img
             className="rounded-2xl cursor-pointer transition-all ease-in-out duration-500 hover:scale-105 hover:z-10"
-            src={dataPro[0]?.insideImage2}
+            src={dataPro[0]?.insideImage5}
             alt=""
           />
-        </div> */}
+          <img
+            className="rounded-2xl cursor-pointer transition-all ease-in-out duration-500 hover:scale-105 hover:z-10"
+            src={dataPro[0]?.insideImage6}
+            alt=""
+          />
+          <img
+            className="rounded-2xl cursor-pointer transition-all ease-in-out duration-500 hover:scale-105 hover:z-10"
+            src={dataPro[0]?.insideImage7}
+            alt=""
+          />
+          <img
+            className="rounded-2xl cursor-pointer transition-all ease-in-out duration-500 hover:scale-105 hover:z-10"
+            src={dataPro[0]?.insideImage8}
+            alt=""
+          />
+        </div>
       </div>
     </div>
   );

@@ -50,6 +50,7 @@ const ContactForm = () => {
             <div className="field w-full">
               <label>Name</label>
               <input
+                placeholder="Your Name"
                 className="form-group w-full p-2"
                 type="text"
                 name="from_name"
@@ -59,6 +60,7 @@ const ContactForm = () => {
             <div className="field">
               <label>Number</label>
               <input
+                placeholder="Your Phone Number"
                 className="form-group w-full p-2"
                 type="text"
                 name="number"
@@ -68,6 +70,7 @@ const ContactForm = () => {
             <div className="field">
               <label>Email</label>
               <input
+                placeholder="Your Email Address"
                 className="form-group w-full p-2"
                 type="text"
                 name="reply_to"
@@ -77,6 +80,7 @@ const ContactForm = () => {
             <div className="field">
               <label>Message</label>
               <input
+                placeholder="Your Message"
                 className="form-group w-full py-[35px] px-2"
                 type="text"
                 name="message"
