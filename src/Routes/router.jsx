@@ -35,6 +35,43 @@ const router = createBrowserRouter([
         path: "/contact",
         element: <ContactForm></ContactForm>,
       },
+      {
+        path: "/business",
+        element: (
+          <div>
+            <h1 className="text-center min-h-screen">This is business page</h1>
+          </div>
+        ),
+      },
+      {
+        path: "/service",
+        element: (
+          <div>
+            <h1 className="text-center min-h-screen">This is service page</h1>
+          </div>
+        ),
+      },
+      {
+        path: "/career",
+        element: (
+          <div>
+            <h1 className="text-center min-h-screen">This is career page</h1>
+          </div>
+        ),
+      },
+      {
+        path: "/*",
+        element: (
+          <div className="text-center py-[10%]">
+            <h1 className="text-center">
+              Error 404! This page does not exists.
+            </h1>
+            <h1 className="btn btn-accent hover:text-white mt-3">
+              <a href="/">Back to home</a>
+            </h1>
+          </div>
+        ),
+      },
     ],
   },
 ]);

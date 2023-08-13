@@ -8,7 +8,7 @@ const PropertiesDetail = () => {
   let dataPro = datas.filter((datas) => datas.id === id);
   const descriptionText = (
     <>
-      <h1 className="text-[17px]">
+      <h1 className="text-[17px] md:text-black text-white">
         <span className="text-[18px] font-semibold">Description: </span>
         Green Living with urban lifestyle is no more a myth for tranquility
         mongers. The urban dwellers of Dhaka city are always dreaming for living
@@ -61,7 +61,7 @@ const PropertiesDetail = () => {
           </div>
         </div>
         <h1 className=" py-[20px] text-3xl font-semibold">Image Gallery</h1>
-        <div className="grid md:grid-cols-4 grid-cols-2 gap-2 place-items-center">
+        <div className="grid md:grid-cols-2 grid-cols-1 gap-2 place-items-center">
           <img
             className="rounded-2xl cursor-pointer transition-all ease-in-out duration-500 hover:scale-105 hover:z-10"
             src={dataPro[0]?.insideImage1}

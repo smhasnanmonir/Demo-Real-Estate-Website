@@ -54,7 +54,7 @@ const CustomerReview = () => {
           {reviews.map((review) => (
             <SwiperSlide key={review?.id}>
               <div className="">
-                <div className="flex md:px-[250px]">
+                <div className="flex lg:px-[250px] md:px-[50px] px-[35px]">
                   <div className="border-l-[5px] border-blue-300 mt-[35px]">
                     <div className="ml-5">
                       <img

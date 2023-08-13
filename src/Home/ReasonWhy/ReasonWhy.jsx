@@ -1,7 +1,7 @@
 const ReasonWhy = () => {
   return (
-    <div className="bgColorGray2 grid md:grid-cols-2 md:gap-0 gap-4 md:px-[200px] px-[25px] md:py-[80px] py-[40px]">
-      <div>
+    <div className="bgColorGray2 grid lg:grid-cols-2 md:gap-0 gap-4 md:px-[200px] px-[25px] md:py-[80px] py-[40px]">
+      <div className="">
         <h1 className="text-center text-3xl font-semibold pb-4">Why us?</h1>
         <p className="text-xl font-medium">
           Unlock the door to your future with Universe Group! Immerse yourself
@@ -12,7 +12,7 @@ const ReasonWhy = () => {
           adventure today and let's make those keys jingle!
         </p>
       </div>
-      <div>
+      <div className="lg:mt-0 md:mt-6">
         <img
           className="rounded-md"
           src="https://i.imgur.com/jVL9T0P.jpg"
