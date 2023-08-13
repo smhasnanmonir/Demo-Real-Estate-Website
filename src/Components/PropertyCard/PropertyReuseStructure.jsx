@@ -50,7 +50,7 @@ const PropertyReuseStructure = () => {
     return (
       <PropertyCard heading="Some Lands, Projects and Apartments are coming soon"></PropertyCard>
     );
-  } else if (selectedValue === "Completed") {
+  } else if (selectedValue === "completed") {
     return <PropertyCard heading="Blank Page"></PropertyCard>;
   } else if (selectedValue === "mohammadpur") {
     return (

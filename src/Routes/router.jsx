@@ -1,11 +1,11 @@
 import { createBrowserRouter } from "react-router-dom";
+import React from "react";
 import Main from "../Main/Main";
 import Home from "../Home/Home/Home";
 import PropertiesDetail from "../Components/PropertiesDetails/PropertiesDetail";
 import AboutUs from "../Components/AboutUs";
 import ContactForm from "../Components/ContactForm/ContactForm";
 import PropertyReuseStructure from "../Components/PropertyCard/PropertyReuseStructure";
-import PropertyCard from "../Components/PropertyCard/PropertyCard";
 const router = createBrowserRouter([
   {
     path: "/",

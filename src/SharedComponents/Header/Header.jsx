@@ -73,11 +73,26 @@ const Header = () => {
             >
               <ul className="px-20 py-12 md:absolute hidden text-gray-700 group-hover:block mt-[13px] space-y-4 bg-black rounded-lg z-50 relative ">
                 <div className=" text-white grid grid-cols-3 w-[380px] h-[140px]">
-                  <div className="space-y-4 ">
+                  <div className="flex flex-col gap-4">
                     <h1 className="font-semibold">Phase</h1>
-                    <p className="hover:text-red-400 font-normal">Ongoing</p>
-                    <p className="hover:text-red-400 font-normal">Upcoming</p>
-                    <p className="hover:text-red-400 font-normal">Completed</p>
+                    <Link
+                      to="allproperties/ongoing"
+                      className="hover:text-red-400 font-normal"
+                    >
+                      Ongoing
+                    </Link>
+                    <Link
+                      to="allproperties/upcoming"
+                      className="hover:text-red-400 font-normal"
+                    >
+                      Upcoming
+                    </Link>
+                    <Link
+                      to="allproperties/completed"
+                      className="hover:text-red-400 font-normal"
+                    >
+                      Completed
+                    </Link>
                   </div>
                   <div className="flex flex-col gap-4">
                     <h1 className="font-semibold">Types</h1>

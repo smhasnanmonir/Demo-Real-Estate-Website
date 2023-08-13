@@ -9,9 +9,9 @@ const Footer = () => {
   const [datas] = UseData();
   return (
     <div className="text-white font-FontRubic">
-      <footer className="footer grid md:grid-cols-4 grid-cols-1 gap-5 py-[150px] md:px-[50px]  px-[25px] bg-[#28282B] text-white md:place-content-start">
+      <footer className="footer grid md:grid-cols-4 grid-cols-1 gap-5 md:py-[150px] py-[50px] md:px-[50px]  px-[35px] bg-[#28282B] text-white md:place-content-start">
         <>
-          <img className="w-3/4" src={logo} alt="Logo" />
+          <img className="md:w-3/4 w-[175px]" src={logo} alt="Logo" />
         </>
         <div className="">
           <h1 className="text-[22px] font-semibold">Contact Information</h1>
