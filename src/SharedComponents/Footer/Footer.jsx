@@ -74,7 +74,7 @@ const Footer = () => {
               Privacy Policy
             </a>
 
-            <div className="grid md:grid-cols-4 grid-cols-2 mt-2 gap-1">
+            <div className="grid grid-cols-4 mt-2 gap-1">
               <img
                 onClick={() =>
                   window.open("https://www.facebook.com/mak.migbd", "_blank")

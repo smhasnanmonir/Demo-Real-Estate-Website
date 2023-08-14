@@ -5,10 +5,7 @@ import {
   A11y,
   Autoplay,
 } from "swiper/modules";
-
 import { Swiper, SwiperSlide } from "swiper/react";
-
-// Import Swiper styles
 import "swiper/css";
 import "swiper/css/bundle";
 import "swiper/css/navigation";
@@ -29,7 +26,7 @@ const OurProjectSection = () => {
           effect="card"
           modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
           spaceBetween={1}
-          navigation={false}
+          navigation={true}
           autoplay={{ delay: 2500 }}
           pagination={{ clickable: true }}
           breakpoints={{

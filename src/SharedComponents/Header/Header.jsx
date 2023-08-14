@@ -6,7 +6,7 @@ const Header = () => {
   const [datas] = UseData();
   const commonNav = (
     <>
-      <li className="text-white hover:border-0 border-0 none navBarCustom">
+      <li className="text-white navBarCustom">
         <NavLink
           className={"navBarCustom"}
           to="/"
@@ -51,7 +51,7 @@ const Header = () => {
           Business
         </NavLink>
       </li>
-      <li className="text-white navBarCustom group">
+      <li className="text-white navBarCustom group pb-2">
         <NavLink
           className={"navBarCustom"}
           to="/allproperties"
@@ -69,9 +69,9 @@ const Header = () => {
             </label>
             <ul
               tabIndex={0}
-              className="dropdown-content z-[1] menu rounded-box w-52"
+              className="dropdown-content z-[1] menu rounded-box w-52 mt-[25px]"
             >
-              <ul className="px-20 py-12 md:absolute hidden text-gray-700 group-hover:block mt-[13px] space-y-4 bg-black rounded-lg z-50 relative ">
+              <ul className="px-20 py-12 md:absolute hidden text-gray-700 group-hover:block transition-all duration-1000 delay-200 space-y-4 bg-black rounded-lg z-50 relative ">
                 <div className=" text-white grid grid-cols-3 w-[380px] h-[140px]">
                   <div className="flex flex-col gap-4">
                     <h1 className="font-semibold">Phase</h1>
@@ -161,12 +161,12 @@ const Header = () => {
             };
           }}
         >
-          <div className="dropdown inline-block dropdown-hover dropdown-bottom">
+          <div className="dropdown inline-block dropdown-hover dropdown-left">
             <label tabIndex={0} className="navBarCustom">
               Media
             </label>
 
-            <ul className="px-[70px] py-10 dropdown-menu  md:absolute hidden text-gray-700 group-hover:block  space-y-4 bg-black rounded-lg z-50 relative">
+            <ul className="px-[70px] py-10 dropdown-menu  md:absolute hidden text-gray-700 group-hover:block  space-y-4 bg-black rounded-lg z-50">
               <div className=" text-white">
                 <div className="space-y-4 px-5">
                   <p className="hover:text-red-500 navBarCustom">Blog</p>
@@ -227,7 +227,7 @@ const Header = () => {
   );
 
   return (
-    <div className="flex navbar bg-[#28282B] justify-between items-center py-[24px] px-[15px] text-red-400 z-50 relative">
+    <div className="flex fixed navbar backdrop-blur-sm bg-[#28282B] bg-opacity-80 justify-between items-center py-[12px] px-[15px] text-red-400 z-50">
       <div className="">
         <div className="dropdown">
           <label tabIndex={0} className="btn btn-ghost lg:hidden">

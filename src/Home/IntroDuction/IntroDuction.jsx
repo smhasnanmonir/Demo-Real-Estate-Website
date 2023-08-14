@@ -17,11 +17,13 @@ const IntroDuction = () => {
   console.log(selectedValue);
 
   return (
-    <div className="mb-5  sm:max-w-full lg:px-[350px] md:px-[150px] px-[25px] mx-auto bg-[#28282B] text-white">
+    <div className="mb-5  sm:max-w-full lg:px-[250px] md:px-[150px] px-[25px] mx-auto bg-[#28282B] text-white">
       <div className="flex items-center justify-between py-4 md:flex-row flex-col">
         <div className="flex items-center gap-2">
           <FaHouse size={50}></FaHouse>
-          <p className="text-3xl font-semibold">Find a property</p>
+          <p className="lg:text-3xl md:text-xl font-semibold">
+            Find a property
+          </p>
         </div>
         <div className="flex gap-3 md:mt-0 mt-[20px]">
           <>
@@ -40,7 +42,7 @@ const IntroDuction = () => {
           <>
             <Link
               to={`/allproperties/${selectedValue}`}
-              className="btn md:text-[16px] text-black hover:bg-slate-100 hover:text-black md:w-[150px] w-[75px]"
+              className="btn md:text-[16px] text-black hover:bg-slate-100 hover:text-black md:w-[150px]"
             >
               <FaSearchengin></FaSearchengin>
               Search

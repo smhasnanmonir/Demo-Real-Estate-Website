@@ -1,9 +1,16 @@
 const ReasonWhy = () => {
   return (
-    <div className="bgColorGray2 grid lg:grid-cols-2 md:gap-0 gap-4 md:px-[200px] px-[25px] md:py-[80px] py-[40px]">
-      <div className="">
-        <h1 className="text-center text-3xl font-semibold pb-4">Why us?</h1>
-        <p className="text-xl font-medium">
+    <div
+      style={{
+        backgroundImage: `url(
+          "https://drive.google.com/uc?export=download&id=1I5OqKEXlQQQlHFiduptQlW_pL7xBVZ5z"
+        )`,
+      }}
+      className="bgColorGray2  grid lg:gap-[20px] place-items-center bg-fixed"
+    >
+      <div className="text-center backdrop-blur-[10px] lg:px-[350px] drop-shadow-md md:px-[95px] px-[35px] md:py-[180px] py-[40px] text-white">
+        <h1 className="text-center text-3xl font-semibold pb-4 ">Why us?</h1>
+        <p className="text-xl font-medium drop-shadow-xl">
           Unlock the door to your future with Universe Group! Immerse yourself
           in a world of stunning properties that match your vision and lifestyle
           perfectly. Our team of passionate experts is here to turn your real
@@ -11,13 +18,6 @@ const ReasonWhy = () => {
           on a journey to find the home you've always envisioned. Start your
           adventure today and let's make those keys jingle!
         </p>
-      </div>
-      <div className="lg:mt-0 md:mt-6">
-        <img
-          className="rounded-md"
-          src="https://i.imgur.com/jVL9T0P.jpg"
-          alt=""
-        />
       </div>
     </div>
   );

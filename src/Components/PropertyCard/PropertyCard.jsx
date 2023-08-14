@@ -19,7 +19,7 @@ const PropertyCard = ({ type2Data, heading }) => {
           Our Properties
         </h1>
       )}
-      <div className="grid md:grid-cols-4 place-items-center grid-cols-1 md:gap-5 md:pb-[70px] pb-[35px] md:px-[30px] px-[25px] overflow-hidden">
+      <div className="grid lg:grid-cols-4 md:grid-cols-2 place-items-center grid-cols-1 lg:gap-5 md:gap-3 md:pb-[70px] pb-[35px] md:px-[30px] px-[25px] overflow-hidden lg:max-w-full md:max-w-3xl mx-auto max-w-full">
         {type2Data?.map((data) => (
           <PropertyReuseCard key={data?.id} data={data}></PropertyReuseCard>
         ))}

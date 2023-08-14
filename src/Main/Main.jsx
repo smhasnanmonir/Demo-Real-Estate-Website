@@ -7,7 +7,7 @@ const Main = () => {
   const noNavBar = location.pathname.includes("about");
   return (
     <>
-      <div className="md:block hidden">
+      <div className="md:block hidden mb-[95px]">
         <Header></Header>
       </div>
       <Outlet></Outlet>

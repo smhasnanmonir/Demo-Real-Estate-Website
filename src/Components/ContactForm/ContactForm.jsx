@@ -3,6 +3,7 @@ import Swal from "sweetalert2";
 import emailjs from "@emailjs/browser";
 import FloatingButton from "../../Home/FloatingButton/FloatingButton";
 import "./ContactForm.css";
+import SharedFrontPage from "../Shared/SharedFrontPage";
 const ContactForm = () => {
   const form = useRef();
 
@@ -40,24 +41,11 @@ const ContactForm = () => {
   return (
     <>
       <FloatingButton></FloatingButton>
-      <div
-        style={{
-          backgroundImage: `url("https://i.imgur.com/wUzcc5g.jpg")`,
-          backgroundSize: "cover",
-          backgroundRepeat: "no-repeat",
-        }}
-        className="front-page min-h-[90vh] grid place-items-center"
-      >
-        <div className=" text-center">
-          <h1 className="font-semibold">Contact</h1>
-          <h1 className="md:text-3xl font-light mb-[20px]">GET IN TOUCH</h1>
-          <img
-            className="w-[45px] md:ml-[75px] animate-bounce"
-            src="https://i.ibb.co/k3HS3tW/down-arrow-1.png"
-            alt=""
-          />
-        </div>
-      </div>
+      <SharedFrontPage
+        backgroundImg="https://images.unsplash.com/photo-1542361345-89e58247f2d5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+        heading1="Contact"
+        heading2="GET IN TOUCH"
+      ></SharedFrontPage>
       <div className="grid md:grid-cols-2 grid-cols-1 bg-white text-black md:gap-[50px]">
         <div className="">
           <img className="" src="https://i.imgur.com/y0Xuk6j.jpg" alt="" />
