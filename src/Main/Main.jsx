@@ -1,4 +1,4 @@
-import { Outlet } from "react-router-dom";
+import { Outlet, ScrollRestoration, useLocation } from "react-router-dom";
 import Footer from "../SharedComponents/Footer/Footer";
 import Header from "../SharedComponents/Header/Header";
 
@@ -10,6 +10,7 @@ const Main = () => {
       </div>
       <Outlet></Outlet>
       <Footer></Footer>
+      <ScrollRestoration />
     </>
   );
 };
