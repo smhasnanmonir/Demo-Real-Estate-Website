@@ -21,10 +21,9 @@ const Header = () => {
           Home
         </NavLink>
       </li>
-      <li className="text-white navBarCustom">
+      <li className="text-white navBarCustom group">
         <NavLink
           className={"navBarCustom"}
-          to="/about"
           style={({ isActive }) => {
             return {
               fontWeight: isActive ? "" : "",
@@ -33,7 +32,27 @@ const Header = () => {
             };
           }}
         >
-          About Us
+          <div className="customDropdown group ">
+            <label>About us</label>
+            <div className="inline-block relative">
+              <ul className="absolute min-w-full top-full right-[-95px]  mt-[13px] bg-black text-white rounded-lg hidden group-hover:inline">
+                <div className="flex flex-col gap-[12px] w-full px-[50px] py-[25px]">
+                  <Link
+                    to="/aboutus/ourstory"
+                    className="hover:text-cyan-500 hover:underline hover:underline-offset-[6px]"
+                  >
+                    Our story
+                  </Link>
+                  <Link className="hover:text-cyan-500 hover:underline hover:underline-offset-[6px]">
+                    Misson, vision and <br /> values
+                  </Link>
+                  <Link className="hover:text-cyan-500 hover:underline hover:underline-offset-[6px]">
+                    Present Days
+                  </Link>
+                </div>
+              </ul>
+            </div>
+          </div>
         </NavLink>
       </li>{" "}
       <li className="text-white navBarCustom">

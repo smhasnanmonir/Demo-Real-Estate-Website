@@ -3,9 +3,9 @@ import React from "react";
 import Main from "../Main/Main";
 import Home from "../Home/Home/Home";
 import PropertiesDetail from "../Components/PropertiesDetails/PropertiesDetail";
-import AboutUs from "../Components/AboutUs";
 import ContactForm from "../Components/ContactForm/ContactForm";
 import PropertyReuseStructure from "../Components/PropertyCard/PropertyReuseStructure";
+import OurStory from "../Components/AboutUs/OurStory";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -14,10 +14,6 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Home></Home>,
-      },
-      {
-        path: "/about",
-        element: <AboutUs></AboutUs>,
       },
       {
         path: "/allproperties",
@@ -71,6 +67,10 @@ const router = createBrowserRouter([
             </h1>
           </div>
         ),
+      },
+      {
+        path: "/aboutus/ourstory",
+        element: <OurStory></OurStory>,
       },
     ],
   },

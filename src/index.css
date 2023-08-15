@@ -11,17 +11,11 @@
     @apply bg-black text-white;
   }
 
-  .aboutUSDIV {
-    @apply grid place-content-center md:px-[450px] px-[25px]  overflow-hidden text-white;
-  }
-  .aboutUSH {
-    @apply md:text-5xl text-2xl font-bold text-center;
-  }
-  .aboutUSP {
-    @apply md:text-4xl text-xl mt-[26px] border-y-[6px] md:py-[50px] py-[30px] text-center leading-[35px];
-  }
   .navBarCustom {
     @apply hover:text-white hover:underline hover:underline-offset-[6px] transition-transform duration-500 ease-in-out;
+  }
+  .abouth1 {
+    @apply text-xl font-semibold;
   }
 }
 

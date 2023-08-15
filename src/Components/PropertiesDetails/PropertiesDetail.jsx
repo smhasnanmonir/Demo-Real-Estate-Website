@@ -80,7 +80,7 @@ const PropertiesDetail = () => {
               <SwiperSlide>
                 <>
                   <img
-                    className="lg:h-[650px] md:h-[450px] h-[350px] object-cover w-screen overflow-hidden pointer-events-none"
+                    className="lg:h-[670px] md:h-[450px] h-[350px] object-cover w-screen overflow-hidden pointer-events-none"
                     src={slide}
                     alt=""
                   />
@@ -90,8 +90,8 @@ const PropertiesDetail = () => {
           ))}
         </div>
       </Swiper>
-      <div className="md:px-[45px] px-[25px] mt-4 flex flex-col gap-y-[25px]">
-        <div className="space-y-5">
+      <div className="md:px-[45px] px-[25px] mt-4 space-y-[25px]">
+        <div className="space-y-[35px]">
           <h1 className="md:text-3xl text-2xl font-semibold">
             {dataPro[0]?.name}
           </h1>
