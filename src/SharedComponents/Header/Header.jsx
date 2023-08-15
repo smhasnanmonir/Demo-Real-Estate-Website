@@ -37,13 +37,19 @@ const Header = () => {
             <div className="inline-block relative">
               <ul className="absolute min-w-full top-full right-[-95px]  mt-[13px] bg-black bg-opacity-80 text-white rounded-lg hidden group-hover:inline">
                 <div className="flex flex-col gap-[12px] w-full px-[50px] py-[25px]">
-                  <Link to="/aboutus/ourstory" className="navBarCustom w-1/2">
+                  <Link
+                    to="/aboutus/ourstory"
+                    className="navBarCustom w-1/2 hover:text-cyan-400"
+                  >
                     Our story
                   </Link>
-                  <Link className="navBarCustom">
+                  <Link className="navBarCustom hover:text-cyan-400">
                     Misson, vision and <br /> values
                   </Link>
-                  <Link to="/aboutus/ourclients" className="navBarCustom w-1/2">
+                  <Link
+                    to="/aboutus/ourclients"
+                    className="navBarCustom w-1/2 hover:text-cyan-400"
+                  >
                     Our Clients
                   </Link>
                 </div>
@@ -87,25 +93,25 @@ const Header = () => {
               tabIndex={0}
               className="dropdown-content z-[1] menu rounded-box w-52 mt-[25px]"
             >
-              <ul className="px-20 py-12 md:absolute hidden text-gray-700 group-hover:block transition-all duration-1000 delay-200 space-y-4 bg-black rounded-lg z-50 relative ">
+              <ul className="px-20 py-12 md:absolute hidden text-gray-700 bg-opacity-80 group-hover:block transition-all duration-1000 delay-200 space-y-4 bg-black rounded-lg z-50 relative ">
                 <div className=" text-white grid grid-cols-3 w-[380px] h-[140px]">
                   <div className="flex flex-col gap-4">
                     <h1 className="font-semibold">Phase</h1>
                     <Link
                       to="allproperties/ongoing"
-                      className="hover:text-red-400 font-normal navBarCustom w-1/2"
+                      className="hover:text-cyan-400 font-normal navBarCustom w-1/2"
                     >
                       Ongoing
                     </Link>
                     <Link
                       to="allproperties/upcoming"
-                      className="hover:text-red-400 font-normal navBarCustom w-1/2"
+                      className="hover:text-cyan-400 font-normal navBarCustom w-1/2"
                     >
                       Upcoming
                     </Link>
                     <Link
                       to="allproperties/completed"
-                      className="hover:text-red-400 font-normal navBarCustom w-1/2"
+                      className="hover:text-cyan-400 font-normal navBarCustom w-1/2"
                     >
                       Completed
                     </Link>
@@ -114,13 +120,13 @@ const Header = () => {
                     <h1 className="font-semibold">Types</h1>
                     <Link
                       to="/allproperties/residential"
-                      className="hover:text-red-400 font-normal navBarCustom w-1/2"
+                      className="hover:text-cyan-400 font-normal navBarCustom w-1/2"
                     >
                       Residential
                     </Link>
                     <Link
                       to="/allproperties/commercial"
-                      className="hover:text-red-400 font-normal navBarCustom w-1/2"
+                      className="hover:text-cyan-400 font-normal navBarCustom w-1/2"
                     >
                       Commercial
                     </Link>
@@ -129,19 +135,19 @@ const Header = () => {
                     <h1 className="font-semibold">Location</h1>
                     <Link
                       to="/allproperties/dhanmondi"
-                      className="hover:text-red-400 font-normal navBarCustom w-1/2"
+                      className="hover:text-cyan-400 font-normal navBarCustom w-1/2"
                     >
                       Dhanmondi
                     </Link>
                     <Link
                       to="/allproperties/keraniganj"
-                      className="hover:text-red-400 font-normal navBarCustom w-1/2"
+                      className="hover:text-cyan-400 font-normal navBarCustom w-1/2"
                     >
                       Keraniganj
                     </Link>
                     <Link
                       to="/allproperties/mohammadpur"
-                      className="hover:text-red-400 font-normal navBarCustom w-3/4"
+                      className="hover:text-cyan-400 font-normal navBarCustom w-3/4"
                     >
                       Mohammadpur
                     </Link>
@@ -153,7 +159,7 @@ const Header = () => {
                       />
                       <Link
                         to="/allproperties"
-                        className="font-normal text-white hover:text-red-500 inline-block "
+                        className="font-normal text-white hover:text-cyan-500 inline-block "
                       >
                         All properties
                       </Link>
@@ -181,11 +187,17 @@ const Header = () => {
             <div className="customDropdown group ">
               <label>Media</label>
               <div className="inline-block relative">
-                <ul className="absolute min-w-full top-full right-[-95px]  mt-[13px] bg-black bg-opacity-80 text-white rounded-lg hidden group-hover:inline">
+                <ul className="absolute min-w-full  top-full right-[-65px]  mt-[13px] bg-black bg-opacity-80 text-white rounded-lg hidden group-hover:inline">
                   <div className="flex flex-col gap-[12px] w-full px-[50px] py-[25px]">
-                    <Link className="navBarCustom">Blog</Link>
-                    <Link className="navBarCustom">News</Link>
-                    <Link className="navBarCustom">Event</Link>
+                    <Link className="navBarCustom hover:text-cyan-400">
+                      Blog
+                    </Link>
+                    <Link className="navBarCustom hover:text-cyan-400">
+                      News
+                    </Link>
+                    <Link className="navBarCustom hover:text-cyan-400">
+                      Event
+                    </Link>
                   </div>
                 </ul>
               </div>
@@ -242,7 +254,7 @@ const Header = () => {
   );
 
   return (
-    <div className="flex fixed navbar backdrop-blur-sm bg-[#28282B] bg-opacity-80 justify-between items-center py-[12px] px-[15px] text-red-400 z-50">
+    <div className="flex fixed navbar backdrop-blur-sm bg-[#28282B] bg-opacity-80 justify-between items-center py-[12px] px-[15px] text-cyan-400 z-50">
       <div className="">
         <div className="dropdown">
           <label tabIndex={0} className="btn btn-ghost lg:hidden">
