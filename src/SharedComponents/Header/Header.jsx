@@ -6,7 +6,7 @@ const Header = () => {
   const [datas] = UseData();
   const commonNav = (
     <>
-      <li className="text-white navBarCustom">
+      <li className="text-white">
         <NavLink
           className={"navBarCustom"}
           to="/"
@@ -21,7 +21,7 @@ const Header = () => {
           Home
         </NavLink>
       </li>
-      <li className="text-white navBarCustom group">
+      <li className="text-white group">
         <NavLink
           className={"navBarCustom"}
           style={({ isActive }) => {
@@ -35,21 +35,15 @@ const Header = () => {
           <div className="customDropdown group ">
             <label>About us</label>
             <div className="inline-block relative">
-              <ul className="absolute min-w-full top-full right-[-95px]  mt-[13px] bg-black text-white rounded-lg hidden group-hover:inline">
+              <ul className="absolute min-w-full top-full right-[-95px]  mt-[13px] bg-black bg-opacity-80 text-white rounded-lg hidden group-hover:inline">
                 <div className="flex flex-col gap-[12px] w-full px-[50px] py-[25px]">
-                  <Link
-                    to="/aboutus/ourstory"
-                    className="hover:text-cyan-500 hover:underline hover:underline-offset-[6px]"
-                  >
+                  <Link to="/aboutus/ourstory" className="navBarCustom w-1/2">
                     Our story
                   </Link>
-                  <Link className="hover:text-cyan-500 hover:underline hover:underline-offset-[6px]">
+                  <Link className="navBarCustom">
                     Misson, vision and <br /> values
                   </Link>
-                  <Link
-                    to="/aboutus/ourclients"
-                    className="hover:text-cyan-500 hover:underline hover:underline-offset-[6px]"
-                  >
+                  <Link to="/aboutus/ourclients" className="navBarCustom w-1/2">
                     Our Clients
                   </Link>
                 </div>
@@ -58,7 +52,7 @@ const Header = () => {
           </div>
         </NavLink>
       </li>{" "}
-      <li className="text-white navBarCustom">
+      <li className="text-white">
         <NavLink
           className={"navBarCustom"}
           to="/business"
@@ -73,7 +67,7 @@ const Header = () => {
           Business
         </NavLink>
       </li>
-      <li className="text-white navBarCustom group pb-2">
+      <li className="text-white group pb-2">
         <NavLink
           className={"navBarCustom"}
           to="/allproperties"
@@ -99,19 +93,19 @@ const Header = () => {
                     <h1 className="font-semibold">Phase</h1>
                     <Link
                       to="allproperties/ongoing"
-                      className="hover:text-red-400 font-normal"
+                      className="hover:text-red-400 font-normal navBarCustom w-1/2"
                     >
                       Ongoing
                     </Link>
                     <Link
                       to="allproperties/upcoming"
-                      className="hover:text-red-400 font-normal"
+                      className="hover:text-red-400 font-normal navBarCustom w-1/2"
                     >
                       Upcoming
                     </Link>
                     <Link
                       to="allproperties/completed"
-                      className="hover:text-red-400 font-normal"
+                      className="hover:text-red-400 font-normal navBarCustom w-1/2"
                     >
                       Completed
                     </Link>
@@ -120,13 +114,13 @@ const Header = () => {
                     <h1 className="font-semibold">Types</h1>
                     <Link
                       to="/allproperties/residential"
-                      className="hover:text-red-400 font-normal"
+                      className="hover:text-red-400 font-normal navBarCustom w-1/2"
                     >
                       Residential
                     </Link>
                     <Link
                       to="/allproperties/commercial"
-                      className="hover:text-red-400 font-normal"
+                      className="hover:text-red-400 font-normal navBarCustom w-1/2"
                     >
                       Commercial
                     </Link>
@@ -135,19 +129,19 @@ const Header = () => {
                     <h1 className="font-semibold">Location</h1>
                     <Link
                       to="/allproperties/dhanmondi"
-                      className="hover:text-red-400 font-normal"
+                      className="hover:text-red-400 font-normal navBarCustom w-1/2"
                     >
                       Dhanmondi
                     </Link>
                     <Link
                       to="/allproperties/keraniganj"
-                      className="hover:text-red-400 font-normal"
+                      className="hover:text-red-400 font-normal navBarCustom w-1/2"
                     >
                       Keraniganj
                     </Link>
                     <Link
                       to="/allproperties/mohammadpur"
-                      className="hover:text-red-400 font-normal"
+                      className="hover:text-red-400 font-normal navBarCustom w-3/4"
                     >
                       Mohammadpur
                     </Link>
@@ -171,7 +165,7 @@ const Header = () => {
           </div>
         </NavLink>
       </li>
-      <li className="text-white navBarCustom group">
+      <li className="text-white group">
         <NavLink
           className={"navBarCustom"}
           to="/media"
@@ -184,23 +178,22 @@ const Header = () => {
           }}
         >
           <div className="dropdown inline-block dropdown-hover dropdown-left">
-            <label tabIndex={0} className="navBarCustom">
-              Media
-            </label>
-
-            <ul className="px-[70px] py-10 dropdown-menu  md:absolute hidden text-gray-700 group-hover:block  space-y-4 bg-black rounded-lg z-50">
-              <div className=" text-white">
-                <div className="space-y-4 px-5">
-                  <p className="hover:text-red-500 navBarCustom">Blog</p>
-                  <p className="hover:text-red-500 navBarCustom">News</p>
-                  <p className="hover:text-red-500 navBarCustom">Event</p>
-                </div>
+            <div className="customDropdown group ">
+              <label>Media</label>
+              <div className="inline-block relative">
+                <ul className="absolute min-w-full top-full right-[-95px]  mt-[13px] bg-black bg-opacity-80 text-white rounded-lg hidden group-hover:inline">
+                  <div className="flex flex-col gap-[12px] w-full px-[50px] py-[25px]">
+                    <Link className="navBarCustom">Blog</Link>
+                    <Link className="navBarCustom">News</Link>
+                    <Link className="navBarCustom">Event</Link>
+                  </div>
+                </ul>
               </div>
-            </ul>
+            </div>
           </div>
         </NavLink>
       </li>{" "}
-      <li className="text-white navBarCustom">
+      <li className="text-white">
         <NavLink
           className={"navBarCustom"}
           to="/service"
@@ -215,7 +208,7 @@ const Header = () => {
           Service
         </NavLink>
       </li>
-      <li className="text-white navBarCustom">
+      <li className="text-white">
         <NavLink
           className={"navBarCustom"}
           to="/career"
@@ -230,7 +223,7 @@ const Header = () => {
           Career
         </NavLink>
       </li>{" "}
-      <li className="text-white navBarCustom">
+      <li className="text-white">
         <NavLink
           className={"navBarCustom"}
           to="/contact"

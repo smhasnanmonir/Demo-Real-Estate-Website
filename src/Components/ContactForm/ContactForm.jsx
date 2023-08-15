@@ -4,6 +4,7 @@ import emailjs from "@emailjs/browser";
 import FloatingButton from "../../Home/FloatingButton/FloatingButton";
 import "./ContactForm.css";
 import SharedFrontPage from "../Shared/SharedFrontPage";
+import contactUS from "../../../src/assets/y0Xuk6j.jpg";
 const ContactForm = () => {
   const form = useRef();
 
@@ -48,11 +49,7 @@ const ContactForm = () => {
       ></SharedFrontPage>
       <div className="grid md:grid-cols-2 grid-cols-1 bg-white text-black md:gap-[50px]">
         <div className="">
-          <img
-            className="w-full h-full object-cover"
-            src="https://i.imgur.com/y0Xuk6j.jpg"
-            alt=""
-          />
+          <img className="w-full h-full object-cover" src={contactUS} alt="" />
         </div>
         <div className="flex flex-col gap-4 justify-center md:w-[310px] px-[35px] md:p-[35px] py-[45px]">
           <h1 className="md:text-2xl">Contact Us</h1>
