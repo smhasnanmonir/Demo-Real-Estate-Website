@@ -6,7 +6,7 @@ const ReasonWhy = () => {
           "https://drive.google.com/uc?export=download&id=1I5OqKEXlQQQlHFiduptQlW_pL7xBVZ5z"
         )`,
       }}
-      className="bgColorGray2  grid lg:gap-[20px] place-items-center bg-fixed"
+      className="bgColorGray2 grid lg:gap-[20px] place-items-center bg-fixed bg-cover bg-no-repeat"
     >
       <div className="text-center backdrop-blur-[10px] lg:px-[350px] drop-shadow-md md:px-[95px] px-[35px] md:py-[180px] py-[40px] text-white">
         <h1 className="text-center text-3xl font-semibold pb-4 ">Why us?</h1>

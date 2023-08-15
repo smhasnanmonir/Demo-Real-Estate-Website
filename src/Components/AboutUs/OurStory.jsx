@@ -1,5 +1,5 @@
 import SharedFrontPage from "../Shared/SharedFrontPage";
-import backimg from "../../../src/assets/pexels-pixabay-51953.jpg";
+import backimg from "../../../src/assets/aboutus.jpg";
 import milestone from "../../../src/assets/milestone.jpg";
 import teamwork from "../../../src/assets/teamwork.jpg";
 import sold from "../../../src/assets/sold.jpg";
