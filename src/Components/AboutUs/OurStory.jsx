@@ -15,7 +15,7 @@ const OurStory = () => {
         heading2="Our Story"
       ></SharedFrontPage>
       <div className="bg-[#e9ecef] text-black">
-        <div className=" text-black lg:px-[320px] md:px-[150px] px-[50px] lg:py-[75px] md:py-[55px] py-[35px] ">
+        <div className=" text-black lg:px-[280px] md:px-[150px] px-[50px] lg:py-[75px] md:py-[55px] py-[35px] ">
           <p className="text-[18px]">
             At <span className="font-semibold">Universe Group</span>, our
             journey began with a simple vision: to make the process of finding a
@@ -25,11 +25,15 @@ const OurStory = () => {
             industry.
           </p>
         </div>
-        <div className="grid md:grid-cols-2 grid-cols-1 gap-6 place-items-center">
-          <div>
-            <img src={milestone} alt="" />
+        <div className="grid md:grid-cols-2 grid-cols-1 lg:gap-6 place-items-center md:pb-[65px]">
+          <div className="w-full h-full object-cover">
+            <img
+              className="w-full h-full object-cover"
+              src={milestone}
+              alt=""
+            />
           </div>
-          <div className="space-y-4 lg:pr-[35px]">
+          <div className="space-y-4 lg:pr-[35px] lg:px-0 px-[35px] lg:py-0 py-[35px]">
             <h1 className="abouth1">2016 - The Genesis</h1>
             <p>
               In a small office space, a group of passionate individuals united
@@ -49,11 +53,11 @@ const OurStory = () => {
             </p>
           </div>
         </div>
-        <div className="grid md:grid-cols-2 grid-cols-1 gap-6 place-items-center ">
-          <div className="order-2">
-            <img src={teamwork} alt="" />
+        <div className="grid md:grid-cols-2 grid-cols-1 gap-6 place-items-center md:pb-[65px]">
+          <div className="md:order-2 w-full h-full object-cover">
+            <img className="w-full h-full object-cover" src={teamwork} alt="" />
           </div>
-          <div className="space-y-4 lg:pl-[35px]">
+          <div className="space-y-4 lg:pl-[35px] lg:px-0 px-[35px] lg:py-0 py-[35px]">
             <h1 className="abouth1">2019 - Guiding Stars</h1>
             <p className="">
               The Universe Group's guiding stars are our clients. We embraced a
@@ -65,10 +69,10 @@ const OurStory = () => {
           </div>
         </div>
         <div className="grid md:grid-cols-2 grid-cols-1 gap-6 place-items-center">
-          <div>
-            <img src={sold} alt="" />
+          <div className="w-full h-full">
+            <img className="w-full h-full object-cover" src={sold} alt="" />
           </div>
-          <div className="space-y-4 lg:pr-[35px]">
+          <div className="space-y-4 lg:pr-[35px] lg:px-0 px-[35px] lg:py-0 py-[35px]">
             <h1 className="abouth1">2021 - Expanding Horizons</h1>
             <p className="">
               Our journey continues with an ever-growing team of dedicated
@@ -90,16 +94,16 @@ const OurStory = () => {
         </div>
         <div className="relative w-full">
           <img
-            className="w-full object-cover brightness-50 bg-fixed"
+            className="w-full md:h-full h-[350px] object-cover brightness-[30%]"
             src={presentDay}
             alt=""
           />
-          <div className="absolute top-1/2 text-center text-white space-y-2">
+          <div className="absolute md:top-1/2 top-1/4 text-center text-white space-y-2 lg:px-0 px-[45px]">
             <h1 className="lg:text-2xl font-semibold">
               Present Day - A Shining Legacy
             </h1>
             <p
-              className="w-1/2 mx-auto
+              className="lg:w-1/2 mx-auto
             "
             >
               Today, the Universe Group stands as a beacon of trust,
@@ -110,7 +114,7 @@ const OurStory = () => {
             </p>
           </div>
         </div>
-        <div className="grid md:grid-cols-2 grid-cols-1 gap-6 place-items-center lg:px-[250px] lg:py-[165px]">
+        <div className="grid md:grid-cols-2 grid-cols-1 gap-6 place-items-center lg:px-[250px] lg:py-[165px] px-[45px] py-[45px]">
           <div className="">
             <img className="w-3/4" src={logo} alt="" />
           </div>
