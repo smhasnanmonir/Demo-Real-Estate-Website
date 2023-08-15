@@ -6,6 +6,7 @@ import PropertiesDetail from "../Components/PropertiesDetails/PropertiesDetail";
 import ContactForm from "../Components/ContactForm/ContactForm";
 import PropertyReuseStructure from "../Components/PropertyCard/PropertyReuseStructure";
 import OurStory from "../Components/AboutUs/OurStory";
+import OurClient from "../Components/AboutUs/OurClient";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -71,6 +72,10 @@ const router = createBrowserRouter([
       {
         path: "/aboutus/ourstory",
         element: <OurStory></OurStory>,
+      },
+      {
+        path: "/aboutus/ourclients",
+        element: <OurClient></OurClient>,
       },
     ],
   },

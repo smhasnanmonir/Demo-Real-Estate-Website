@@ -90,17 +90,15 @@ const PropertiesDetail = () => {
           ))}
         </div>
       </Swiper>
-      <div className="md:px-[45px] px-[25px] mt-4 space-y-[25px]">
-        <div className="space-y-[35px]">
-          <h1 className="md:text-3xl text-2xl font-semibold">
-            {dataPro[0]?.name}
-          </h1>
-          <iframe
-            className="w-full h-[310px] rounded-2xl border-[1px] border-black"
-            src={dataPro[0]?.iframe}
-          ></iframe>
-        </div>
-        <div className="">{descriptionText}</div>
+      <h1 className="md:text-4xl text-2xl font-semibold pt-6 md:px-[45px] md:py-[45px] py-[25px] px-[25px]">
+        {dataPro[0]?.name}
+      </h1>
+      <div className="md:px-[45px] px-[25px] grid">
+        <iframe
+          className="w-full h-[310px] rounded-2xl border-[1px] border-black md:order-2 md:mb-0 mb-[25px]"
+          src={dataPro[0]?.iframe}
+        ></iframe>
+        <div className="md:pb-[35px]">{descriptionText}</div>
       </div>
     </div>
   );

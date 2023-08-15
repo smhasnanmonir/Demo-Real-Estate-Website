@@ -46,8 +46,11 @@ const Header = () => {
                   <Link className="hover:text-cyan-500 hover:underline hover:underline-offset-[6px]">
                     Misson, vision and <br /> values
                   </Link>
-                  <Link className="hover:text-cyan-500 hover:underline hover:underline-offset-[6px]">
-                    Present Days
+                  <Link
+                    to="/aboutus/ourclients"
+                    className="hover:text-cyan-500 hover:underline hover:underline-offset-[6px]"
+                  >
+                    Our Clients
                   </Link>
                 </div>
               </ul>
