@@ -1,8 +1,8 @@
 const SharedFrontPage = ({ backgroundImg, heading1, heading2 }) => {
   return (
-    <div className="front-page min-h-[90vh] grid place-items-center">
+    <div className="front-page min-h-[100vh] grid place-items-center">
       <img
-        className="object-cover object-left brightness-[30%] max-h-[90vh] w-full left"
+        className="object-cover object-left brightness-[30%] md:max-h-[90vh] min-h-[100vh] w-full left"
         src={backgroundImg}
       />
       <div className="grid place-items-center absolute">
