@@ -12,7 +12,7 @@
   }
 
   .navBarCustom {
-    @apply relative before:content-[''] before:absolute before:block before:w-full before:h-[2px] 
+    @apply relative before:content-[''] before:absolute before:block before:w-full inline-block before:h-[2px] 
               before:bottom-0 before:left-0 before:bg-white before:text-white hover:text-white
               before:hover:scale-x-100 before:scale-x-0 before:origin-top-left
               before:transition before:ease-in-out before:duration-500 pb-[4px];

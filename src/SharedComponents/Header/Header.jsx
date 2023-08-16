@@ -41,10 +41,16 @@ const Header = () => {
                     to="/aboutus/ourstory"
                     className="navBarCustom w-1/2 hover:text-cyan-400"
                   >
-                    Our story
+                    Our Story
                   </Link>
                   <Link className="navBarCustom hover:text-cyan-400">
-                    Misson, vision and <br /> values
+                    Misson, Vision and <br /> Values
+                  </Link>
+                  <Link
+                    to="/aboutus/ourclients"
+                    className="navBarCustom hover:text-cyan-400"
+                  >
+                    Corporate Clients
                   </Link>
                   <Link
                     to="/aboutus/ourteam"
