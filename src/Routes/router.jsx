@@ -7,6 +7,7 @@ import ContactForm from "../Components/ContactForm/ContactForm";
 import PropertyReuseStructure from "../Components/PropertyCard/PropertyReuseStructure";
 import OurStory from "../Components/AboutUs/OurStory";
 import OurClient from "../Components/AboutUs/OurClient";
+import OurTeam from "../Components/AboutUs/OurTeam";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -76,6 +77,10 @@ const router = createBrowserRouter([
       {
         path: "/aboutus/ourclients",
         element: <OurClient></OurClient>,
+      },
+      {
+        path: "/aboutus/ourteam",
+        element: <OurTeam></OurTeam>,
       },
     ],
   },

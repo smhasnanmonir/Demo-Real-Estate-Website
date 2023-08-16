@@ -47,10 +47,10 @@ const Header = () => {
                     Misson, vision and <br /> values
                   </Link>
                   <Link
-                    to="/aboutus/ourclients"
+                    to="/aboutus/ourteam"
                     className="navBarCustom w-1/2 hover:text-cyan-400"
                   >
-                    Our Clients
+                    Our Team
                   </Link>
                 </div>
               </ul>
@@ -187,7 +187,7 @@ const Header = () => {
             <div className="customDropdown group ">
               <label>Media</label>
               <div className="inline-block relative">
-                <ul className="absolute min-w-full  top-full right-[-65px]  mt-[13px] bg-black bg-opacity-80 text-white rounded-lg hidden group-hover:inline">
+                <ul className="absolute min-w-full top-full right-[-55px]  mt-[13px] bg-black bg-opacity-80 text-white rounded-lg hidden group-hover:inline">
                   <div className="flex flex-col gap-[12px] w-full px-[50px] py-[25px]">
                     <Link className="navBarCustom hover:text-cyan-400">
                       Blog
