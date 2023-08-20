@@ -7,6 +7,9 @@
 
 .ReactModal__Content,
 .ReactModal__Content--after-open {
-  background: none;
   padding: 0;
+}
+
+::placeholder {
+  color: black !important;
 }
