@@ -25,3 +25,7 @@
 .swiper-button-prev::after {
   display: none;
 }
+
+.swiper {
+  z-index: 0;
+}

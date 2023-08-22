@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useState } from "react";
 import { useParams } from "react-router-dom";
+import Modal from "react-modal";
 import FloatingButton from "../../Home/FloatingButton/FloatingButton";
 import UseData from "../Hooks/UseData";
 import school from "../../../src/assets/details/school.jpg";
@@ -36,32 +37,76 @@ import "./projectswiper.css";
 import FormReuse from "../ContactForm/FormReuse/FormReuse";
 import { data } from "autoprefixer";
 const PropertiesDetail = () => {
+  const customStyles = {
+    overlay: {
+      position: "fixed",
+      top: 0,
+      left: 0,
+      right: 0,
+      bottom: 0,
+      backgroundColor: "rgba(0, 0, 0, 0.8)",
+    },
+    content: {
+      top: "50%",
+      left: "50%",
+      right: "auto",
+      bottom: "auto",
+      marginRight: "-50%",
+      transform: "translate(-50%, -50%)",
+      display: "block",
+      zIndex: "99",
+    },
+  };
+  let subtitle;
+  const [modalIsOpen, setIsOpen] = useState(false);
+  const [modalIsOpen1, setIsOpen1] = useState(false);
+
+  function openModal() {
+    setIsOpen(true);
+  }
+  function openModal1() {
+    setIsOpen1(true);
+  }
+
+  function afterOpenModal() {
+    // references are now sync'd and can be accessed.
+    subtitle.style.color = "black";
+  }
+
+  function closeModal() {
+    setIsOpen(false);
+  }
+  function closeModal1() {
+    setIsOpen1(false);
+  }
   const { id } = useParams();
   const [datas] = UseData();
   let dataPro = datas.filter((datas) => datas.id === id);
 
   const descriptionText = (
     <>
-      <h1 className="text-[17px] text-black ">
-        <span className="text-[18px] font-semibold">Description: </span>
-        Green Living with urban lifestyle is no more a myth for tranquility
-        mongers. The urban dwellers of Dhaka city are always dreaming for living
-        accommodations accompanied by garden with plants, open spaces for
-        wander, trees for oxygen and lakes for boating & fishing. A place
-        belonging magic touch of green-living in an environment friendly
-        community with complementary fresh & clean breathing air accompanied by
-        caring & sharing neighbors throughout the year, is a dream coming true
-        by the grace of heavenly initiative called Unveiling the imaginations of
-        urban dwellers and introducing the eco-friendly environment,{" "}
-        <span className="font-bold">{dataPro[0]?.name}</span> Town was developed
-        with significant & dynamic aspects of green architecture which was
-        meticulously planned and perfectly designed. The Best Brand of Living
-        was flawlessly designed for the cream de la cream of societies finest.
-        The architecture here is in creating spaces that interrelates, provokes
-        and titillate the green senses. With the casual open layout, every
-        composition of the architectural design exudes eminent and distinguished
-        elegance.
-      </h1>
+      <div>
+        <h1 className="text-[18px] font-semibold">Project Overview</h1>
+        <h1 className="text-[17px] text-black ">
+          Green Living with urban lifestyle is no more a myth for tranquility
+          mongers. The urban dwellers of Dhaka city are always dreaming for
+          living accommodations accompanied by garden with plants, open spaces
+          for wander, trees for oxygen and lakes for boating & fishing. A place
+          belonging magic touch of green-living in an environment friendly
+          community with complementary fresh & clean breathing air accompanied
+          by caring & sharing neighbors throughout the year, is a dream coming
+          true by the grace of heavenly initiative called Unveiling the
+          imaginations of urban dwellers and introducing the eco-friendly
+          environment, <span className="font-bold">{dataPro[0]?.name}</span>{" "}
+          Town was developed with significant & dynamic aspects of green
+          architecture which was meticulously planned and perfectly designed.
+          The Best Brand of Living was flawlessly designed for the cream de la
+          cream of societies finest. The architecture here is in creating spaces
+          that interrelates, provokes and titillate the green senses. With the
+          casual open layout, every composition of the architectural design
+          exudes eminent and distinguished elegance.
+        </h1>
+      </div>
     </>
   );
   return (
@@ -92,7 +137,7 @@ const PropertiesDetail = () => {
           },
         }}
       >
-        <div className="w-screen">
+        <div className="w-screen -z-[50] relative">
           {dataPro[0]?.slideshow.map((slide, i) => (
             <div key={i}>
               <SwiperSlide>
@@ -149,7 +194,7 @@ const PropertiesDetail = () => {
         </div>
       </div>
       {/* Overview and Spec */}
-      <div className="grid lg:grid-cols-2 grid-cols-1 border-y-[3px] border-black bg-[#212529] lg:px-[45px] md:px-[35px] px-[35px] py-[45px] gap-[50px] text-white">
+      <div className="grid lg:grid-cols-2 grid-cols-1 border-y-[3px] border-black bg-[#212529] lg:px-[45px] md:px-[35px] px-[55px] lg:py-[105px] py-[65px] gap-[50px] text-white">
         <div className="space-y-3 lg:border-r-[2px] border-white lg:border-b-[0px] border-b-[2px] pb-[35px]">
           <h1 className="md:text-3xl text-2xl text-[#daa520]">Overview</h1>
           <p>
@@ -158,11 +203,82 @@ const PropertiesDetail = () => {
             inventore, fugiat consequatur sunt recusandae magni dolores amet.
             Nostrum, quo!
           </p>
-          <button className="px-[35px] py-[7px] text-white border-[2px] border-white hover:bg-black hover:text-white transition-all ease-in delay-100 duration-300">
+          <Modal
+            className=""
+            isOpen={modalIsOpen}
+            onAfterOpen={afterOpenModal}
+            onRequestClose={closeModal}
+            style={customStyles}
+            contentLabel="Example Modal"
+          >
+            <button
+              className="absolute md:left-[85%] btn md:btn-md btn-sm btn-neutral"
+              onClick={closeModal}
+            >
+              Close
+            </button>
+            <form className="md:w-[700px] md:h-[500px] w-full h-[290px] grid place-items-center p-0 m-0 -z-10 relative">
+              <p>{descriptionText}</p>
+            </form>
+          </Modal>
+          <button
+            onClick={openModal}
+            className="px-[35px] py-[7px] text-white border-[2px] border-white hover:bg-black hover:text-white transition-all ease-in delay-100 duration-300"
+          >
             Read More
           </button>
         </div>
         <div className="space-y-3">
+          <Modal
+            className=""
+            isOpen={modalIsOpen1}
+            onAfterOpen={afterOpenModal}
+            onRequestClose={closeModal1}
+            style={customStyles}
+            contentLabel="Example Modal"
+          >
+            <button
+              className="absolute md:left-[85%] btn md:btn-md btn-sm btn-neutral"
+              onClick={closeModal1}
+            >
+              Close
+            </button>
+            <form className="lg:py-[45px]">
+              <p>
+                Welcome to{" "}
+                <span className="font-semibold">{dataPro[0]?.name}</span>, an
+                exceptional land development project brought to you by the
+                Universe Group. With meticulous planning, attention to detail,
+                and a commitment to creating vibrant communities, this project
+                embodies our dedication to excellence in real estate.
+              </p>
+              <p>{dataPro[0]?.locationText}</p>
+              <div>
+                <h1>Legal and Regulatory Compliance:</h1>
+                <p>
+                  All necessary permits and approvals have been obtained in
+                  compliance with local regulations.
+                </p>
+              </div>
+              <div>
+                <h1>Booking and Inquiries:</h1>
+                <p>
+                  For booking inquiries and more information, please contact us.
+                </p>
+              </div>
+              <div>
+                <h1>Experience a New Universe of Possibilities</h1>
+                <p>
+                  <span className="font-semibold">{dataPro[0]?.name}</span>{" "}
+                  invites you to be a part of its journey. Whether you're
+                  seeking a space to build your dream home, an investment
+                  opportunity, or a chance to contribute to a thriving
+                  community, this project promises a universe of possibilities.
+                  Join us in shaping the future of Urban Residency
+                </p>
+              </div>
+            </form>
+          </Modal>
           <h1 className="md:text-3xl text-2xl text-[#daa520]">Specification</h1>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi
@@ -174,7 +290,10 @@ const PropertiesDetail = () => {
             provident natus, a excepturi modi. Sapiente rerum cum, velit facere
             odio voluptatem atque nulla perferendis vel excepturi, accusamus.
           </p>
-          <button className="px-[35px] py-[7px] text-white border-[2px] border-white hover:bg-black hover:text-white transition-all ease-in delay-100 duration-300">
+          <button
+            onClick={openModal1}
+            className="px-[35px] py-[7px] text-white border-[2px] border-white hover:bg-black hover:text-white transition-all ease-in delay-100 duration-300"
+          >
             Read More
           </button>
         </div>
@@ -237,7 +356,7 @@ const PropertiesDetail = () => {
       </div>
 
       {/* Brochure */}
-      <div className="grid lg:grid-cols-2 grid-cols-1 border-t-[3px] border-black mt-[25px]">
+      <div className="grid lg:grid-cols-2 grid-cols-1 border-t-[3px] border-black mt-[25px] ">
         <div className="relative">
           <img
             className="brightness-50 w-full lg:h-full h-[450px] object-cover"
