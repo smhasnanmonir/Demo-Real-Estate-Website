@@ -219,11 +219,14 @@ const PropertiesDetail = () => {
             >
               Close
             </button>
-            <form className=" overflow-hidden mx-auto lg:py-[75px] md:py-[65px] py-[55px] grid place-items-center p-0 m-0 -z-10 text-white">
+            <form className=" max-h-[90vh] mx-auto lg:py-[75px] md:py-[65px] py-[55px] grid place-items-center p-0 m-0 -z-10 text-white">
               <p>{descriptionText}</p>
             </form>
           </Modal>
-          <button className="px-[35px] py-[7px] text-white border-[2px] border-white hover:bg-black hover:text-white transition-all ease-in delay-100 duration-300">
+          <button
+            onClick={openModal}
+            className="px-[35px] py-[7px] text-white border-[2px] border-white hover:bg-black hover:text-white transition-all ease-in delay-100 duration-300"
+          >
             Read More
           </button>
         </div>
@@ -413,7 +416,7 @@ const PropertiesDetail = () => {
       {/* Video Section */}
 
       <>
-        <h1 className="text-center font-FontNews font-semibold md:text-3xl lg:py-[35px] py-[25px]">
+        <h1 className="text-center font-FontNews font-semibold md:text-3xl text-2xl lg:py-[35px] py-[25px]">
           Video Section
         </h1>
         <iframe
@@ -427,7 +430,7 @@ const PropertiesDetail = () => {
 
       {/* Location */}
       <>
-        <h1 className="text-center font-FontNews font-semibold md:text-3xl lg:py-[35px] py-[25px]">
+        <h1 className="text-center font-FontNews font-semibold md:text-3xl text-2xl lg:py-[35px] py-[25px]">
           Project Location
         </h1>
         <iframe

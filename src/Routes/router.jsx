@@ -1,5 +1,4 @@
 import { createBrowserRouter } from "react-router-dom";
-import React from "react";
 import Main from "../Main/Main";
 import Home from "../Home/Home/Home";
 import PropertiesDetail from "../Components/PropertiesDetails/PropertiesDetail";
@@ -8,6 +7,7 @@ import PropertyReuseStructure from "../Components/PropertyCard/PropertyReuseStru
 import OurStory from "../Components/AboutUs/OurStory";
 import OurClient from "../Components/AboutUs/OurClient";
 import OurTeam from "../Components/AboutUs/OurTeam";
+import MissionVision from "../Components/AboutUs/MissionVission";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -81,6 +81,10 @@ const router = createBrowserRouter([
       {
         path: "/aboutus/ourteam",
         element: <OurTeam></OurTeam>,
+      },
+      {
+        path: "/aboutus/missionVision",
+        element: <MissionVision></MissionVision>,
       },
     ],
   },

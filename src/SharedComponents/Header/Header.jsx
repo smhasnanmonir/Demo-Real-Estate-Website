@@ -43,7 +43,10 @@ const Header = () => {
                   >
                     Our Story
                   </Link>
-                  <Link className="navBarCustom hover:text-cyan-400">
+                  <Link
+                    to="/aboutus/missionVision"
+                    className="navBarCustom hover:text-cyan-400"
+                  >
                     Misson, Vision and <br /> Values
                   </Link>
                   <Link
