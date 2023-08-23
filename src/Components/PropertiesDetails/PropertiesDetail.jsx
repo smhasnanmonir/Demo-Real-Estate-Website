@@ -85,9 +85,11 @@ const PropertiesDetail = () => {
 
   const descriptionText = (
     <>
-      <div>
-        <h1 className="text-[18px] font-semibold">Project Overview</h1>
-        <h1 className="text-[17px] text-black ">
+      <div className="text-white space-y-3">
+        <h1 className="text-[24px] font-light font-FontNews">
+          Project Overview
+        </h1>
+        <h1 className="text-[18px] font-light text-[#e9ecef] font-FontNews">
           Green Living with urban lifestyle is no more a myth for tranquility
           mongers. The urban dwellers of Dhaka city are always dreaming for
           living accommodations accompanied by garden with plants, open spaces
@@ -195,9 +197,9 @@ const PropertiesDetail = () => {
       </div>
       {/* Overview and Spec */}
       <div className="grid lg:grid-cols-2 grid-cols-1 border-y-[3px] border-black bg-[#212529] lg:px-[45px] md:px-[35px] px-[55px] lg:py-[105px] py-[65px] gap-[50px] text-white">
-        <div className="space-y-3 lg:border-r-[2px] border-white lg:border-b-[0px] border-b-[2px] pb-[35px]">
+        <div className="space-y-5 w-11/12 font-FontNews lg:border-r-[2px] border-white lg:border-b-[0px] border-b-[2px] pb-[35px]">
           <h1 className="md:text-3xl text-2xl text-[#daa520]">Overview</h1>
-          <p>
+          <p className="w-3/4">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, odit
             sunt? Laborum quasi similique commodi nostrum aperiam eos at sequi
             inventore, fugiat consequatur sunt recusandae magni dolores amet.
@@ -212,143 +214,92 @@ const PropertiesDetail = () => {
             contentLabel="Example Modal"
           >
             <button
-              className="absolute md:left-[85%] btn md:btn-md btn-sm btn-neutral"
+              className="absolute lg:left-[85%] btn md:btn-md btn-sm btn-neutral"
               onClick={closeModal}
             >
               Close
             </button>
-            <form className="md:w-[700px] md:h-[500px] w-full h-[290px] grid place-items-center p-0 m-0 -z-10 relative">
+            <form className=" overflow-hidden mx-auto lg:py-[75px] md:py-[65px] py-[55px] grid place-items-center p-0 m-0 -z-10 text-white">
               <p>{descriptionText}</p>
             </form>
           </Modal>
-          <button
-            onClick={openModal}
-            className="px-[35px] py-[7px] text-white border-[2px] border-white hover:bg-black hover:text-white transition-all ease-in delay-100 duration-300"
-          >
+          <button className="px-[35px] py-[7px] text-white border-[2px] border-white hover:bg-black hover:text-white transition-all ease-in delay-100 duration-300">
             Read More
           </button>
         </div>
         <div className="space-y-3">
-          <Modal
-            className=""
-            isOpen={modalIsOpen1}
-            onAfterOpen={afterOpenModal}
-            onRequestClose={closeModal1}
-            style={customStyles}
-            contentLabel="Example Modal"
-          >
-            <button
-              className="absolute md:left-[85%] btn md:btn-md btn-sm btn-neutral"
-              onClick={closeModal1}
-            >
-              Close
+          <div className="font-FontNews space-y-5">
+            <h1 className="md:text-3xl text-2xl text-[#daa520]">
+              Specification
+            </h1>
+            <p className="pb-[10px]">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi
+              natus ut maxime facilis corrupti modi sunt illum cupiditate
+              dolorum in dolor laudantium iusto hic, vel maiores eos nostrum eum
+              qui? Iure officiis, recusandae ipsum quidem explicabo minus nulla?
+              Accusamus aspernatur consequatur labore nesciunt blanditiis natus
+              optio eaque, nostrum officia ex quos! Vel commodi laboriosam
+              praesentium provident natus, a excepturi modi. Sapiente rerum cum,
+              velit facere odio voluptatem atque nulla perferendis vel
+              excepturi, accusamus.
+            </p>
+            <button className="px-[35px] py-[7px] text-white border-[2px] border-white hover:bg-black hover:text-white transition-all ease-in delay-100 duration-300">
+              Read More
             </button>
-            <form className="lg:py-[45px]">
-              <p>
-                Welcome to{" "}
-                <span className="font-semibold">{dataPro[0]?.name}</span>, an
-                exceptional land development project brought to you by the
-                Universe Group. With meticulous planning, attention to detail,
-                and a commitment to creating vibrant communities, this project
-                embodies our dedication to excellence in real estate.
-              </p>
-              <p>{dataPro[0]?.locationText}</p>
-              <div>
-                <h1>Legal and Regulatory Compliance:</h1>
-                <p>
-                  All necessary permits and approvals have been obtained in
-                  compliance with local regulations.
-                </p>
-              </div>
-              <div>
-                <h1>Booking and Inquiries:</h1>
-                <p>
-                  For booking inquiries and more information, please contact us.
-                </p>
-              </div>
-              <div>
-                <h1>Experience a New Universe of Possibilities</h1>
-                <p>
-                  <span className="font-semibold">{dataPro[0]?.name}</span>{" "}
-                  invites you to be a part of its journey. Whether you're
-                  seeking a space to build your dream home, an investment
-                  opportunity, or a chance to contribute to a thriving
-                  community, this project promises a universe of possibilities.
-                  Join us in shaping the future of Urban Residency
-                </p>
-              </div>
-            </form>
-          </Modal>
-          <h1 className="md:text-3xl text-2xl text-[#daa520]">Specification</h1>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi
-            natus ut maxime facilis corrupti modi sunt illum cupiditate dolorum
-            in dolor laudantium iusto hic, vel maiores eos nostrum eum qui? Iure
-            officiis, recusandae ipsum quidem explicabo minus nulla? Accusamus
-            aspernatur consequatur labore nesciunt blanditiis natus optio eaque,
-            nostrum officia ex quos! Vel commodi laboriosam praesentium
-            provident natus, a excepturi modi. Sapiente rerum cum, velit facere
-            odio voluptatem atque nulla perferendis vel excepturi, accusamus.
-          </p>
-          <button
-            onClick={openModal1}
-            className="px-[35px] py-[7px] text-white border-[2px] border-white hover:bg-black hover:text-white transition-all ease-in delay-100 duration-300"
-          >
-            Read More
-          </button>
+          </div>
         </div>
       </div>
       {/* Feature of the city */}
       <div className="px-[25px]">
-        <h1 className="md:text-3xl text-2xl text-center  py-[20px] font-semibold">
-          Features of The City
+        <h1 className="md:text-3xl text-2xl text-center font-FontNews  py-[20px] font-semibold">
+          Features of The Project
         </h1>
         <div className="grid lg:grid-cols-6 md:grid-cols-4 grid-cols-2 gap-x-4 lg:px-[25px]">
-          <div className="text-center">
+          <div className="text-center hover:scale-110 hover:cursor-pointer transition-all duration-300 ease-in">
             <img src={school} alt="" />
             <p className="py-2">School</p>
           </div>
-          <div className="text-center">
+          <div className="text-center hover:scale-110 hover:cursor-pointer transition-all duration-300 ease-in">
             <img src={college} alt="" />
             <p className="pt-1">College</p>
           </div>
-          <div className="text-center">
+          <div className="text-center hover:scale-110 hover:cursor-pointer transition-all duration-300 ease-in">
             <img src={university} alt="" />
             <p className="pt-1">University</p>
           </div>
-          <div className="text-center">
+          <div className="text-center hover:scale-110 hover:cursor-pointer transition-all duration-300 ease-in">
             <img src={hospital} alt="" />
             <p className="pt-1">Hospital</p>
           </div>
-          <div className="text-center">
+          <div className="text-center hover:scale-110 hover:cursor-pointer transition-all duration-300 ease-in">
             <img src={mall} alt="" />
             <p className="pt-1">Shopping Mall</p>
           </div>
-          <div className="text-center">
+          <div className="text-center hover:scale-110 hover:cursor-pointer transition-all duration-300 ease-in">
             <img src={mosque} alt="" />
             <p className="pt-1">Mosque</p>
           </div>
-          <div className="text-center">
+          <div className="text-center hover:scale-110 hover:cursor-pointer transition-all duration-300 ease-in">
             <img src={helipad} alt="" />
             <p className="pt-1">Helipad</p>
           </div>
-          <div className="text-center">
+          <div className="text-center hover:scale-110 hover:cursor-pointer transition-all duration-300 ease-in">
             <img src={gym} alt="" />
             <p className="pt-1">Gym</p>
           </div>
-          <div className="text-center">
+          <div className="text-center hover:scale-110 hover:cursor-pointer transition-all duration-300 ease-in">
             <img src={food} alt="" />
             <p className="pt-1">Food Court</p>
           </div>
-          <div className="text-center">
+          <div className="text-center hover:scale-110 hover:cursor-pointer transition-all duration-300 ease-in">
             <img src={convention} alt="" />
             <p className="pt-1">Convention Center</p>
           </div>
-          <div className="text-center">
+          <div className="text-center hover:scale-110 hover:cursor-pointer transition-all duration-300 ease-in">
             <img src={park} alt="" />
             <p className="pt-1">Park</p>
           </div>
-          <div className="text-center">
+          <div className="text-center hover:scale-110 hover:cursor-pointer transition-all duration-300 ease-in">
             <img src={field} alt="" />
             <p className="pt-1">Field</p>
           </div>
@@ -363,7 +314,7 @@ const PropertiesDetail = () => {
             src={brochure}
             alt=""
           />
-          <div className="absolute lg:top-[25%] top-[8%] py-[35px] px-[45px] space-y-[20px] ">
+          <div className="absolute top-0 lg:py-[125px] md:py-[95px] py-[65px] px-[45px] space-y-[20px] ">
             <h1 className="text-[#daa520] md:text-3xl text-xl">Plot Booking</h1>
             <p className="text-white text-xl">Regulation</p>
             <p className="text-white text-xl">
@@ -373,9 +324,71 @@ const PropertiesDetail = () => {
               and transparent process, we have established the following plot
               booking regulations.
             </p>
-            <button className="px-[35px] py-[7px] text-white border-[2px] border-white hover:bg-black hover:text-white transition-all ease-in delay-100 duration-300">
+            <button
+              onClick={openModal1}
+              className="px-[35px] py-[7px] text-white border-[2px] border-white hover:bg-black hover:text-white transition-all ease-in delay-100 duration-300"
+            >
               Read More
             </button>
+            <Modal
+              className=""
+              isOpen={modalIsOpen1}
+              onAfterOpen={afterOpenModal}
+              onRequestClose={closeModal1}
+              style={customStyles}
+              contentLabel="Example Modal"
+            >
+              <button
+                className="absolute md:left-[85%] btn md:btn-md btn-sm btn-neutral"
+                onClick={closeModal1}
+              >
+                Close
+              </button>
+              <form className="max-h-[90vh] mx-auto lg:py-[55px] md:py-[45px] py-[35px] p-0 m-0 -z-10 text-white font-FontNews">
+                <p className="text-[16px] pb-[15px]">
+                  Welcome to{" "}
+                  <span className="font-semibold">{dataPro[0]?.name}</span>, an
+                  exceptional land development project brought to you by the
+                  Universe Group. With meticulous planning, attention to detail,
+                  and a commitment to creating vibrant communities, this project
+                  embodies our dedication to excellence in real estate.
+                </p>
+                <p className="text-[16px] pb-[15px]">
+                  {dataPro[0]?.locationText}
+                </p>
+                <div className="pb-[15px]">
+                  <h1 className="text-xl font-semibold">
+                    Legal and Regulatory Compliance
+                  </h1>
+                  <p className="text-[16px]">
+                    All necessary permits and approvals have been obtained in
+                    compliance with local regulations.
+                  </p>
+                </div>
+                <div className="pb-[15px]">
+                  <h1 className="text-xl font-semibold">
+                    Booking and Inquiries
+                  </h1>
+                  <p className="text-[16px]">
+                    For booking inquiries and more information, please contact
+                    us.
+                  </p>
+                </div>
+                <div className="">
+                  <h1 className="text-xl font-semibold">
+                    Experience a New Universe of Possibilities
+                  </h1>
+                  <p className="text-[16px]">
+                    <span className="">{dataPro[0]?.name}</span> invites you to
+                    be a part of its journey. Whether you're seeking a space to
+                    build your dream home, an investment opportunity, or a
+                    chance to contribute to a thriving community, this project
+                    promises a universe of possibilities. Join us in shaping the
+                    future of Urban Residency
+                  </p>
+                </div>
+              </form>
+            </Modal>
           </div>
         </div>
         <div className="relative">
@@ -384,7 +397,7 @@ const PropertiesDetail = () => {
             src={book}
             alt=""
           />
-          <div className="absolute top-1/2 lg:left-[35%] md:left-[30%] left-[25%]">
+          <div className="absolute top-0 lg:p-[230px] md:py-[195px] md:px-[295px] px-[125px] py-[195px]">
             <a
               className="px-[35px] py-[10px] text-white border-[2px] border-white hover:bg-black hover:text-white transition-all ease-in delay-100 duration-300"
               href={dataPro[0]?.brochure}
@@ -400,6 +413,9 @@ const PropertiesDetail = () => {
       {/* Video Section */}
 
       <>
+        <h1 className="text-center font-FontNews font-semibold md:text-3xl lg:py-[35px] py-[25px]">
+          Video Section
+        </h1>
         <iframe
           className="w-full h-[550px]"
           src="https://www.youtube.com/embed/y9j-BL5ocW8"
@@ -411,6 +427,9 @@ const PropertiesDetail = () => {
 
       {/* Location */}
       <>
+        <h1 className="text-center font-FontNews font-semibold md:text-3xl lg:py-[35px] py-[25px]">
+          Project Location
+        </h1>
         <iframe
           className="w-full h-[450px] md:order-2 md:mb-0 mb-[25px]"
           src={dataPro[0]?.iframe}

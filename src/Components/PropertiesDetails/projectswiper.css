@@ -29,3 +29,25 @@
 .swiper {
   z-index: 0;
 }
+.ReactModal__Content,
+.ReactModal__Content--after-open {
+  background: #343a40 !important;
+  border: none !important;
+  color: white !important;
+  width: 75%;
+  transform: translate(-50%, -45%) !important;
+}
+
+.ReactModal__Overlay {
+  opacity: 0;
+  transition: opacity 300ms ease-in-out;
+}
+
+.ReactModal__Overlay--after-open {
+  opacity: 1;
+}
+
+.ReactModal__Overlay--before-close {
+  opacity: 0.5;
+  transition: opacity 300ms ease-in-out;
+}
