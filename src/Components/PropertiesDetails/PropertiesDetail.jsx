@@ -60,12 +60,16 @@ const PropertiesDetail = () => {
   let subtitle;
   const [modalIsOpen, setIsOpen] = useState(false);
   const [modalIsOpen1, setIsOpen1] = useState(false);
+  const [modalIsOpen2, setIsOpen2] = useState(false);
 
   function openModal() {
     setIsOpen(true);
   }
   function openModal1() {
     setIsOpen1(true);
+  }
+  function openModal2() {
+    setIsOpen2(true);
   }
 
   function afterOpenModal() {
@@ -78,6 +82,9 @@ const PropertiesDetail = () => {
   }
   function closeModal1() {
     setIsOpen1(false);
+  }
+  function closeModal2() {
+    setIsOpen2(false);
   }
   const { id } = useParams();
   const [datas] = UseData();
@@ -229,6 +236,62 @@ const PropertiesDetail = () => {
           >
             Read More
           </button>
+          <Modal
+            className=""
+            isOpen={modalIsOpen1}
+            onAfterOpen={afterOpenModal}
+            onRequestClose={closeModal1}
+            style={customStyles}
+            contentLabel="Example Modal"
+          >
+            <button
+              className="absolute md:left-[85%] btn md:btn-md btn-sm btn-neutral"
+              onClick={closeModal1}
+            >
+              Close
+            </button>
+            <form className="max-h-[90vh] mx-auto lg:py-[55px] md:py-[45px] py-[35px] p-0 m-0 -z-10 text-white font-FontNews">
+              <p className="text-[16px] pb-[15px]">
+                Welcome to{" "}
+                <span className="font-semibold">{dataPro[0]?.name}</span>, an
+                exceptional land development project brought to you by the
+                Universe Group. With meticulous planning, attention to detail,
+                and a commitment to creating vibrant communities, this project
+                embodies our dedication to excellence in real estate.
+              </p>
+              <p className="text-[16px] pb-[15px]">
+                {dataPro[0]?.locationText}
+              </p>
+              <div className="pb-[15px]">
+                <h1 className="text-xl font-semibold">
+                  Legal and Regulatory Compliance
+                </h1>
+                <p className="text-[16px]">
+                  All necessary permits and approvals have been obtained in
+                  compliance with local regulations.
+                </p>
+              </div>
+              <div className="pb-[15px]">
+                <h1 className="text-xl font-semibold">Booking and Inquiries</h1>
+                <p className="text-[16px]">
+                  For booking inquiries and more information, please contact us.
+                </p>
+              </div>
+              <div className="">
+                <h1 className="text-xl font-semibold">
+                  Experience a New Universe of Possibilities
+                </h1>
+                <p className="text-[16px]">
+                  <span className="">{dataPro[0]?.name}</span> invites you to be
+                  a part of its journey. Whether you're seeking a space to build
+                  your dream home, an investment opportunity, or a chance to
+                  contribute to a thriving community, this project promises a
+                  universe of possibilities. Join us in shaping the future of
+                  Urban Residency
+                </p>
+              </div>
+            </form>
+          </Modal>
         </div>
         <div className="space-y-3">
           <div className="font-FontNews space-y-5">
@@ -246,7 +309,10 @@ const PropertiesDetail = () => {
               velit facere odio voluptatem atque nulla perferendis vel
               excepturi, accusamus.
             </p>
-            <button className="px-[35px] py-[7px] text-white border-[2px] border-white hover:bg-black hover:text-white transition-all ease-in delay-100 duration-300">
+            <button
+              onClick={openModal1}
+              className="px-[35px] py-[7px] text-white border-[2px] border-white hover:bg-black hover:text-white transition-all ease-in delay-100 duration-300"
+            >
               Read More
             </button>
           </div>
@@ -328,71 +394,140 @@ const PropertiesDetail = () => {
               booking regulations.
             </p>
             <button
-              onClick={openModal1}
+              onClick={openModal2}
               className="px-[35px] py-[7px] text-white border-[2px] border-white hover:bg-black hover:text-white transition-all ease-in delay-100 duration-300"
             >
               Read More
             </button>
-            <Modal
-              className=""
-              isOpen={modalIsOpen1}
-              onAfterOpen={afterOpenModal}
-              onRequestClose={closeModal1}
-              style={customStyles}
-              contentLabel="Example Modal"
-            >
-              <button
-                className="absolute md:left-[85%] btn md:btn-md btn-sm btn-neutral"
-                onClick={closeModal1}
-              >
-                Close
-              </button>
-              <form className="max-h-[90vh] mx-auto lg:py-[55px] md:py-[45px] py-[35px] p-0 m-0 -z-10 text-white font-FontNews">
-                <p className="text-[16px] pb-[15px]">
-                  Welcome to{" "}
-                  <span className="font-semibold">{dataPro[0]?.name}</span>, an
-                  exceptional land development project brought to you by the
-                  Universe Group. With meticulous planning, attention to detail,
-                  and a commitment to creating vibrant communities, this project
-                  embodies our dedication to excellence in real estate.
-                </p>
-                <p className="text-[16px] pb-[15px]">
-                  {dataPro[0]?.locationText}
-                </p>
-                <div className="pb-[15px]">
-                  <h1 className="text-xl font-semibold">
-                    Legal and Regulatory Compliance
-                  </h1>
-                  <p className="text-[16px]">
-                    All necessary permits and approvals have been obtained in
-                    compliance with local regulations.
-                  </p>
-                </div>
-                <div className="pb-[15px]">
-                  <h1 className="text-xl font-semibold">
-                    Booking and Inquiries
-                  </h1>
-                  <p className="text-[16px]">
-                    For booking inquiries and more information, please contact
-                    us.
-                  </p>
-                </div>
-                <div className="">
-                  <h1 className="text-xl font-semibold">
-                    Experience a New Universe of Possibilities
-                  </h1>
-                  <p className="text-[16px]">
-                    <span className="">{dataPro[0]?.name}</span> invites you to
-                    be a part of its journey. Whether you're seeking a space to
-                    build your dream home, an investment opportunity, or a
-                    chance to contribute to a thriving community, this project
-                    promises a universe of possibilities. Join us in shaping the
-                    future of Urban Residency
-                  </p>
-                </div>
-              </form>
-            </Modal>
           </div>
+          <Modal
+            className=""
+            isOpen={modalIsOpen2}
+            onAfterOpen={afterOpenModal}
+            onRequestClose={closeModal2}
+            style={customStyles}
+            contentLabel="Example Modal"
+          >
+            <button
+              className="absolute lg:left-[85%] btn md:btn-md btn-sm btn-neutral"
+              onClick={closeModal2}
+            >
+              Close
+            </button>
+            <form className="lg:max-h-[70vh] max-h-[85vh] max-w-[80vw] mx-auto lg:py-[55px] md:py-[45px] py-[35px] p-0 m-0 -z-10 text-white font-FontNews">
+              <div className="space-y-[13px] pb-[13px]">
+                <h1>
+                  Welcome to Mayakunjo Model Town! We are excited to have you as
+                  a potential plot buyer. To ensure a smooth and transparent
+                  process, we have established the following plot booking
+                  regulations
+                </h1>
+                <div className="space-y-[5px]">
+                  <h1 className="text-xl font-semibold">1. Booking Process:</h1>
+                  <p>
+                    Prospective buyers are required to fill out a booking form
+                    provided by the Universe Group. A booking fee of 1,00,000 is
+                    required to secure a plot. This fee is non-refundable and
+                    will be deducted from the total plot cost upon purchase.
+                  </p>
+                </div>
+                <div className="space-y-[5px]">
+                  <h1 className="text-xl font-semibold">2. Plot Selection:</h1>
+                  <p>
+                    Plots will be allocated on a first-come, first-served basis.
+                    Buyers will have the opportunity to choose their preferred
+                    plot location based on availability at the time of booking.
+                  </p>
+                </div>
+                <div className="space-y-[5px]">
+                  <h1 className="text-xl font-semibold">3. Documentation:</h1>
+                  <p>
+                    Buyers must provide valid identification and complete all
+                    necessary documentation required by local regulations. A
+                    signed copy of the booking form and terms and conditions is
+                    mandatory.
+                  </p>
+                </div>
+                <div className="space-y-[5px]">
+                  <h1 className="text-xl font-semibold">
+                    4. Payment Schedule:
+                  </h1>
+                  <p>
+                    The booking fee is payable at the time of booking. A
+                    percentage of the total plot cost (as outlined in the
+                    payment schedule) must be paid within 30 days of the booking
+                    date to secure the plot. Failure to do so may result in the
+                    plot being released for resale.
+                  </p>
+                </div>
+                <div className="space-y-[5px]">
+                  <h1 className="text-xl font-semibold">5. Payment Methods:</h1>
+                  <p>
+                    Payments can be made through accepted modes as specified by
+                    the Universe Group. Cash, cheques or bank transfers are
+                    preferred.
+                  </p>
+                </div>
+                <div className="space-y-[5px]">
+                  <h1 className="text-xl font-semibold">
+                    6. Transfer of Ownership:
+                  </h1>
+                  <p>
+                    The plot's ownership transfer will take place upon the full
+                    payment of the plot cost. The Universe Group will facilitate
+                    the legal transfer process and provide all necessary
+                    documentation.
+                  </p>
+                </div>
+                <div className="space-y-[5px]">
+                  <h1 className="text-xl font-semibold">7. Resale of Plots:</h1>
+                  <p>
+                    Buyers interested in reselling their plots before full
+                    payment must inform the Universe Group in writing. A resale
+                    fee may apply. The Universe Group reserves the right to
+                    approve or disapprove plot resale.
+                  </p>
+                </div>
+                <div className="space-y-[5px]">
+                  <h1 className="text-xl font-semibold">8. Refund Policy:</h1>
+                  <p>The booking fee is non-refundable.</p>
+                  <p>
+                    In case of cancellation after the initial payment, refund
+                    policies will be as per local regulations and the terms
+                    outlined in the booking form.
+                  </p>
+                </div>
+                <div className="space-y-[5px]">
+                  <h1 className="text-xl font-semibold">9. Timeline:</h1>
+                  <p>
+                    Buyers are expected to adhere to the payment schedule and
+                    timeline specified in the booking form.
+                  </p>
+                  <p>
+                    Delays in payment beyond the stipulated period may result in
+                    the cancellation of the booking.
+                  </p>
+                </div>
+                <div className="space-y-[5px]">
+                  <h1 className="text-xl font-semibold">10. Disclaimer:</h1>
+                  <p>
+                    The Universe Group reserves the right to amend these
+                    regulations, terms, and conditions as necessary. All changes
+                    will be communicated to buyers in writing.
+                  </p>
+                </div>
+                <div className="space-y-[5px]">
+                  <h1 className="text-xl font-semibold">Contact Us:</h1>
+                  <p>
+                    If you have any questions or concerns regarding the plot
+                    booking regulations or the booking process, please don't
+                    hesitate to reach out to our customer service team or
+                    Hotline.
+                  </p>
+                </div>
+              </div>
+            </form>
+          </Modal>
         </div>
         <div className="relative">
           <img
