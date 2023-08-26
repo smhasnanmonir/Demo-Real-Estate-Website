@@ -93,10 +93,8 @@ const PropertiesDetail = () => {
   const descriptionText = (
     <>
       <div className="text-white space-y-3">
-        <h1 className="text-[24px] font-light font-FontNews">
-          Project Overview
-        </h1>
-        <h1 className="text-[18px] font-light text-[#e9ecef] font-FontNews">
+        <h1 className="text-[24px] font-light">Project Overview</h1>
+        <h1 className="text-[18px] font-light text-[#e9ecef]">
           Green Living with urban lifestyle is no more a myth for tranquility
           mongers. The urban dwellers of Dhaka city are always dreaming for
           living accommodations accompanied by garden with plants, open spaces
@@ -204,13 +202,14 @@ const PropertiesDetail = () => {
       </div>
       {/* Overview and Spec */}
       <div className="grid lg:grid-cols-2 grid-cols-1 border-y-[3px] border-black bg-[#212529] lg:px-[45px] md:px-[35px] px-[55px] lg:py-[105px] py-[65px] gap-[50px] text-white">
-        <div className="space-y-5 w-11/12 font-FontNews lg:border-r-[2px] border-white lg:border-b-[0px] border-b-[2px] pb-[35px]">
+        <div className="space-y-5 w-11/12  lg:border-r-[2px] border-white lg:border-b-[0px] border-b-[2px] pb-[35px]">
           <h1 className="md:text-3xl text-2xl text-[#daa520]">Overview</h1>
-          <p className="w-3/4">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, odit
-            sunt? Laborum quasi similique commodi nostrum aperiam eos at sequi
-            inventore, fugiat consequatur sunt recusandae magni dolores amet.
-            Nostrum, quo!
+          <p className="w-3/4 text-xl">
+            Green Living with urban lifestyle is no more a myth for tranquility
+            mongers. The urban dwellers of Dhaka city are always dreaming of
+            living accommodations accompanied by gardens with plants, open
+            spaces for wandering, trees for oxygen and lakes for boating &
+            fishing..............
           </p>
           <Modal
             className=""
@@ -226,7 +225,7 @@ const PropertiesDetail = () => {
             >
               Close
             </button>
-            <form className=" max-h-[90vh] mx-auto lg:py-[75px] md:py-[65px] py-[55px] grid place-items-center p-0 m-0 -z-10 text-white">
+            <form className=" w-full max-h-[70vh] mx-auto lg:py-[75px] md:py-[65px] py-[55px] grid place-items-center p-0 m-0 -z-10 text-white">
               <p>{descriptionText}</p>
             </form>
           </Modal>
@@ -250,7 +249,7 @@ const PropertiesDetail = () => {
             >
               Close
             </button>
-            <form className="max-h-[90vh] mx-auto lg:py-[55px] md:py-[45px] py-[35px] p-0 m-0 -z-10 text-white font-FontNews">
+            <form className="w-full max-h-[70vh] mx-auto lg:py-[55px] md:py-[45px] py-[35px] p-0 m-0 -z-10 text-white ">
               <p className="text-[16px] pb-[15px]">
                 Welcome to{" "}
                 <span className="font-semibold">{dataPro[0]?.name}</span>, an
@@ -294,21 +293,25 @@ const PropertiesDetail = () => {
           </Modal>
         </div>
         <div className="space-y-3">
-          <div className="font-FontNews space-y-5">
+          <div className=" space-y-5">
             <h1 className="md:text-3xl text-2xl text-[#daa520]">
               Specification
             </h1>
-            <p className="pb-[10px]">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi
-              natus ut maxime facilis corrupti modi sunt illum cupiditate
-              dolorum in dolor laudantium iusto hic, vel maiores eos nostrum eum
-              qui? Iure officiis, recusandae ipsum quidem explicabo minus nulla?
-              Accusamus aspernatur consequatur labore nesciunt blanditiis natus
-              optio eaque, nostrum officia ex quos! Vel commodi laboriosam
-              praesentium provident natus, a excepturi modi. Sapiente rerum cum,
-              velit facere odio voluptatem atque nulla perferendis vel
-              excepturi, accusamus.
-            </p>
+            <ul className="pb-[10px]">
+              <li className="text-xl">
+                <span className="innerText">{dataPro[0]?.situated}</span>
+              </li>
+              <li className="text-xl">
+                <span className="innerText">
+                  Legal and Regulatory Compliance
+                </span>
+              </li>
+              <li className="text-xl">
+                <span className="innerText">
+                  Experience a New Universe of Possibilities
+                </span>
+              </li>
+            </ul>
             <button
               onClick={openModal1}
               className="px-[35px] py-[7px] text-white border-[2px] border-white hover:bg-black hover:text-white transition-all ease-in delay-100 duration-300"
@@ -320,7 +323,7 @@ const PropertiesDetail = () => {
       </div>
       {/* Feature of the city */}
       <div className="px-[25px]">
-        <h1 className="md:text-3xl text-2xl text-center font-FontNews  py-[20px] font-semibold">
+        <h1 className="md:text-3xl text-2xl text-center   py-[20px] font-semibold">
           Features of The Project
         </h1>
         <div className="grid lg:grid-cols-6 md:grid-cols-4 grid-cols-2 gap-x-4 lg:px-[25px]">
@@ -376,14 +379,14 @@ const PropertiesDetail = () => {
       </div>
 
       {/* Brochure */}
-      <div className="grid lg:grid-cols-2 grid-cols-1 border-t-[3px] border-black mt-[25px] ">
+      <div className="grid lg:grid-cols-2 grid-cols-1 border-t-[3px] border-black mt-[25px] w-full h-full">
         <div className="relative">
           <img
-            className="brightness-50 w-full lg:h-full h-[450px] object-cover"
+            className="brightness-50 w-full md:h-[550px] h-[450px] object-cover"
             src={brochure}
             alt=""
           />
-          <div className="absolute top-0 lg:py-[125px] md:py-[95px] py-[65px] px-[45px] space-y-[20px] ">
+          <div className="absolute top-1/2 left-[40%] transform -translate-x-1/2 -translate-y-1/2 space-y-[20px] ">
             <h1 className="text-[#daa520] md:text-3xl text-xl">Plot Booking</h1>
             <p className="text-white text-xl">Regulation</p>
             <p className="text-white text-xl">
@@ -409,12 +412,25 @@ const PropertiesDetail = () => {
             contentLabel="Example Modal"
           >
             <button
-              className="absolute lg:left-[85%] btn md:btn-md btn-sm btn-neutral"
               onClick={closeModal2}
+              className="btn btn-circle btn-outline lg:btn-md btn-sm absolute md:left-[94%] lg:left-[95%] left-[85%] top-2 text-white"
             >
-              Close
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M6 18L18 6M6 6l12 12"
+                />
+              </svg>
             </button>
-            <form className="lg:max-h-[70vh] max-h-[85vh] max-w-[80vw] mx-auto lg:py-[55px] md:py-[45px] py-[35px] p-0 m-0 -z-10 text-white font-FontNews">
+            <form className="w-full max-h-[70vh] max-w-[80vw] mx-auto lg:py-[55px] md:py-[45px] py-[35px] p-0 m-0 -z-10 text-white ">
               <div className="space-y-[13px] pb-[13px]">
                 <h1>
                   Welcome to Mayakunjo Model Town! We are excited to have you as
@@ -535,9 +551,9 @@ const PropertiesDetail = () => {
             src={book}
             alt=""
           />
-          <div className="absolute top-0 lg:p-[230px] md:py-[195px] md:px-[295px] px-[125px] py-[195px]">
+          <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
             <a
-              className="px-[35px] py-[10px] text-white border-[2px] border-white hover:bg-black hover:text-white transition-all ease-in delay-100 duration-300"
+              className="px-[75px] py-[10px] text-white border-[2px] border-white hover:bg-black hover:text-white transition-all ease-in delay-100 duration-300"
               href={dataPro[0]?.brochure}
               target="blank"
             >
@@ -551,7 +567,7 @@ const PropertiesDetail = () => {
       {/* Video Section */}
 
       <>
-        <h1 className="text-center font-FontNews font-semibold md:text-3xl text-2xl lg:py-[35px] py-[25px]">
+        <h1 className="text-center  font-semibold md:text-3xl text-2xl lg:py-[35px] py-[25px]">
           Video Section
         </h1>
         <iframe
@@ -565,7 +581,7 @@ const PropertiesDetail = () => {
 
       {/* Location */}
       <>
-        <h1 className="text-center font-FontNews font-semibold md:text-3xl text-2xl lg:py-[35px] py-[25px]">
+        <h1 className="text-center  font-semibold md:text-3xl text-2xl lg:py-[35px] py-[25px]">
           Project Location
         </h1>
         <iframe
