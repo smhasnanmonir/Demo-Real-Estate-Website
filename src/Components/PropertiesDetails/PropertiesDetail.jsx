@@ -18,6 +18,17 @@ import field from "../../../src/assets/details/field.jpg";
 import brochure from "../../../src/assets/brochure/brochure-left.jpg";
 import book from "../../../src/assets/brochure/book-brochure.jpg";
 
+import addressIcon from "../../../src/assets/ProDetIcon/maps-and-flags.png";
+import plotIcon from "../../../src/assets/ProDetIcon/plot.png";
+import apartmentIcon from "../../../src/assets/ProDetIcon/apartment.png";
+import calenderIcon from "../../../src/assets/ProDetIcon/calendar.png";
+import buildingIcon from "../../../src/assets/ProDetIcon/building.png";
+import bathroomIcon from "../../../src/assets/ProDetIcon/bathroom.png";
+import bedroomIcon from "../../../src/assets/ProDetIcon/sleep.png";
+import collectionIcon from "../../../src/assets/ProDetIcon/collection.png";
+import planIcon from "../../../src/assets/ProDetIcon/plan.png";
+import roomIcon from "../../../src/assets/ProDetIcon/living-room.png";
+
 import {
   Navigation,
   Pagination,
@@ -183,12 +194,12 @@ const PropertiesDetail = () => {
             </p>
           </div>
           <div className="text-center">
-            <h1>Plot Size</h1>
-            <p>3,5 & 10 Katha</p>
+            <h1>Apartment Size</h1>
+            <p>{dataPro[0]?.apartmentSize}</p>
           </div>
           <div className="text-center">
             <h1>Completion Date</h1>
-            <p>To be announced</p>
+            <p>{dataPro[0]?.CompletionDate}</p>
           </div>
           <div className="text-center">
             <h1>Status</h1>
@@ -200,11 +211,123 @@ const PropertiesDetail = () => {
           </div>
         </div>
       </div>
+      <div className="bg-white grid md:grid-cols-2 grid-cols-1 md:px-[150px] px-[25px] py-[50px] gap-[35px]">
+        <div>
+          <img
+            className="object-cover w-full h-full"
+            src={dataPro[0]?.img}
+            alt=""
+          />
+        </div>
+        <table className="border-collapse border border-slate-400">
+          <tbody className="">
+            <tr className="">
+              <td className="border border-slate-300  p-3">
+                <div className="flex items-center  gap-2">
+                  <img src={addressIcon} alt="" />
+                  <p>Address</p>
+                </div>
+              </td>
+              <td className="border border-slate-300 text-right p-3">
+                {dataPro[0]?.address}
+              </td>
+            </tr>
+            <tr>
+              <td className="border border-slate-300  p-3">
+                <div className="flex items-center  gap-2">
+                  <img src={plotIcon} alt="" />
+                  <p>Land Area</p>
+                </div>
+              </td>
+              <td className="border border-slate-300 text-right p-3">
+                {dataPro[0]?.landArea}
+              </td>
+            </tr>
+            <tr>
+              <td className="border border-slate-300 p-3">
+                <div className="flex items-center  gap-2">
+                  <img src={buildingIcon} alt="" />
+                  <p> No. of floors</p>
+                </div>
+              </td>
+              <td className="border border-slate-300 text-right p-3">
+                {dataPro[0]?.floors}
+              </td>
+            </tr>
+            <tr>
+              <td className="border border-slate-300 p-3">
+                <div className="flex items-center  gap-2">
+                  <img src={apartmentIcon} alt="" />
+                  <p> Apartment/Floor</p>
+                </div>
+              </td>
+              <td className="border border-slate-300 text-right p-3">
+                {dataPro[0]?.apartments}
+              </td>
+            </tr>
+            <tr>
+              <td className="border border-slate-300 p-3">
+                <div className="flex items-center  gap-2">
+                  <img src={roomIcon} alt="" />
+                  <p> Apartment Size</p>
+                </div>
+              </td>
+              <td className="border border-slate-300 text-right p-3">
+                {dataPro[0]?.apartmentSize}
+              </td>
+            </tr>
+            <tr>
+              <td className="border border-slate-300 p-3">
+                <div className="flex items-center  gap-2">
+                  <img src={bedroomIcon} alt="" />
+                  <p> Bedrooms</p>
+                </div>
+              </td>
+              <td className="border border-slate-300 text-right p-3">
+                {dataPro[0]?.bedroom}
+              </td>
+            </tr>
+            <tr>
+              <td className="border border-slate-300 p-3">
+                <div className="flex items-center  gap-2">
+                  <img src={bathroomIcon} alt="" />
+                  <p> Bathrooms</p>
+                </div>
+              </td>
+              <td className="border border-slate-300 text-right p-3">
+                {dataPro[0]?.bathroom}
+              </td>
+            </tr>
+            <tr>
+              <td className="border border-slate-300 p-3">
+                <div className="flex items-center  gap-2">
+                  <img src={calenderIcon} alt="" />
+                  <p> Lunch Date</p>
+                </div>
+              </td>
+              <td className="border border-slate-300 text-right p-3">
+                {dataPro[0]?.CompletionDate}
+              </td>
+            </tr>
+            <tr>
+              <td className="border border-slate-300 p-3">
+                <div className="flex items-center  gap-2">
+                  <img src={collectionIcon} alt="" />
+                  <p> Collections</p>
+                </div>
+              </td>
+              <td className="border border-slate-300 text-right p-3">
+                {dataPro[0]?.collection}
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
       {/* Overview and Spec */}
       <div className="grid lg:grid-cols-2 grid-cols-1 border-y-[3px] border-black bg-[#212529] lg:px-[45px] md:px-[35px] px-[55px] lg:py-[105px] py-[65px] gap-[50px] text-white">
         <div className="space-y-5 w-11/12  lg:border-r-[2px] border-white lg:border-b-[0px] border-b-[2px] pb-[35px]">
           <h1 className="md:text-3xl text-2xl text-[#daa520]">Overview</h1>
-          <p className="w-3/4 text-xl">
+          <p className="w-3/4 text-xl font-thin">
             Green Living with urban lifestyle is no more a myth for tranquility
             mongers. The urban dwellers of Dhaka city are always dreaming of
             living accommodations accompanied by gardens with plants, open
@@ -220,13 +343,26 @@ const PropertiesDetail = () => {
             contentLabel="Example Modal"
           >
             <button
-              className="absolute lg:left-[85%] btn md:btn-md btn-sm btn-neutral"
+              className="btn btn-circle btn-outline lg:btn-md btn-sm absolute md:left-[94%] lg:left-[95%] left-[85%] top-2 text-white"
               onClick={closeModal}
             >
-              Close
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M6 18L18 6M6 6l12 12"
+                />
+              </svg>
             </button>
             <form className=" w-full max-h-[70vh] mx-auto lg:py-[75px] md:py-[65px] py-[55px] grid place-items-center p-0 m-0 -z-10 text-white">
-              <p>{descriptionText}</p>
+              <p className="">{descriptionText}</p>
             </form>
           </Modal>
           <button
@@ -244,13 +380,26 @@ const PropertiesDetail = () => {
             contentLabel="Example Modal"
           >
             <button
-              className="absolute md:left-[85%] btn md:btn-md btn-sm btn-neutral"
+              className="btn btn-circle btn-outline lg:btn-md btn-sm absolute md:left-[94%] lg:left-[95%] left-[85%] top-2 text-white"
               onClick={closeModal1}
             >
-              Close
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M6 18L18 6M6 6l12 12"
+                />
+              </svg>
             </button>
             <form className="w-full max-h-[70vh] mx-auto lg:py-[55px] md:py-[45px] py-[35px] p-0 m-0 -z-10 text-white ">
-              <p className="text-[16px] pb-[15px]">
+              <p className="text-[18px] pb-[15px]">
                 Welcome to{" "}
                 <span className="font-semibold">{dataPro[0]?.name}</span>, an
                 exceptional land development project brought to you by the

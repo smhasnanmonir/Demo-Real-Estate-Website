@@ -9,7 +9,7 @@ const Footer = () => {
   const [datas] = UseData();
   return (
     <div className="text-white font-FontRubic">
-      <footer className="footer grid md:grid-cols-4 grid-cols-1 gap-5 md:py-[150px] py-[50px] md:px-[50px]  px-[35px] bg-[#28282B] text-white md:place-content-start">
+      <footer className="footer grid lg:grid-cols-4 grid-cols-1 gap-5 lg:py-[150px] md:py-[90px] py-[50px] lg:px-[50px] md:px-[40px]  px-[35px] bg-[#28282B] text-white md:place-content-start">
         <>
           <img className="md:w-3/4 w-[175px]" src={logo} alt="Logo" />
         </>
