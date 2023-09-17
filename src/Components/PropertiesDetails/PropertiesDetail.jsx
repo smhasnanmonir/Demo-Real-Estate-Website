@@ -324,6 +324,7 @@ const PropertiesDetail = () => {
         </table>
       </div>
       {/* Overview and Spec */}
+      {/* Overview and Spec */}
       <div className="grid lg:grid-cols-2 grid-cols-1 border-y-[3px] border-black bg-[#212529] lg:px-[45px] md:px-[35px] px-[55px] lg:py-[105px] py-[65px] gap-[50px] text-white">
         <div className="space-y-5 w-11/12  lg:border-r-[2px] border-white lg:border-b-[0px] border-b-[2px] pb-[35px]">
           <h1 className="md:text-3xl text-2xl text-[#daa520]">Overview</h1>
