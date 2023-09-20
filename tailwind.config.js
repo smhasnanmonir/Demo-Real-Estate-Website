@@ -5,7 +5,8 @@ export default {
     extend: {},
     fontFamily: {
       FontRubic: ["Rubik", "sans-serif"],
-      FontNews: ["Newsreader", "serif"],
+      FontNews: ["Newsreader", "sans-serif"],
+      FontCroissant: ["Croissant One", "sans-serif"],
     },
   },
   daisyui: {
