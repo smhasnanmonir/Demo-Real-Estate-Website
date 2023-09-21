@@ -12,7 +12,6 @@ const PropertiesLocation = () => {
   const filterSelectedValue = datas.filter(
     (data) => data?.location == selectedValue
   );
-  console.log(filterSelectedValue);
   const uppercase =
     selectedValue.charAt(0).toUpperCase() + selectedValue.slice(1);
   return (

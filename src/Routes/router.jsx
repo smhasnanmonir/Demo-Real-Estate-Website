@@ -8,6 +8,7 @@ import OurStory from "../Components/AboutUs/OurStory";
 import OurClient from "../Components/AboutUs/OurClient";
 import OurTeam from "../Components/AboutUs/OurTeam";
 import MissionVision from "../Components/AboutUs/MissionVission";
+import CareerPage from "../Components/CareerPage/CareerPage";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -32,6 +33,10 @@ const router = createBrowserRouter([
       {
         path: "/contact",
         element: <ContactForm></ContactForm>,
+      },
+      {
+        path: "/career",
+        element: <CareerPage></CareerPage>,
       },
       {
         path: "/business",

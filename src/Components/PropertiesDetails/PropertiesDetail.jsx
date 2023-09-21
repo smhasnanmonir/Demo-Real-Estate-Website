@@ -427,43 +427,41 @@ const PropertiesDetail = () => {
 
       {/* Floor plan for dreams paradise starts*/}
       {id == "Dreams-Paradise" && (
-        <div>
-          <div className="md:w-3/4 mx-auto md:px-0 px-[10%]">
-            <h1 className="uppercase md:text-3xl text-2xl md:py-[45px] py-[25px] text-white">
-              Floor Plans
-            </h1>
-            <div className="grid md:grid-cols-3 grid-cols-2 gap-4">
-              <img
-                className="cursor-zoom-in hover:scale-110 transition-all duration-300 ease-linear hover:border-[8px] border-cyan-200"
-                src={floor1}
-                alt=""
-              />
-              <img
-                className="cursor-zoom-in hover:scale-110 transition-all duration-300 ease-linear hover:border-[8px] border-cyan-200"
-                src={floor2}
-                alt=""
-              />
-              <img
-                className="cursor-zoom-in hover:scale-110 transition-all duration-300 ease-linear hover:border-[8px] border-cyan-200"
-                src={floor3}
-                alt=""
-              />
-              <img
-                className="cursor-zoom-in hover:scale-110 transition-all duration-300 ease-linear hover:border-[8px] border-cyan-200"
-                src={floor4}
-                alt=""
-              />
-              <img
-                className="cursor-zoom-in hover:scale-110 transition-all duration-300 ease-linear hover:border-[8px] border-cyan-200"
-                src={floor5}
-                alt=""
-              />
-              <img
-                className="cursor-zoom-in hover:scale-110 transition-all duration-300 ease-linear hover:border-[8px] border-cyan-200"
-                src={floor6}
-                alt=""
-              />
-            </div>
+        <div className="md:w-3/4 mx-auto md:px-0 px-[10%] pb-[5%]">
+          <h1 className="uppercase md:text-3xl text-2xl md:py-[45px] py-[25px] text-white">
+            Floor Plans
+          </h1>
+          <div className="grid md:grid-cols-3 grid-cols-2 gap-4">
+            <img
+              className="cursor-zoom-in hover:scale-110 transition-all duration-300 ease-linear hover:border-[8px] border-cyan-200"
+              src={floor1}
+              alt=""
+            />
+            <img
+              className="cursor-zoom-in hover:scale-110 transition-all duration-300 ease-linear hover:border-[8px] border-cyan-200"
+              src={floor2}
+              alt=""
+            />
+            <img
+              className="cursor-zoom-in hover:scale-110 transition-all duration-300 ease-linear hover:border-[8px] border-cyan-200"
+              src={floor3}
+              alt=""
+            />
+            <img
+              className="cursor-zoom-in hover:scale-110 transition-all duration-300 ease-linear hover:border-[8px] border-cyan-200"
+              src={floor4}
+              alt=""
+            />
+            <img
+              className="cursor-zoom-in hover:scale-110 transition-all duration-300 ease-linear hover:border-[8px] border-cyan-200"
+              src={floor5}
+              alt=""
+            />
+            <img
+              className="cursor-zoom-in hover:scale-110 transition-all duration-300 ease-linear hover:border-[8px] border-cyan-200"
+              src={floor6}
+              alt=""
+            />
           </div>
         </div>
       )}
@@ -471,409 +469,431 @@ const PropertiesDetail = () => {
 
       {/* Overview and Spec */}
 
-      <div className="grid lg:grid-cols-2 grid-cols-1 border-y-[3px] border-black bg-[#212529] lg:px-[45px] md:px-[35px] px-[55px] lg:py-[105px] py-[65px] gap-[50px] text-white">
-        <div className="space-y-5 w-11/12  lg:border-r-[2px] border-white lg:border-b-[0px] border-b-[2px] pb-[35px]">
-          <h1 className="md:text-3xl text-2xl text-[#daa520]">Overview</h1>
-          <p className="md:w-3/4 text-xl font-thin">
-            Green Living with urban lifestyle is no more a myth for tranquility
-            mongers. The urban dwellers of Dhaka city are always dreaming of
-            living accommodations accompanied by gardens with plants, open
-            spaces for wandering, trees for oxygen and lakes for boating &
-            fishing..............
-          </p>
-          <Modal
-            className=""
-            isOpen={modalIsOpen}
-            onAfterOpen={afterOpenModal}
-            onRequestClose={closeModal}
-            style={customStyles}
-            contentLabel="Example Modal"
-          >
-            <button
-              className="btn btn-circle btn-outline lg:btn-md btn-sm absolute md:left-[94%] lg:left-[95%] left-[85%] top-2 text-white"
-              onClick={closeModal}
+      {id != "Dreams-Paradise" && (
+        <div className="grid lg:grid-cols-2 grid-cols-1 border-y-[3px] border-black bg-[#212529] lg:px-[45px] md:px-[35px] px-[55px] lg:py-[105px] py-[65px] gap-[50px] text-white">
+          <div className="space-y-5 w-11/12  lg:border-r-[2px] border-white lg:border-b-[0px] border-b-[2px] pb-[35px]">
+            <h1 className="md:text-3xl text-2xl text-[#daa520]">Overview</h1>
+            <p className="md:w-3/4 text-xl font-thin">
+              Green Living with urban lifestyle is no more a myth for
+              tranquility mongers. The urban dwellers of Dhaka city are always
+              dreaming of living accommodations accompanied by gardens with
+              plants, open spaces for wandering, trees for oxygen and lakes for
+              boating & fishing..............
+            </p>
+            <Modal
+              className=""
+              isOpen={modalIsOpen}
+              onAfterOpen={afterOpenModal}
+              onRequestClose={closeModal}
+              style={customStyles}
+              contentLabel="Example Modal"
             >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-6 w-6"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
+              <button
+                className="btn btn-circle btn-outline lg:btn-md btn-sm absolute md:left-[94%] lg:left-[95%] left-[85%] top-2 text-white"
+                onClick={closeModal}
               >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M6 18L18 6M6 6l12 12"
-                />
-              </svg>
-            </button>
-            <form className=" w-full max-h-[70vh] mx-auto lg:py-[75px] md:py-[65px] py-[55px] grid place-items-center p-0 m-0 -z-10 text-white">
-              <p className="">{descriptionText}</p>
-            </form>
-          </Modal>
-          <button
-            onClick={openModal}
-            className="px-[35px] py-[7px] text-white border-[2px] border-white hover:bg-black hover:text-white transition-all ease-in delay-100 duration-300"
-          >
-            Read More
-          </button>
-          <Modal
-            className=""
-            isOpen={modalIsOpen1}
-            onAfterOpen={afterOpenModal}
-            onRequestClose={closeModal1}
-            style={customStyles}
-            contentLabel="Example Modal"
-          >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="h-6 w-6"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M6 18L18 6M6 6l12 12"
+                  />
+                </svg>
+              </button>
+              <form className=" w-full max-h-[70vh] mx-auto lg:py-[75px] md:py-[65px] py-[55px] grid place-items-center p-0 m-0 -z-10 text-white">
+                <p className="">{descriptionText}</p>
+              </form>
+            </Modal>
             <button
-              className="btn btn-circle btn-outline lg:btn-md btn-sm absolute md:left-[94%] lg:left-[95%] left-[85%] top-2 text-white"
-              onClick={closeModal1}
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-6 w-6"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M6 18L18 6M6 6l12 12"
-                />
-              </svg>
-            </button>
-            <form className="w-full max-h-[70vh] mx-auto lg:py-[55px] md:py-[45px] py-[35px] p-0 m-0 -z-10 text-white ">
-              <p className="text-[18px] pb-[15px]">
-                Welcome to{" "}
-                <span className="font-semibold">{dataPro[0]?.name}</span>, an
-                exceptional land development project brought to you by the
-                Universe Group. With meticulous planning, attention to detail,
-                and a commitment to creating vibrant communities, this project
-                embodies our dedication to excellence in real estate.
-              </p>
-              <p className="text-[16px] pb-[15px]">
-                {dataPro[0]?.locationText}
-              </p>
-              <div className="pb-[15px]">
-                <h1 className="text-xl font-semibold">
-                  Legal and Regulatory Compliance
-                </h1>
-                <p className="text-[16px]">
-                  All necessary permits and approvals have been obtained in
-                  compliance with local regulations.
-                </p>
-              </div>
-              <div className="pb-[15px]">
-                <h1 className="text-xl font-semibold">Booking and Inquiries</h1>
-                <p className="text-[16px]">
-                  For booking inquiries and more information, please contact us.
-                </p>
-              </div>
-              <div className="">
-                <h1 className="text-xl font-semibold">
-                  Experience a New Universe of Possibilities
-                </h1>
-                <p className="text-[16px]">
-                  <span className="">{dataPro[0]?.name}</span> invites you to be
-                  a part of its journey. Whether you're seeking a space to build
-                  your dream home, an investment opportunity, or a chance to
-                  contribute to a thriving community, this project promises a
-                  universe of possibilities. Join us in shaping the future of
-                  Urban Residency
-                </p>
-              </div>
-            </form>
-          </Modal>
-        </div>
-        <div className="space-y-3">
-          <div className=" space-y-5">
-            <h1 className="md:text-3xl text-2xl text-[#daa520]">
-              Specification
-            </h1>
-            <ul className="pb-[10px]">
-              <li className="text-xl">
-                <span className="innerText">{dataPro[0]?.situated}</span>
-              </li>
-              <li className="text-xl">
-                <span className="innerText">
-                  Legal and Regulatory Compliance
-                </span>
-              </li>
-              <li className="text-xl">
-                <span className="innerText">
-                  Experience a New Universe of Possibilities
-                </span>
-              </li>
-            </ul>
-            <button
-              onClick={openModal1}
+              onClick={openModal}
               className="px-[35px] py-[7px] text-white border-[2px] border-white hover:bg-black hover:text-white transition-all ease-in delay-100 duration-300"
             >
               Read More
             </button>
+            <Modal
+              className=""
+              isOpen={modalIsOpen1}
+              onAfterOpen={afterOpenModal}
+              onRequestClose={closeModal1}
+              style={customStyles}
+              contentLabel="Example Modal"
+            >
+              <button
+                className="btn btn-circle btn-outline lg:btn-md btn-sm absolute md:left-[94%] lg:left-[95%] left-[85%] top-2 text-white"
+                onClick={closeModal1}
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="h-6 w-6"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M6 18L18 6M6 6l12 12"
+                  />
+                </svg>
+              </button>
+              <form className="w-full max-h-[70vh] mx-auto lg:py-[55px] md:py-[45px] py-[35px] p-0 m-0 -z-10 text-white ">
+                <p className="text-[18px] pb-[15px]">
+                  Welcome to{" "}
+                  <span className="font-semibold">{dataPro[0]?.name}</span>, an
+                  exceptional land development project brought to you by the
+                  Universe Group. With meticulous planning, attention to detail,
+                  and a commitment to creating vibrant communities, this project
+                  embodies our dedication to excellence in real estate.
+                </p>
+                <p className="text-[16px] pb-[15px]">
+                  {dataPro[0]?.locationText}
+                </p>
+                <div className="pb-[15px]">
+                  <h1 className="text-xl font-semibold">
+                    Legal and Regulatory Compliance
+                  </h1>
+                  <p className="text-[16px]">
+                    All necessary permits and approvals have been obtained in
+                    compliance with local regulations.
+                  </p>
+                </div>
+                <div className="pb-[15px]">
+                  <h1 className="text-xl font-semibold">
+                    Booking and Inquiries
+                  </h1>
+                  <p className="text-[16px]">
+                    For booking inquiries and more information, please contact
+                    us.
+                  </p>
+                </div>
+                <div className="">
+                  <h1 className="text-xl font-semibold">
+                    Experience a New Universe of Possibilities
+                  </h1>
+                  <p className="text-[16px]">
+                    <span className="">{dataPro[0]?.name}</span> invites you to
+                    be a part of its journey. Whether you're seeking a space to
+                    build your dream home, an investment opportunity, or a
+                    chance to contribute to a thriving community, this project
+                    promises a universe of possibilities. Join us in shaping the
+                    future of Urban Residency
+                  </p>
+                </div>
+              </form>
+            </Modal>
+          </div>
+          <div className="space-y-3">
+            <div className=" space-y-5">
+              <h1 className="md:text-3xl text-2xl text-[#daa520]">
+                Specification
+              </h1>
+              <ul className="pb-[10px]">
+                <li className="text-xl">
+                  <span className="innerText">{dataPro[0]?.situated}</span>
+                </li>
+                <li className="text-xl">
+                  <span className="innerText">
+                    Legal and Regulatory Compliance
+                  </span>
+                </li>
+                <li className="text-xl">
+                  <span className="innerText">
+                    Experience a New Universe of Possibilities
+                  </span>
+                </li>
+              </ul>
+              <button
+                onClick={openModal1}
+                className="px-[35px] py-[7px] text-white border-[2px] border-white hover:bg-black hover:text-white transition-all ease-in delay-100 duration-300"
+              >
+                Read More
+              </button>
+            </div>
           </div>
         </div>
-      </div>
+      )}
       {/* Feature of the city */}
-      <div className="px-[25px] bg-white pb-[25px]">
-        <h1 className="md:text-3xl text-2xl text-center   py-[20px] font-semibold">
-          Features of The Project
-        </h1>
-        <div className="grid lg:grid-cols-6 md:grid-cols-4 grid-cols-2 gap-x-4 lg:px-[25px]">
-          <div className="text-center hover:scale-110 hover:cursor-pointer transition-all duration-300 ease-in">
-            <img src={school} alt="" />
-            <p className="py-2">School</p>
-          </div>
-          <div className="text-center hover:scale-110 hover:cursor-pointer transition-all duration-300 ease-in">
-            <img src={college} alt="" />
-            <p className="pt-1">College</p>
-          </div>
-          <div className="text-center hover:scale-110 hover:cursor-pointer transition-all duration-300 ease-in">
-            <img src={university} alt="" />
-            <p className="pt-1">University</p>
-          </div>
-          <div className="text-center hover:scale-110 hover:cursor-pointer transition-all duration-300 ease-in">
-            <img src={hospital} alt="" />
-            <p className="pt-1">Hospital</p>
-          </div>
-          <div className="text-center hover:scale-110 hover:cursor-pointer transition-all duration-300 ease-in">
-            <img src={mall} alt="" />
-            <p className="pt-1">Shopping Mall</p>
-          </div>
-          <div className="text-center hover:scale-110 hover:cursor-pointer transition-all duration-300 ease-in">
-            <img src={mosque} alt="" />
-            <p className="pt-1">Mosque</p>
-          </div>
-          <div className="text-center hover:scale-110 hover:cursor-pointer transition-all duration-300 ease-in">
-            <img src={helipad} alt="" />
-            <p className="pt-1">Helipad</p>
-          </div>
-          <div className="text-center hover:scale-110 hover:cursor-pointer transition-all duration-300 ease-in">
-            <img src={gym} alt="" />
-            <p className="pt-1">Gym</p>
-          </div>
-          <div className="text-center hover:scale-110 hover:cursor-pointer transition-all duration-300 ease-in">
-            <img src={food} alt="" />
-            <p className="pt-1">Food Court</p>
-          </div>
-          <div className="text-center hover:scale-110 hover:cursor-pointer transition-all duration-300 ease-in">
-            <img src={convention} alt="" />
-            <p className="pt-1">Convention Center</p>
-          </div>
-          <div className="text-center hover:scale-110 hover:cursor-pointer transition-all duration-300 ease-in">
-            <img src={park} alt="" />
-            <p className="pt-1">Park</p>
-          </div>
-          <div className="text-center hover:scale-110 hover:cursor-pointer transition-all duration-300 ease-in">
-            <img src={field} alt="" />
-            <p className="pt-1">Field</p>
+      {id != "Dreams-Paradise" && (
+        <div className="px-[25px] bg-white pb-[25px]">
+          <h1 className="md:text-3xl text-2xl text-center   py-[20px] font-semibold">
+            Features of The Project
+          </h1>
+          <div className="grid lg:grid-cols-6 md:grid-cols-4 grid-cols-2 gap-x-4 lg:px-[25px]">
+            <div className="text-center hover:scale-110 hover:cursor-pointer transition-all duration-300 ease-in">
+              <img src={school} alt="" />
+              <p className="py-2">School</p>
+            </div>
+            <div className="text-center hover:scale-110 hover:cursor-pointer transition-all duration-300 ease-in">
+              <img src={college} alt="" />
+              <p className="pt-1">College</p>
+            </div>
+            <div className="text-center hover:scale-110 hover:cursor-pointer transition-all duration-300 ease-in">
+              <img src={university} alt="" />
+              <p className="pt-1">University</p>
+            </div>
+            <div className="text-center hover:scale-110 hover:cursor-pointer transition-all duration-300 ease-in">
+              <img src={hospital} alt="" />
+              <p className="pt-1">Hospital</p>
+            </div>
+            <div className="text-center hover:scale-110 hover:cursor-pointer transition-all duration-300 ease-in">
+              <img src={mall} alt="" />
+              <p className="pt-1">Shopping Mall</p>
+            </div>
+            <div className="text-center hover:scale-110 hover:cursor-pointer transition-all duration-300 ease-in">
+              <img src={mosque} alt="" />
+              <p className="pt-1">Mosque</p>
+            </div>
+            <div className="text-center hover:scale-110 hover:cursor-pointer transition-all duration-300 ease-in">
+              <img src={helipad} alt="" />
+              <p className="pt-1">Helipad</p>
+            </div>
+            <div className="text-center hover:scale-110 hover:cursor-pointer transition-all duration-300 ease-in">
+              <img src={gym} alt="" />
+              <p className="pt-1">Gym</p>
+            </div>
+            <div className="text-center hover:scale-110 hover:cursor-pointer transition-all duration-300 ease-in">
+              <img src={food} alt="" />
+              <p className="pt-1">Food Court</p>
+            </div>
+            <div className="text-center hover:scale-110 hover:cursor-pointer transition-all duration-300 ease-in">
+              <img src={convention} alt="" />
+              <p className="pt-1">Convention Center</p>
+            </div>
+            <div className="text-center hover:scale-110 hover:cursor-pointer transition-all duration-300 ease-in">
+              <img src={park} alt="" />
+              <p className="pt-1">Park</p>
+            </div>
+            <div className="text-center hover:scale-110 hover:cursor-pointer transition-all duration-300 ease-in">
+              <img src={field} alt="" />
+              <p className="pt-1">Field</p>
+            </div>
           </div>
         </div>
-      </div>
+      )}
 
       {/* Brochure */}
-      <div className="bg-white grid lg:grid-cols-2 grid-cols-1 border-t-[3px] border-black w-full h-full">
-        <div className="relative">
-          <img
-            className="brightness-50 w-full md:h-[550px] h-[450px] object-cover"
-            src={brochure}
-            alt=""
-          />
-          <div className="absolute top-1/2 left-[40%] transform -translate-x-1/2 -translate-y-1/2 space-y-[20px] ">
-            <h1 className="text-[#daa520] md:text-3xl text-xl">Plot Booking</h1>
-            <p className="text-white text-xl">Regulation</p>
-            <p className="text-white text-xl">
-              Welcome to{" "}
-              <span className="font-semibold">{dataPro[0]?.name}</span>! We are
-              excited to have you as a potential plot buyer. To ensure a smooth
-              and transparent process, we have established the following plot
-              booking regulations.
-            </p>
-            <button
-              onClick={openModal2}
-              className="px-[35px] py-[7px] text-white border-[2px] border-white hover:bg-black hover:text-white transition-all ease-in delay-100 duration-300"
-            >
-              Read More
-            </button>
-          </div>
-          <Modal
-            className=""
-            isOpen={modalIsOpen2}
-            onAfterOpen={afterOpenModal}
-            onRequestClose={closeModal2}
-            style={customStyles}
-            contentLabel="Example Modal"
-          >
-            <button
-              onClick={closeModal2}
-              className="btn btn-circle btn-outline lg:btn-md btn-sm absolute md:left-[94%] lg:left-[95%] left-[85%] top-2 text-white"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-6 w-6"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
+      {id != "Dreams-Paradise" && (
+        <div className="bg-white grid lg:grid-cols-2 grid-cols-1 border-t-[3px] border-black w-full h-full">
+          <div className="relative">
+            <img
+              className="brightness-50 w-full md:h-[550px] h-[450px] object-cover"
+              src={brochure}
+              alt=""
+            />
+            <div className="absolute top-1/2 left-[40%] transform -translate-x-1/2 -translate-y-1/2 space-y-[20px] ">
+              <h1 className="text-[#daa520] md:text-3xl text-xl">
+                Plot Booking
+              </h1>
+              <p className="text-white text-xl">Regulation</p>
+              <p className="text-white text-xl">
+                Welcome to{" "}
+                <span className="font-semibold">{dataPro[0]?.name}</span>! We
+                are excited to have you as a potential plot buyer. To ensure a
+                smooth and transparent process, we have established the
+                following plot booking regulations.
+              </p>
+              <button
+                onClick={openModal2}
+                className="px-[35px] py-[7px] text-white border-[2px] border-white hover:bg-black hover:text-white transition-all ease-in delay-100 duration-300"
               >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M6 18L18 6M6 6l12 12"
-                />
-              </svg>
-            </button>
-            <form className="w-full max-h-[70vh] max-w-[80vw] mx-auto lg:py-[55px] md:py-[45px] py-[35px] p-0 m-0 -z-10 text-white ">
-              <div className="space-y-[13px] pb-[13px]">
-                <h1>
-                  Welcome to Mayakunjo Model Town! We are excited to have you as
-                  a potential plot buyer. To ensure a smooth and transparent
-                  process, we have established the following plot booking
-                  regulations
-                </h1>
-                <div className="space-y-[5px]">
-                  <h1 className="text-xl font-semibold">1. Booking Process:</h1>
-                  <p>
-                    Prospective buyers are required to fill out a booking form
-                    provided by the Universe Group. A booking fee of 1,00,000 is
-                    required to secure a plot. This fee is non-refundable and
-                    will be deducted from the total plot cost upon purchase.
-                  </p>
-                </div>
-                <div className="space-y-[5px]">
-                  <h1 className="text-xl font-semibold">2. Plot Selection:</h1>
-                  <p>
-                    Plots will be allocated on a first-come, first-served basis.
-                    Buyers will have the opportunity to choose their preferred
-                    plot location based on availability at the time of booking.
-                  </p>
-                </div>
-                <div className="space-y-[5px]">
-                  <h1 className="text-xl font-semibold">3. Documentation:</h1>
-                  <p>
-                    Buyers must provide valid identification and complete all
-                    necessary documentation required by local regulations. A
-                    signed copy of the booking form and terms and conditions is
-                    mandatory.
-                  </p>
-                </div>
-                <div className="space-y-[5px]">
-                  <h1 className="text-xl font-semibold">
-                    4. Payment Schedule:
-                  </h1>
-                  <p>
-                    The booking fee is payable at the time of booking. A
-                    percentage of the total plot cost (as outlined in the
-                    payment schedule) must be paid within 30 days of the booking
-                    date to secure the plot. Failure to do so may result in the
-                    plot being released for resale.
-                  </p>
-                </div>
-                <div className="space-y-[5px]">
-                  <h1 className="text-xl font-semibold">5. Payment Methods:</h1>
-                  <p>
-                    Payments can be made through accepted modes as specified by
-                    the Universe Group. Cash, cheques or bank transfers are
-                    preferred.
-                  </p>
-                </div>
-                <div className="space-y-[5px]">
-                  <h1 className="text-xl font-semibold">
-                    6. Transfer of Ownership:
-                  </h1>
-                  <p>
-                    The plot's ownership transfer will take place upon the full
-                    payment of the plot cost. The Universe Group will facilitate
-                    the legal transfer process and provide all necessary
-                    documentation.
-                  </p>
-                </div>
-                <div className="space-y-[5px]">
-                  <h1 className="text-xl font-semibold">7. Resale of Plots:</h1>
-                  <p>
-                    Buyers interested in reselling their plots before full
-                    payment must inform the Universe Group in writing. A resale
-                    fee may apply. The Universe Group reserves the right to
-                    approve or disapprove plot resale.
-                  </p>
-                </div>
-                <div className="space-y-[5px]">
-                  <h1 className="text-xl font-semibold">8. Refund Policy:</h1>
-                  <p>The booking fee is non-refundable.</p>
-                  <p>
-                    In case of cancellation after the initial payment, refund
-                    policies will be as per local regulations and the terms
-                    outlined in the booking form.
-                  </p>
-                </div>
-                <div className="space-y-[5px]">
-                  <h1 className="text-xl font-semibold">9. Timeline:</h1>
-                  <p>
-                    Buyers are expected to adhere to the payment schedule and
-                    timeline specified in the booking form.
-                  </p>
-                  <p>
-                    Delays in payment beyond the stipulated period may result in
-                    the cancellation of the booking.
-                  </p>
-                </div>
-                <div className="space-y-[5px]">
-                  <h1 className="text-xl font-semibold">10. Disclaimer:</h1>
-                  <p>
-                    The Universe Group reserves the right to amend these
-                    regulations, terms, and conditions as necessary. All changes
-                    will be communicated to buyers in writing.
-                  </p>
-                </div>
-                <div className="space-y-[5px]">
-                  <h1 className="text-xl font-semibold">Contact Us:</h1>
-                  <p>
-                    If you have any questions or concerns regarding the plot
-                    booking regulations or the booking process, please don't
-                    hesitate to reach out to our customer service team or
-                    Hotline.
-                  </p>
-                </div>
-              </div>
-            </form>
-          </Modal>
-        </div>
-        <div className="relative">
-          <img
-            className="w-full lg:h-full h-[450px] object-cover brightness-50 "
-            src={book}
-            alt=""
-          />
-          <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-            <a
-              className="px-[75px] py-[10px] text-white border-[2px] border-white hover:bg-black hover:text-white transition-all ease-in delay-100 duration-300"
-              href={dataPro[0]?.brochure}
-              target="blank"
-            >
-              <button className="md:text-xl text-[16px]">
-                Download Brochure
+                Read More
               </button>
-            </a>
+            </div>
+            <Modal
+              className=""
+              isOpen={modalIsOpen2}
+              onAfterOpen={afterOpenModal}
+              onRequestClose={closeModal2}
+              style={customStyles}
+              contentLabel="Example Modal"
+            >
+              <button
+                onClick={closeModal2}
+                className="btn btn-circle btn-outline lg:btn-md btn-sm absolute md:left-[94%] lg:left-[95%] left-[85%] top-2 text-white"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="h-6 w-6"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M6 18L18 6M6 6l12 12"
+                  />
+                </svg>
+              </button>
+              <form className="w-full max-h-[70vh] max-w-[80vw] mx-auto lg:py-[55px] md:py-[45px] py-[35px] p-0 m-0 -z-10 text-white ">
+                <div className="space-y-[13px] pb-[13px]">
+                  <h1>
+                    Welcome to Mayakunjo Model Town! We are excited to have you
+                    as a potential plot buyer. To ensure a smooth and
+                    transparent process, we have established the following plot
+                    booking regulations
+                  </h1>
+                  <div className="space-y-[5px]">
+                    <h1 className="text-xl font-semibold">
+                      1. Booking Process:
+                    </h1>
+                    <p>
+                      Prospective buyers are required to fill out a booking form
+                      provided by the Universe Group. A booking fee of 1,00,000
+                      is required to secure a plot. This fee is non-refundable
+                      and will be deducted from the total plot cost upon
+                      purchase.
+                    </p>
+                  </div>
+                  <div className="space-y-[5px]">
+                    <h1 className="text-xl font-semibold">
+                      2. Plot Selection:
+                    </h1>
+                    <p>
+                      Plots will be allocated on a first-come, first-served
+                      basis. Buyers will have the opportunity to choose their
+                      preferred plot location based on availability at the time
+                      of booking.
+                    </p>
+                  </div>
+                  <div className="space-y-[5px]">
+                    <h1 className="text-xl font-semibold">3. Documentation:</h1>
+                    <p>
+                      Buyers must provide valid identification and complete all
+                      necessary documentation required by local regulations. A
+                      signed copy of the booking form and terms and conditions
+                      is mandatory.
+                    </p>
+                  </div>
+                  <div className="space-y-[5px]">
+                    <h1 className="text-xl font-semibold">
+                      4. Payment Schedule:
+                    </h1>
+                    <p>
+                      The booking fee is payable at the time of booking. A
+                      percentage of the total plot cost (as outlined in the
+                      payment schedule) must be paid within 30 days of the
+                      booking date to secure the plot. Failure to do so may
+                      result in the plot being released for resale.
+                    </p>
+                  </div>
+                  <div className="space-y-[5px]">
+                    <h1 className="text-xl font-semibold">
+                      5. Payment Methods:
+                    </h1>
+                    <p>
+                      Payments can be made through accepted modes as specified
+                      by the Universe Group. Cash, cheques or bank transfers are
+                      preferred.
+                    </p>
+                  </div>
+                  <div className="space-y-[5px]">
+                    <h1 className="text-xl font-semibold">
+                      6. Transfer of Ownership:
+                    </h1>
+                    <p>
+                      The plot's ownership transfer will take place upon the
+                      full payment of the plot cost. The Universe Group will
+                      facilitate the legal transfer process and provide all
+                      necessary documentation.
+                    </p>
+                  </div>
+                  <div className="space-y-[5px]">
+                    <h1 className="text-xl font-semibold">
+                      7. Resale of Plots:
+                    </h1>
+                    <p>
+                      Buyers interested in reselling their plots before full
+                      payment must inform the Universe Group in writing. A
+                      resale fee may apply. The Universe Group reserves the
+                      right to approve or disapprove plot resale.
+                    </p>
+                  </div>
+                  <div className="space-y-[5px]">
+                    <h1 className="text-xl font-semibold">8. Refund Policy:</h1>
+                    <p>The booking fee is non-refundable.</p>
+                    <p>
+                      In case of cancellation after the initial payment, refund
+                      policies will be as per local regulations and the terms
+                      outlined in the booking form.
+                    </p>
+                  </div>
+                  <div className="space-y-[5px]">
+                    <h1 className="text-xl font-semibold">9. Timeline:</h1>
+                    <p>
+                      Buyers are expected to adhere to the payment schedule and
+                      timeline specified in the booking form.
+                    </p>
+                    <p>
+                      Delays in payment beyond the stipulated period may result
+                      in the cancellation of the booking.
+                    </p>
+                  </div>
+                  <div className="space-y-[5px]">
+                    <h1 className="text-xl font-semibold">10. Disclaimer:</h1>
+                    <p>
+                      The Universe Group reserves the right to amend these
+                      regulations, terms, and conditions as necessary. All
+                      changes will be communicated to buyers in writing.
+                    </p>
+                  </div>
+                  <div className="space-y-[5px]">
+                    <h1 className="text-xl font-semibold">Contact Us:</h1>
+                    <p>
+                      If you have any questions or concerns regarding the plot
+                      booking regulations or the booking process, please don't
+                      hesitate to reach out to our customer service team or
+                      Hotline.
+                    </p>
+                  </div>
+                </div>
+              </form>
+            </Modal>
+          </div>
+          <div className="relative">
+            <img
+              className="w-full lg:h-full h-[450px] object-cover brightness-50 "
+              src={book}
+              alt=""
+            />
+            <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+              <a
+                className="px-[75px] py-[10px] text-white border-[2px] border-white hover:bg-black hover:text-white transition-all ease-in delay-100 duration-300"
+                href={dataPro[0]?.brochure}
+                target="blank"
+              >
+                <button className="md:text-xl text-[16px]">
+                  Download Brochure
+                </button>
+              </a>
+            </div>
           </div>
         </div>
-      </div>
+      )}
       {/* Video Section */}
-
-      <div className="bg-white">
-        <h1 className="text-center  font-semibold md:text-3xl text-2xl lg:py-[35px] py-[25px]">
-          Video Section
-        </h1>
-        <iframe
-          className="w-full h-[550px]"
-          src="https://www.youtube.com/embed/y9j-BL5ocW8"
-          title="Cinematic Real estate video tour example 4K | Laowa 12mm &amp; Sony A7III"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen
-        ></iframe>
-      </div>
+      {id != "Dreams-Paradise" && (
+        <div className="bg-white">
+          <h1 className="text-center  font-semibold md:text-3xl text-2xl lg:py-[35px] py-[25px]">
+            Video Section
+          </h1>
+          <iframe
+            className="w-full h-[550px]"
+            src="https://www.youtube.com/embed/y9j-BL5ocW8"
+            title="Cinematic Real estate video tour example 4K | Laowa 12mm &amp; Sony A7III"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+        </div>
+      )}
 
       {/* Location */}
       <div className="bg-white">

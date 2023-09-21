@@ -5,7 +5,7 @@ import Header from "../SharedComponents/Header/Header";
 const Main = () => {
   return (
     <>
-      <div className="md:block hidden mb-[85px]">
+      <div className="mb-[85px]">
         <Header></Header>
       </div>
       <Outlet></Outlet>
