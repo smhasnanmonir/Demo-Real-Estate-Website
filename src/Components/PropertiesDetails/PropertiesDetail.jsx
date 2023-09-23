@@ -37,6 +37,11 @@ import floor3 from "../../../src/assets/FloorPlan/3.jpg";
 import floor4 from "../../../src/assets/FloorPlan/4.jpg";
 import floor5 from "../../../src/assets/FloorPlan/5.jpg";
 import floor6 from "../../../src/assets/FloorPlan/6.jpg";
+import image1 from "../../assets/Lifestyle/1.jpg";
+import image2 from "../../assets/Lifestyle/2.jpg";
+import image3 from "../../assets/Lifestyle/3.jpg";
+import image4 from "../../assets/Lifestyle/4.jpg";
+import image5 from "../../assets/Lifestyle/5.jpg";
 
 import {
   Navigation,
@@ -55,6 +60,7 @@ import "swiper/css/scrollbar";
 import "swiper/css/effect-creative";
 import "./projectswiper.css";
 import FormReuse from "../ContactForm/FormReuse/FormReuse";
+import ScrollDownToComp from "./ScrollDownToComp";
 const PropertiesDetail = () => {
   const customStyles = {
     overlay: {
@@ -149,6 +155,7 @@ const PropertiesDetail = () => {
           ]}
           spaceBetween={350}
           navigation={true}
+          loop={true}
           pagination={{ clickable: false }}
           autoplay={{ delay: 2500 }}
           grabCursor={true}
@@ -255,9 +262,13 @@ const PropertiesDetail = () => {
           </div>
         </div>
       )}
+      {id == "Dreams-Paradise" && <ScrollDownToComp></ScrollDownToComp>}
       {/* At a glance starts */}
       {id == "Dreams-Paradise" && (
-        <div className="bg-white grid md:grid-cols-2 grid-cols-1 md:px-[150px] px-[25px] py-[50px] gap-[35px]">
+        <div
+          id="glance"
+          className="bg-white grid md:grid-cols-2 grid-cols-1 md:px-[150px] px-[25px] md:py-[50px] gap-[35px]"
+        >
           <div>
             <img
               className="object-cover w-full h-full"
@@ -265,116 +276,124 @@ const PropertiesDetail = () => {
               alt=""
             />
           </div>
-          <table className="border-collapse border border-slate-400">
-            <tbody className="">
-              <tr className="">
-                <td className="border border-slate-300  p-3">
-                  <div className="flex items-center  gap-2">
-                    <img src={addressIcon} alt="" />
-                    <p>Address</p>
-                  </div>
-                </td>
-                <td className="border border-slate-300 text-right p-3">
-                  {dataPro[0]?.address}
-                </td>
-              </tr>
-              <tr>
-                <td className="border border-slate-300  p-3">
-                  <div className="flex items-center  gap-2">
-                    <img src={plotIcon} alt="" />
-                    <p>Land Area</p>
-                  </div>
-                </td>
-                <td className="border border-slate-300 text-right p-3">
-                  {dataPro[0]?.landArea}
-                </td>
-              </tr>
-              <tr>
-                <td className="border border-slate-300 p-3">
-                  <div className="flex items-center  gap-2">
-                    <img src={buildingIcon} alt="" />
-                    <p> No. of floors</p>
-                  </div>
-                </td>
-                <td className="border border-slate-300 text-right p-3">
-                  {dataPro[0]?.floors}
-                </td>
-              </tr>
-              <tr>
-                <td className="border border-slate-300 p-3">
-                  <div className="flex items-center  gap-2">
-                    <img src={apartmentIcon} alt="" />
-                    <p> Apartment/Floor</p>
-                  </div>
-                </td>
-                <td className="border border-slate-300 text-right p-3">
-                  {dataPro[0]?.apartments}
-                </td>
-              </tr>
-              <tr>
-                <td className="border border-slate-300 p-3">
-                  <div className="flex items-center  gap-2">
-                    <img src={roomIcon} alt="" />
-                    <p> Apartment Size</p>
-                  </div>
-                </td>
-                <td className="border border-slate-300 text-right p-3">
-                  {dataPro[0]?.apartmentSize}
-                </td>
-              </tr>
-              <tr>
-                <td className="border border-slate-300 p-3">
-                  <div className="flex items-center  gap-2">
-                    <img src={bedroomIcon} alt="" />
-                    <p> Bedrooms</p>
-                  </div>
-                </td>
-                <td className="border border-slate-300 text-right p-3">
-                  {dataPro[0]?.bedroom}
-                </td>
-              </tr>
-              <tr>
-                <td className="border border-slate-300 p-3">
-                  <div className="flex items-center  gap-2">
-                    <img src={bathroomIcon} alt="" />
-                    <p> Bathrooms</p>
-                  </div>
-                </td>
-                <td className="border border-slate-300 text-right p-3">
-                  {dataPro[0]?.bathroom}
-                </td>
-              </tr>
-              <tr>
-                <td className="border border-slate-300 p-3">
-                  <div className="flex items-center  gap-2">
-                    <img src={calenderIcon} alt="" />
-                    <p> Lunch Date</p>
-                  </div>
-                </td>
-                <td className="border border-slate-300 text-right p-3">
-                  {dataPro[0]?.CompletionDate}
-                </td>
-              </tr>
-              <tr>
-                <td className="border border-slate-300 p-3">
-                  <div className="flex items-center  gap-2">
-                    <img src={collectionIcon} alt="" />
-                    <p> Collections</p>
-                  </div>
-                </td>
-                <td className="border border-slate-300 text-right p-3">
-                  {dataPro[0]?.collection}
-                </td>
-              </tr>
-            </tbody>
-          </table>
+          <div>
+            <h1 className="uppercase text-[18px] md:mb-[18px] mb-[9px] border-b-[2px] border-black">
+              At a glance
+            </h1>
+            <table className="border-collapse border border-slate-400 w-full">
+              <tbody className="">
+                <tr className="">
+                  <td className="border border-slate-300  p-3">
+                    <div className="flex items-center  gap-2">
+                      <img src={addressIcon} alt="" />
+                      <p>Address</p>
+                    </div>
+                  </td>
+                  <td className="border border-slate-300 text-right p-3">
+                    {dataPro[0]?.address}
+                  </td>
+                </tr>
+                <tr>
+                  <td className="border border-slate-300  p-3">
+                    <div className="flex items-center  gap-2">
+                      <img src={plotIcon} alt="" />
+                      <p>Land Area</p>
+                    </div>
+                  </td>
+                  <td className="border border-slate-300 text-right p-3">
+                    {dataPro[0]?.landArea}
+                  </td>
+                </tr>
+                <tr>
+                  <td className="border border-slate-300 p-3">
+                    <div className="flex items-center  gap-2">
+                      <img src={buildingIcon} alt="" />
+                      <p> No. of floors</p>
+                    </div>
+                  </td>
+                  <td className="border border-slate-300 text-right p-3">
+                    {dataPro[0]?.floors}
+                  </td>
+                </tr>
+                <tr>
+                  <td className="border border-slate-300 p-3">
+                    <div className="flex items-center  gap-2">
+                      <img src={apartmentIcon} alt="" />
+                      <p> Apartment/Floor</p>
+                    </div>
+                  </td>
+                  <td className="border border-slate-300 text-right p-3">
+                    {dataPro[0]?.apartments}
+                  </td>
+                </tr>
+                <tr>
+                  <td className="border border-slate-300 p-3">
+                    <div className="flex items-center  gap-2">
+                      <img src={roomIcon} alt="" />
+                      <p> Apartment Size</p>
+                    </div>
+                  </td>
+                  <td className="border border-slate-300 text-right p-3">
+                    {dataPro[0]?.apartmentSize}
+                  </td>
+                </tr>
+                <tr>
+                  <td className="border border-slate-300 p-3">
+                    <div className="flex items-center  gap-2">
+                      <img src={bedroomIcon} alt="" />
+                      <p> Bedrooms</p>
+                    </div>
+                  </td>
+                  <td className="border border-slate-300 text-right p-3">
+                    {dataPro[0]?.bedroom}
+                  </td>
+                </tr>
+                <tr>
+                  <td className="border border-slate-300 p-3">
+                    <div className="flex items-center  gap-2">
+                      <img src={bathroomIcon} alt="" />
+                      <p> Bathrooms</p>
+                    </div>
+                  </td>
+                  <td className="border border-slate-300 text-right p-3">
+                    {dataPro[0]?.bathroom}
+                  </td>
+                </tr>
+                <tr>
+                  <td className="border border-slate-300 p-3">
+                    <div className="flex items-center  gap-2">
+                      <img src={calenderIcon} alt="" />
+                      <p> Lunch Date</p>
+                    </div>
+                  </td>
+                  <td className="border border-slate-300 text-right p-3">
+                    {dataPro[0]?.CompletionDate}
+                  </td>
+                </tr>
+                <tr>
+                  <td className="border border-slate-300 p-3">
+                    <div className="flex items-center  gap-2">
+                      <img src={collectionIcon} alt="" />
+                      <p> Collections</p>
+                    </div>
+                  </td>
+                  <td className="border border-slate-300 text-right p-3">
+                    {dataPro[0]?.collection}
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </div>
       )}
       {/* At a glance ends */}
       {/* Swiper for dreams paradise starts */}
       {id == "Dreams-Paradise" && (
-        <div className="py-[5px] pb-[10px]">
-          <h1 className="uppercase py-[35px] text-white pl-[10%] md:text-3xl text-2xl">
+        <div className="pt-[5px]">
+          <h1
+            id="features"
+            className="uppercase py-[35px] text-white pl-[10%] md:text-3xl text-2xl"
+          >
             Features
           </h1>
           <div>
@@ -425,10 +444,64 @@ const PropertiesDetail = () => {
       )}
       {/* Swiper for dreams paradise ends*/}
 
+      {/* Experience */}
+
+      {id == "Dreams-Paradise" && (
+        <div className=" bg-[#eceeef]">
+          <div className="w-3/4 mx-auto py-[35px]">
+            <h1 id="experience" className="md:text-3xl text-2xl md:pb-[15px]">
+              Experience the Lifestyle
+            </h1>
+          </div>
+          <div>
+            <Swiper
+              modules={[Autoplay, Pagination]}
+              spaceBetween={2}
+              autoplay={{ delay: 3000 }}
+              pagination={{ clickable: false }}
+              className="mySwiper"
+              breakpoints={{
+                640: {
+                  slidesPerView: 2,
+                  spaceBetween: 2,
+                },
+                768: {
+                  slidesPerView: 3,
+                  spaceBetween: 2,
+                },
+                1024: {
+                  slidesPerView: 4,
+                  spaceBetween: 2,
+                },
+              }}
+            >
+              <SwiperSlide>
+                <img src={image1} alt="" />
+              </SwiperSlide>
+              <SwiperSlide>
+                <img src={image2} alt="" />
+              </SwiperSlide>
+              <SwiperSlide>
+                <img src={image3} alt="" />
+              </SwiperSlide>
+              <SwiperSlide>
+                <img src={image4} alt="" />
+              </SwiperSlide>
+              <SwiperSlide>
+                <img src={image5} alt="" />
+              </SwiperSlide>
+            </Swiper>
+          </div>
+        </div>
+      )}
+
       {/* Floor plan for dreams paradise starts*/}
       {id == "Dreams-Paradise" && (
         <div className="md:w-3/4 mx-auto md:px-0 px-[10%] pb-[5%]">
-          <h1 className="uppercase md:text-3xl text-2xl md:py-[45px] py-[25px] text-white">
+          <h1
+            id="floorPlan"
+            className="uppercase md:text-3xl text-2xl md:py-[45px] py-[25px] text-white"
+          >
             Floor Plans
           </h1>
           <div className="grid md:grid-cols-3 grid-cols-2 gap-4">
@@ -896,7 +969,7 @@ const PropertiesDetail = () => {
       )}
 
       {/* Location */}
-      <div className="bg-white">
+      <div id="location" className="bg-white">
         <h1 className="text-center  font-semibold md:text-3xl text-2xl lg:py-[35px] py-[25px]">
           Project Location
         </h1>
