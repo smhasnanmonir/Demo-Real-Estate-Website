@@ -16,7 +16,7 @@ import UseData from "../../Components/Hooks/UseData";
 const OurProjectSection = () => {
   const [datas] = UseData();
   return (
-    <div className="z-[0] relative">
+    <div id="choice" className="z-[0] relative ">
       <h1 className="OurProjects text-center text-3xl font-semibold text-white md:my-[45px] my-[25px]">
         Our Projects
       </h1>

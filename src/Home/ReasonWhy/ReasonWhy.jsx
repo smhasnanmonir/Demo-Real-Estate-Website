@@ -3,7 +3,7 @@ const ReasonWhy = () => {
     <div
       style={{
         backgroundImage: `url(
-          "https://drive.google.com/uc?export=download&id=1I5OqKEXlQQQlHFiduptQlW_pL7xBVZ5z"
+          "https://i.ibb.co/Zfgw869/jVL9T0P.jpg"
         )`,
       }}
       className="bgColorGray2 grid lg:gap-[20px] place-items-center bg-fixed bg-cover bg-no-repeat"

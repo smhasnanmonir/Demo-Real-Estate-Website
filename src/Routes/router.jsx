@@ -2,6 +2,10 @@ import React from "react";
 
 import { createBrowserRouter } from "react-router-dom";
 import Main from "../Main/Main";
+const Blog = React.lazy(() => import("../Components/Media/Blog"));
+const Media = React.lazy(() => import("../Components/Media/Media"));
+const Events = React.lazy(() => import("../Components/Media/Events"));
+const NewsPage = React.lazy(() => import("../Components/Media/NewsPage"));
 
 const Home = React.lazy(() => import("../Home/Home/Home"));
 const PropertiesDetail = React.lazy(() =>
@@ -127,6 +131,62 @@ const router = createBrowserRouter([
           <div>
             <h1 className="text-center min-h-screen">This is service page</h1>
           </div>
+        ),
+      },
+      {
+        path: "/media",
+        element: (
+          <React.Suspense
+            fallback={
+              <div className="grid place-items-center min-h-screen">
+                <span className="loading loading-dots loading-lg"></span>
+              </div>
+            }
+          >
+            <Media></Media>
+          </React.Suspense>
+        ),
+      },
+      {
+        path: "/media/blog",
+        element: (
+          <React.Suspense
+            fallback={
+              <div className="grid place-items-center min-h-screen">
+                <span className="loading loading-dots loading-lg"></span>
+              </div>
+            }
+          >
+            <Blog></Blog>
+          </React.Suspense>
+        ),
+      },
+      {
+        path: "/media/news",
+        element: (
+          <React.Suspense
+            fallback={
+              <div className="grid place-items-center min-h-screen">
+                <span className="loading loading-dots loading-lg"></span>
+              </div>
+            }
+          >
+            <NewsPage></NewsPage>
+          </React.Suspense>
+        ),
+      },
+      {
+        path: "/media/events",
+        element: (
+          <React.Suspense
+            fallback={
+              <div className="grid place-items-center min-h-screen">
+                <span className="loading loading-dots loading-lg"></span>
+              </div>
+            }
+          >
+            <Events></Events>
+          </React.Suspense>
         ),
       },
       {

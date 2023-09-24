@@ -26,7 +26,6 @@ import buildingIcon from "../../../src/assets/ProDetIcon/building.png";
 import bathroomIcon from "../../../src/assets/ProDetIcon/bathroom.png";
 import bedroomIcon from "../../../src/assets/ProDetIcon/sleep.png";
 import collectionIcon from "../../../src/assets/ProDetIcon/collection.png";
-import planIcon from "../../../src/assets/ProDetIcon/plan.png";
 import roomIcon from "../../../src/assets/ProDetIcon/living-room.png";
 
 import dreamsCover from "../../../src/assets/Dreams/3D stractural View.jpg";
@@ -61,6 +60,7 @@ import "swiper/css/effect-creative";
 import "./projectswiper.css";
 import FormReuse from "../ContactForm/FormReuse/FormReuse";
 import ScrollDownToComp from "./ScrollDownToComp";
+import OurProjectSection from "../../Home/OurProjectSection/OurProjectSection";
 const PropertiesDetail = () => {
   const customStyles = {
     overlay: {
@@ -143,6 +143,7 @@ const PropertiesDetail = () => {
   );
   return (
     <div className="bgColorGray2  overflow-hidden bg-[#1d1d21]">
+      <FloatingButton></FloatingButton>
       {id !== "Dreams-Paradise" && (
         <Swiper
           modules={[
@@ -982,6 +983,7 @@ const PropertiesDetail = () => {
       <div>
         <FormReuse></FormReuse>
       </div>
+      {id == "Dreams-Paradise" && <OurProjectSection></OurProjectSection>}
     </div>
   );
 };
