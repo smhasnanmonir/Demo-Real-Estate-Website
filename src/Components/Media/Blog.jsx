@@ -30,7 +30,7 @@ const Blog = () => {
               <div className="flex items-center gap-7">
                 <div>
                   <img
-                    className="w-[250px] h-full object-cover"
+                    className="max-w-[250px] h-full object-cover"
                     src={blog?.photo}
                     alt=""
                   />

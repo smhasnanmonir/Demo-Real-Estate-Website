@@ -21,9 +21,9 @@ const NewsPage = () => {
         <div className="grid lg:grid-cols-4 md:grid-cols-3 grid-cols-1 gap-[12px] md:px-[45px] px-[25px] pt-[15px] place-items-center">
           {news.map((data) => (
             <div key={data?.id}>
-              <div className=" w-[350px] bg-base-100 shadow-xl">
+              <div className="bg-base-100 shadow-xl">
                 <img
-                  className="h-full w-[450px]"
+                  className="h-full w-full object-cover"
                   src={data?.photo}
                   alt={data?.title}
                 />

@@ -5,9 +5,9 @@ const MediaTemplate = ({ datas }) => {
     <div className="grid lg:grid-cols-4 md:grid-cols-3 grid-cols-1 gap-[12px] place-items-center md:px-[45px] px-[25px]">
       {datas.map((data) => (
         <div key={data?.id}>
-          <div className=" w-[350px] bg-base-100 shadow-xl">
+          <div className="max-w-[350px] bg-base-100 shadow-xl">
             <img
-              className="h-full w-[450px]"
+              className="h-full w-full object-cover"
               src={data?.photo}
               alt={data?.title}
             />

@@ -17,9 +17,9 @@ const Events = () => {
         {events.map((data) => (
           <Link to={`${data?.id}`} className="cursor-pointer" key={data?.id}>
             <div>
-              <div className=" md:w-[450px] w-[350px] bg-base-100 shadow-xl">
+              <div className="bg-base-100 shadow-xl">
                 <img
-                  className="h-full w-[450px]"
+                  className="h-full w-full object-cover"
                   src={data?.photo}
                   alt={data?.title}
                 />
