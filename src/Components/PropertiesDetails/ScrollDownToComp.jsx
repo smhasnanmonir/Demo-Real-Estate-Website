@@ -5,6 +5,7 @@ import doubleTap from "../../assets/DSIcon/doubletap.png";
 import material from "../../assets/DSIcon/material.png";
 import pencilandruler from "../../assets/DSIcon/pencil-and-ruler.png";
 import choice from "../../assets/DSIcon/choice.png";
+import brochureDream from "../../assets/brochure/Dream's-Paradise-Brochure.pdf";
 const ScrollDownToComp = () => {
   return (
     <div className="grid md:grid-cols-4 grid-cols-1 gap-[4px] md:max-w-5xl md:px-0 px-[5%] mx-auto py-[35px]">
@@ -38,10 +39,16 @@ const ScrollDownToComp = () => {
         <img className="w-[120px]" src={doubleTap} alt="" />
         <h1 className="uppercase text-white mt-[15px]">experience</h1>
       </div>
-      <div className="bg-[#aaa8885b] hover:bg-slate-700 transition-all duration-300 cursor-pointer ease-in grid place-items-center md:py-[45px] py-[25px]">
-        <img className="w-[120px]" src={brochure} alt="" />
-        <h1 className="uppercase text-white mt-[15px]">brochure</h1>
-      </div>
+      <a
+        href={brochureDream}
+        target="blank"
+        className="bg-[#aaa8885b] hover:bg-slate-700 transition-all duration-300 cursor-pointer ease-in grid place-items-center md:py-[45px] py-[25px]"
+      >
+        <div className="">
+          <img className="w-[120px]" src={brochure} alt="" />
+          <h1 className="uppercase text-white mt-[15px]">brochure</h1>
+        </div>
+      </a>
       <div
         onClick={() => {
           const anchor = document.querySelector("#floorPlan");

@@ -28,7 +28,7 @@ import bedroomIcon from "../../../src/assets/ProDetIcon/sleep.png";
 import collectionIcon from "../../../src/assets/ProDetIcon/collection.png";
 import roomIcon from "../../../src/assets/ProDetIcon/living-room.png";
 
-import dreamsCover from "../../../src/assets/Dreams/3D stractural View.jpg";
+import dreamsCover from "../../../src/assets/Dreams/CoverPage.jpg";
 
 import floor1 from "../../../src/assets/FloorPlan/1.jpg";
 import floor2 from "../../../src/assets/FloorPlan/2.jpg";
@@ -113,6 +113,7 @@ const PropertiesDetail = () => {
   }
   const { id } = useParams();
   const [datas] = UseData();
+  console.log(datas);
   let dataPro = datas.filter((datas) => datas.id === id);
 
   const descriptionText = (
@@ -223,10 +224,19 @@ const PropertiesDetail = () => {
                 dataPro[0]?.type2?.slice(1)}
             </p>
           </div>
-          <div className="text-center">
-            <h1 className="font-light">Apartment Size</h1>
-            <p className="font-medium">{dataPro[0]?.apartmentSize}</p>
-          </div>
+          {dataPro[0]?.apartmentSize && (
+            <div className="text-center">
+              <h1 className="font-light">Apartment Size</h1>
+              <p className="font-medium">{dataPro[0]?.apartmentSize}</p>
+            </div>
+          )}
+
+          {id != "Dreams-Paradise" && (
+            <div className="text-center">
+              <h1 className="font-light">Plot Size</h1>
+              <p className="font-medium">{dataPro[0]?.landArea}</p>
+            </div>
+          )}
           <div className="text-center">
             <h1 className="font-light">Completion Date</h1>
             <p className="font-medium">{dataPro[0]?.CompletionDate}</p>
@@ -272,8 +282,8 @@ const PropertiesDetail = () => {
         >
           <div>
             <img
-              className="object-cover w-full h-full"
-              src={dataPro[0]?.img}
+              className="object-cover object-right w-full h-full"
+              src={dreamsCover}
               alt=""
             />
           </div>
@@ -391,13 +401,10 @@ const PropertiesDetail = () => {
       {/* Swiper for dreams paradise starts */}
       {id == "Dreams-Paradise" && (
         <div className="pt-[5px]">
-          <h1
-            id="features"
-            className="uppercase py-[35px] text-white pl-[10%] md:text-3xl text-2xl"
-          >
+          <h1 className="uppercase py-[35px] text-white pl-[10%] md:text-3xl text-2xl">
             Features
           </h1>
-          <div>
+          <div id="features">
             <Swiper
               modules={[
                 Navigation,
@@ -450,11 +457,11 @@ const PropertiesDetail = () => {
       {id == "Dreams-Paradise" && (
         <div className=" bg-[#eceeef]">
           <div className="w-3/4 mx-auto py-[35px]">
-            <h1 id="experience" className="md:text-3xl text-2xl md:pb-[15px]">
+            <h1 className="md:text-3xl text-2xl md:pb-[15px]">
               Experience the Lifestyle
             </h1>
           </div>
-          <div>
+          <div id="experience">
             <Swiper
               modules={[Autoplay, Pagination]}
               spaceBetween={2}
@@ -499,14 +506,12 @@ const PropertiesDetail = () => {
       {/* Floor plan for dreams paradise starts*/}
       {id == "Dreams-Paradise" && (
         <div className="md:w-3/4 mx-auto md:px-0 px-[10%] pb-[5%]">
-          <h1
-            id="floorPlan"
-            className="uppercase md:text-3xl text-2xl md:py-[45px] py-[25px] text-white"
-          >
+          <h1 className="uppercase md:text-3xl text-2xl md:py-[45px] py-[25px] text-white">
             Floor Plans
           </h1>
           <div className="grid md:grid-cols-3 grid-cols-2 gap-4">
             <img
+              id="floorPlan"
               className="cursor-zoom-in hover:scale-110 transition-all duration-300 ease-linear hover:border-[8px] border-cyan-200"
               src={floor1}
               alt=""
@@ -619,47 +624,15 @@ const PropertiesDetail = () => {
                 </svg>
               </button>
               <form className="w-full max-h-[70vh] mx-auto lg:py-[55px] md:py-[45px] py-[35px] p-0 m-0 -z-10 text-white ">
-                <p className="text-[18px] pb-[15px]">
-                  Welcome to{" "}
-                  <span className="font-semibold">{dataPro[0]?.name}</span>, an
-                  exceptional land development project brought to you by the
-                  Universe Group. With meticulous planning, attention to detail,
-                  and a commitment to creating vibrant communities, this project
-                  embodies our dedication to excellence in real estate.
-                </p>
-                <p className="text-[16px] pb-[15px]">
-                  {dataPro[0]?.locationText}
-                </p>
-                <div className="pb-[15px]">
-                  <h1 className="text-xl font-semibold">
-                    Legal and Regulatory Compliance
-                  </h1>
-                  <p className="text-[16px]">
-                    All necessary permits and approvals have been obtained in
-                    compliance with local regulations.
-                  </p>
-                </div>
-                <div className="pb-[15px]">
-                  <h1 className="text-xl font-semibold">
-                    Booking and Inquiries
-                  </h1>
-                  <p className="text-[16px]">
-                    For booking inquiries and more information, please contact
-                    us.
-                  </p>
-                </div>
-                <div className="">
-                  <h1 className="text-xl font-semibold">
-                    Experience a New Universe of Possibilities
-                  </h1>
-                  <p className="text-[16px]">
-                    <span className="">{dataPro[0]?.name}</span> invites you to
-                    be a part of its journey. Whether you're seeking a space to
-                    build your dream home, an investment opportunity, or a
-                    chance to contribute to a thriving community, this project
-                    promises a universe of possibilities. Join us in shaping the
-                    future of Urban Residency
-                  </p>
+                <div className="space-y-[10px]">
+                  {dataPro[0]?.keyFeatures?.map((features) => (
+                    <div key={features?.feature} className="px-[5%] ">
+                      <p className="text-xl">
+                        <span className="font-bold">{features?.feature}: </span>
+                        {features?.description}
+                      </p>
+                    </div>
+                  ))}
                 </div>
               </form>
             </Modal>
@@ -669,21 +642,14 @@ const PropertiesDetail = () => {
               <h1 className="md:text-3xl text-2xl text-[#daa520]">
                 Specification
               </h1>
-              <ul className="pb-[10px]">
-                <li className="text-xl">
-                  <span className="innerText">{dataPro[0]?.situated}</span>
-                </li>
-                <li className="text-xl">
-                  <span className="innerText">
-                    Legal and Regulatory Compliance
-                  </span>
-                </li>
-                <li className="text-xl">
-                  <span className="innerText">
-                    Experience a New Universe of Possibilities
-                  </span>
-                </li>
-              </ul>
+
+              {dataPro[0]?.keyFeatures?.map((features) => (
+                <div key={features?.feature}>
+                  <ul className="text-white text-xl">
+                    <li>{features?.feature}</li>
+                  </ul>
+                </div>
+              ))}
               <button
                 onClick={openModal1}
                 className="px-[35px] py-[7px] text-white border-[2px] border-white hover:bg-black hover:text-white transition-all ease-in delay-100 duration-300"
@@ -939,7 +905,7 @@ const PropertiesDetail = () => {
               src={book}
               alt=""
             />
-            <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+            <div className="absolute flex inset-0 z-10 items-center justify-center">
               <a
                 className="px-[75px] py-[10px] text-white border-[2px] border-white hover:bg-black hover:text-white transition-all ease-in delay-100 duration-300"
                 href={dataPro[0]?.brochure}

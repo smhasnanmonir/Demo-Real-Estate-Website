@@ -21,6 +21,24 @@
       "https://i.ibb.co/d66X78v/oM917QT.jpg",
       "https://i.ibb.co/TK5NSnN/ZkJh82F.jpg",
       "https://i.ibb.co/StwjY1J/gsotfWA.jpg"
+    ],
+    "keyFeatures": [
+      {
+        "feature": "Scenic Beauty",
+        "description": "The land offers breathtaking views of rolling hills, lush meadows, and serene lakes, making it an ideal setting for nature enthusiasts and those looking for tranquility."
+      },
+      {
+        "feature": "Customization",
+        "description": "Each plot of land is generously sized and allows for customization to meet your unique lifestyle and architectural preferences."
+      },
+      {
+        "feature": "Amenities",
+        "description": "The project includes plans for state-of-the-art amenities, including walking trails, a community clubhouse, and recreational areas for residents and guests."
+      },
+      {
+        "feature": "Proximity to Services",
+        "description": "is conveniently located near schools, hospitals, shopping centers, and major transportation routes, ensuring easy access to essential services."
+      }
     ]
   },
   {
@@ -47,6 +65,24 @@
       "https://i.ibb.co/XsbYrdH/new-02.jpg",
       "https://i.ibb.co/2sMKfQr/new.jpg",
       "https://i.imgur.com/dfMhri0.jpg"
+    ],
+    "keyFeatures": [
+      {
+        "feature": "Scenic Beauty",
+        "description": "The land offers breathtaking views of rolling hills, lush meadows, and serene lakes, making it an ideal setting for nature enthusiasts and those looking for tranquility."
+      },
+      {
+        "feature": "Customization",
+        "description": "Each plot of land is generously sized and allows for customization to meet your unique lifestyle and architectural preferences."
+      },
+      {
+        "feature": "Amenities",
+        "description": "The project includes plans for state-of-the-art amenities, including walking trails, a community clubhouse, and recreational areas for residents and guests."
+      },
+      {
+        "feature": "Proximity to Services",
+        "description": "is conveniently located near schools, hospitals, shopping centers, and major transportation routes, ensuring easy access to essential services."
+      }
     ]
   },
   {
@@ -76,6 +112,24 @@
       "https://i.ibb.co/zNZH97B/g7-Owx-Cd-3.jpg",
       "https://i.ibb.co/rt7HpTC/Dhanmondi-Perspective-1.jpg",
       "https://i.ibb.co/k67f5pR/2642362-1.jpg"
+    ],
+    "keyFeatures": [
+      {
+        "feature": "Scenic Beauty",
+        "description": "The land offers breathtaking views of rolling hills, lush meadows, and serene lakes, making it an ideal setting for nature enthusiasts and those looking for tranquility."
+      },
+      {
+        "feature": "Customization",
+        "description": "Each plot of land is generously sized and allows for customization to meet your unique lifestyle and architectural preferences."
+      },
+      {
+        "feature": "Amenities",
+        "description": "The project includes plans for state-of-the-art amenities, including walking trails, a community clubhouse, and recreational areas for residents and guests."
+      },
+      {
+        "feature": "Proximity to Services",
+        "description": "is conveniently located near schools, hospitals, shopping centers, and major transportation routes, ensuring easy access to essential services."
+      }
     ]
   },
   {
@@ -83,12 +137,13 @@
     "phase": "ongoing",
     "type1": "residential",
     "id": "Nishorgo-Valley",
+    "landArea": "3, 4 & 5 Katha",
     "location": "Purbachal",
     "numberId": 2,
     "brochure": "https://firebasestorage.googleapis.com/v0/b/sm-realestate-project.appspot.com/o/Project%20Nishorgo%20Valley%20(Purbachal).pdf?alt=media&token=7464bd97-2f51-4f71-9877-f4cdb6e0a55b",
     "img": "https://i.ibb.co/bzTPFqJ/vIWIyVS.jpg",
     "slideimg": "https://i.ibb.co/bzTPFqJ/vIWIyVS.jpg",
-    "description": "Green Living with urban lifestyle is no more a myth for tranquility mongers. The urban dwellers of Dhaka city are always dreaming for living accommodations accompanied by garden with plants, open spaces for wander, trees for oxygen and lakes for boating & fishing. A place belonging magic touch of green-living in an environment friendly community with complementary fresh & clean breathing air accompanied by caring & sharing neighbors throughout the year, is a dream coming true by the grace of heavenly initiative called Unveiling the imaginations of urban dwellers and introducing the eco-friendly environment, Mayakunjo Model Town was developed with significant & dynamic aspects of green architecture which was meticulously planned and perfectly designed. The Best Brand of Living was flawlessly designed for the cream de la cream of societies finest. The architecture here is in creating spaces that interrelates, provokes and titillate the green senses. With the casual open layout, every composition of the architectural design exudes eminent and distinguished elegance.",
+    "description": "Nishorgo Valley  is a prestigious real estate land project located in the Purbachal new town, offering a unique opportunity for investors and homeowners to experience country living at its finest. This expansive development spans 200 acres of pristine land, providing a wide range of options for those seeking to build their dream home or invest in the future.",
     "google_location": "https://www.google.com/maps?ll=23.883025,90.509969&z=15&t=m&hl=en-US&gl=US&mapclient=embed&cid=7177966179380372765",
     "iframe": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14592.743689732753!2d90.509969!3d23.883025000000004!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755cf6237b0c61d%3A0x639d4235abbc251d!2sNishorgo%20Valley!5e0!3m2!1sen!2sus!4v1690908475832!5m2!1sen!2sus",
     "slideshow": [
@@ -97,6 +152,24 @@
       "https://i.imgur.com/bxST9bC.jpg",
       "https://i.imgur.com/zb867Xu.jpg",
       "https://i.imgur.com/1w7L2c4.jpg"
+    ],
+    "keyFeatures": [
+      {
+        "feature": "Scenic Beauty",
+        "description": "The land offers breathtaking views of rolling hills, lush meadows, and serene lakes, making it an ideal setting for nature enthusiasts and those looking for tranquility."
+      },
+      {
+        "feature": "Customization",
+        "description": "Each plot of land is generously sized and allows for customization to meet your unique lifestyle and architectural preferences."
+      },
+      {
+        "feature": "Amenities",
+        "description": "The project includes plans for state-of-the-art amenities, including walking trails, a community clubhouse, and recreational areas for residents and guests."
+      },
+      {
+        "feature": "Proximity to Services",
+        "description": "Nishorgo Valley is conveniently located near schools, hospitals, shopping centers, and major transportation routes, ensuring easy access to essential services."
+      }
     ]
   }
 ]

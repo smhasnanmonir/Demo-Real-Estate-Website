@@ -28,14 +28,14 @@ const PropertyReuseStructure = () => {
   } else if (selectedValue === "residential") {
     return (
       <PropertyCard
-        heading="Our Residential Apartments"
+        heading="Our Residential Projects"
         type2Data={datas}
       ></PropertyCard>
     );
   } else if (selectedValue === "commercial") {
     return (
       <PropertyCard
-        heading="Our Commercial Apartments"
+        heading="Commercial Properties Available Here"
         type2Data={commercialFilter}
       ></PropertyCard>
     );
