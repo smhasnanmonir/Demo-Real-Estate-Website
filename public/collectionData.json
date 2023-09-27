@@ -3,24 +3,24 @@
     "id": "1",
     "name": "LUXURY",
     "location": ["Dhaka"],
-    "photo": "https://drive.google.com/uc?export=download&id=1Di2SVrqHtAXI4GjUj-VQJL8Zv-dUSI00"
+    "photo": "https://i.ibb.co/0rXmP3V/pexels-mark-1080721.jpg"
   },
   {
     "id": "2",
     "name": "CLASSIC",
     "location": ["Dhaka", "Chattogram"],
-    "photo": "https://drive.google.com/uc?export=download&id=11Pz1FAOjENdXVh7V50f-EjXfe_GxbGL_"
+    "photo": "https://i.ibb.co/fC8kdfY/FSXqcVP.jpg"
   },
   {
     "id": "3",
     "name": "WELLNESS",
     "location": ["Dhaka", "Chattogram"],
-    "photo": "https://drive.google.com/uc?export=download&id=13bosQzXln7UbQDfHYu-X55kxdJwNeIFg"
+    "photo": "https://i.ibb.co/XtVZTbR/OJcHpVI.jpg"
   },
   {
     "id": "4",
     "name": "COMMERCIAL",
     "location": ["Dhaka", "Chattogram"],
-    "photo": "https://drive.google.com/uc?export=download&id=1ffr26tNzlifSwwQPTnFiWjwfqP-ETF2v"
+    "photo": "https://i.ibb.co/GWZdJD6/Ef2lQwn.jpg"
   }
 ]

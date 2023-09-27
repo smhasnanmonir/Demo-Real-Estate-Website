@@ -9,15 +9,6 @@ const AboutUs = () => {
             Experiential Events and activations. Integrate and create holistic
             Creative & Strategies.
           </p>
-          {/* <img
-            className="md:w-[65px] w-[45px] md:ml-[275px] ml-[155px] mt-10 cursor-pointer"
-            onClick={() => {
-              const anchor = document.querySelector("#sec2");
-              anchor.scrollIntoView({ behavior: "smooth", block: "center" });
-            }}
-            src="https://i.ibb.co/hyCKJD3/down-arrow.png"
-            alt=""
-          /> */}
         </div>
       </div>
       <div className="carousel-item h-full">
@@ -28,15 +19,6 @@ const AboutUs = () => {
             Experiential Events and activations. Integrate and create holistic
             Creative & Strategies.
           </p>
-          {/* <img
-            className="md:w-[65px] w-[45px] md:ml-[275px] ml-[155px] mt-10 cursor-pointer"
-            onClick={() => {
-              const anchor = document.querySelector("#sec2");
-              anchor.scrollIntoView({ behavior: "smooth", block: "center" });
-            }}
-            src="https://i.ibb.co/hyCKJD3/down-arrow.png"
-            alt=""
-          /> */}
         </div>
       </div>
       <div className="carousel-item h-full">
@@ -47,15 +29,6 @@ const AboutUs = () => {
             Experiential Events and activations. Integrate and create holistic
             Creative & Strategies.
           </p>
-          {/* <img
-            className="md:w-[65px] w-[45px] md:ml-[275px] ml-[155px] mt-10 cursor-pointer"
-            onClick={() => {
-              const anchor = document.querySelector("#sec2");
-              anchor.scrollIntoView({ behavior: "smooth", block: "center" });
-            }}
-            src="https://i.ibb.co/hyCKJD3/down-arrow.png"
-            alt=""
-          /> */}
         </div>
       </div>
       <div className="carousel-item h-full">

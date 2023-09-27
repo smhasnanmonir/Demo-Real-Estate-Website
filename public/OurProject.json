@@ -39,6 +39,24 @@
         "feature": "Proximity to Services",
         "description": "is conveniently located near schools, hospitals, shopping centers, and major transportation routes, ensuring easy access to essential services."
       }
+    ],
+    "localBenefit": [
+      {
+        "feature": "220 feet western bypass road",
+        "img": "https://i.ibb.co/0QDQX3R/road.png"
+      },
+      {
+        "feature": "100 feet Gov road",
+        "img": "https://i.ibb.co/LJVJZP1/destination.png"
+      },
+      {
+        "feature": "Metro Rail",
+        "img": "https://i.ibb.co/PZWq064/train.png"
+      },
+      {
+        "feature": "Proposed New Bus Terminal",
+        "img": "https://i.ibb.co/kBFbTQz/bus.png"
+      }
     ]
   },
   {
@@ -82,6 +100,36 @@
       {
         "feature": "Proximity to Services",
         "description": "is conveniently located near schools, hospitals, shopping centers, and major transportation routes, ensuring easy access to essential services."
+      }
+    ],
+    "localBenefit": [
+      {
+        "feature": "220 feet western bypass road",
+        "img": "https://i.ibb.co/0QDQX3R/road.png"
+      },
+      {
+        "feature": "120 feet Bosila-Kalatia road",
+        "img": "https://i.ibb.co/LJVJZP1/destination.png"
+      },
+      {
+        "feature": "Proposed New Bus Terminal",
+        "img": "https://i.ibb.co/PZWq064/train.png"
+      },
+      {
+        "feature": "Shyamol Bangla Resort",
+        "img": "https://i.ibb.co/wJGN8Rx/resort.png"
+      },
+      {
+        "feature": "Akiz Foundation English Medium School",
+        "img": "https://i.ibb.co/7JxL1m9/school.png"
+      },
+      {
+        "feature": "Ibn Sina Hospital",
+        "img": "https://i.ibb.co/1XGDK7y/hospital.png"
+      },
+      {
+        "feature": "University(proposed)",
+        "img": "https://i.ibb.co/hY96jF1/graduation.png"
       }
     ]
   },

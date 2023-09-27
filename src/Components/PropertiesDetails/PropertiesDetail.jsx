@@ -29,6 +29,7 @@ import collectionIcon from "../../../src/assets/ProDetIcon/collection.png";
 import roomIcon from "../../../src/assets/ProDetIcon/living-room.png";
 
 import dreamsCover from "../../../src/assets/Dreams/CoverPage.jpg";
+import dreamsCover2 from "../../../src/assets/Dreams/CoverPage2.jpg";
 
 import floor1 from "../../../src/assets/FloorPlan/1.jpg";
 import floor2 from "../../../src/assets/FloorPlan/2.jpg";
@@ -61,6 +62,9 @@ import "./projectswiper.css";
 import FormReuse from "../ContactForm/FormReuse/FormReuse";
 import ScrollDownToComp from "./ScrollDownToComp";
 import OurProjectSection from "../../Home/OurProjectSection/OurProjectSection";
+import LocalBenifits from "./LocalBenifits";
+import Zoom from "react-medium-image-zoom";
+import "react-medium-image-zoom/dist/styles.css";
 const PropertiesDetail = () => {
   const customStyles = {
     overlay: {
@@ -278,12 +282,12 @@ const PropertiesDetail = () => {
       {id == "Dreams-Paradise" && (
         <div
           id="glance"
-          className="bg-white grid md:grid-cols-2 grid-cols-1 md:px-[150px] px-[25px] md:py-[50px] gap-[35px]"
+          className="bg-white grid md:grid-cols-2 grid-cols-1 md:px-[150px] px-[25px] md:py-[50px] gap-[35px] items-center"
         >
           <div>
             <img
               className="object-cover object-right w-full h-full"
-              src={dreamsCover}
+              src={dreamsCover2}
               alt=""
             />
           </div>
@@ -400,8 +404,8 @@ const PropertiesDetail = () => {
       {/* At a glance ends */}
       {/* Swiper for dreams paradise starts */}
       {id == "Dreams-Paradise" && (
-        <div className="pt-[5px]">
-          <h1 className="uppercase py-[35px] text-white pl-[10%] md:text-3xl text-2xl">
+        <div className="pt-[5px] ">
+          <h1 className="uppercase py-[35px] text-white md:text-3xl text-2xl w-3/4 mx-auto">
             Features
           </h1>
           <div id="features">
@@ -455,9 +459,9 @@ const PropertiesDetail = () => {
       {/* Experience */}
 
       {id == "Dreams-Paradise" && (
-        <div className=" bg-[#eceeef]">
-          <div className="w-3/4 mx-auto py-[35px]">
-            <h1 className="md:text-3xl text-2xl md:pb-[15px]">
+        <div className=" bg-[#eceeef] ">
+          <div className="w-3/4 mx-auto">
+            <h1 className="md:text-3xl text-2xl py-[35px] ">
               Experience the Lifestyle
             </h1>
           </div>
@@ -510,37 +514,49 @@ const PropertiesDetail = () => {
             Floor Plans
           </h1>
           <div className="grid md:grid-cols-3 grid-cols-2 gap-4">
-            <img
-              id="floorPlan"
-              className="cursor-zoom-in hover:scale-110 transition-all duration-300 ease-linear hover:border-[8px] border-cyan-200"
-              src={floor1}
-              alt=""
-            />
-            <img
-              className="cursor-zoom-in hover:scale-110 transition-all duration-300 ease-linear hover:border-[8px] border-cyan-200"
-              src={floor2}
-              alt=""
-            />
-            <img
-              className="cursor-zoom-in hover:scale-110 transition-all duration-300 ease-linear hover:border-[8px] border-cyan-200"
-              src={floor3}
-              alt=""
-            />
-            <img
-              className="cursor-zoom-in hover:scale-110 transition-all duration-300 ease-linear hover:border-[8px] border-cyan-200"
-              src={floor4}
-              alt=""
-            />
-            <img
-              className="cursor-zoom-in hover:scale-110 transition-all duration-300 ease-linear hover:border-[8px] border-cyan-200"
-              src={floor5}
-              alt=""
-            />
-            <img
-              className="cursor-zoom-in hover:scale-110 transition-all duration-300 ease-linear hover:border-[8px] border-cyan-200"
-              src={floor6}
-              alt=""
-            />
+            <Zoom>
+              <img
+                id="floorPlan"
+                className="cursor-zoom-in hover:scale-110 transition-all duration-300 ease-linear hover:border-[8px] border-cyan-200"
+                src={floor1}
+                alt=""
+              />
+            </Zoom>
+            <Zoom>
+              <img
+                className="cursor-zoom-in hover:scale-110 transition-all duration-300 ease-linear hover:border-[8px] border-cyan-200"
+                src={floor2}
+                alt=""
+              />
+            </Zoom>
+            <Zoom>
+              <img
+                className="cursor-zoom-in hover:scale-110 transition-all duration-300 ease-linear hover:border-[8px] border-cyan-200"
+                src={floor3}
+                alt=""
+              />
+            </Zoom>
+            <Zoom>
+              <img
+                className="cursor-zoom-in hover:scale-110 transition-all duration-300 ease-linear hover:border-[8px] border-cyan-200"
+                src={floor4}
+                alt=""
+              />
+            </Zoom>
+            <Zoom>
+              <img
+                className="cursor-zoom-in hover:scale-110 transition-all duration-300 ease-linear hover:border-[8px] border-cyan-200"
+                src={floor5}
+                alt=""
+              />
+            </Zoom>
+            <Zoom>
+              <img
+                className="cursor-zoom-in hover:scale-110 transition-all duration-300 ease-linear hover:border-[8px] border-cyan-200"
+                src={floor6}
+                alt=""
+              />
+            </Zoom>
           </div>
         </div>
       )}
@@ -549,7 +565,7 @@ const PropertiesDetail = () => {
       {/* Overview and Spec */}
 
       {id != "Dreams-Paradise" && (
-        <div className="grid lg:grid-cols-2 grid-cols-1 border-y-[3px] border-black bg-[#212529] lg:px-[45px] md:px-[35px] px-[55px] lg:py-[105px] py-[65px] gap-[50px] text-white">
+        <div className="grid lg:grid-cols-2 grid-cols-1 border-y-[3px] border-black bg-[#212529] lg:px-[45px] md:px-[35px] px-[55px] lg:py-[105px] py-[65px] gap-[50px] text-white mx-auto place-items-center">
           <div className="space-y-5 w-11/12  lg:border-r-[2px] border-white lg:border-b-[0px] border-b-[2px] pb-[35px]">
             <h1 className="md:text-3xl text-2xl text-[#daa520]">Overview</h1>
             <p className="md:w-3/4 text-xl font-thin">
@@ -625,6 +641,9 @@ const PropertiesDetail = () => {
               </button>
               <form className="w-full max-h-[70vh] mx-auto lg:py-[55px] md:py-[45px] py-[35px] p-0 m-0 -z-10 text-white ">
                 <div className="space-y-[10px]">
+                  <h1 className="text-2xl font-semibold py-[10px] px-[5%] text-center max-w-fit mx-auto underline-offset-[12px] underline">
+                    Specification of {dataPro[0]?.name}
+                  </h1>
                   {dataPro[0]?.keyFeatures?.map((features) => (
                     <div key={features?.feature} className="px-[5%] ">
                       <p className="text-xl">
@@ -719,6 +738,11 @@ const PropertiesDetail = () => {
         </div>
       )}
 
+      {id == "Mayakunjo-Model-Town" ||
+        (id == "Dream-Square-Model-Town" && (
+          <LocalBenifits datas={dataPro[0]}></LocalBenifits>
+        ))}
+
       {/* Brochure */}
       {id != "Dreams-Paradise" && (
         <div className="bg-white grid lg:grid-cols-2 grid-cols-1 border-t-[3px] border-black w-full h-full">
@@ -730,9 +754,9 @@ const PropertiesDetail = () => {
             />
             <div className="absolute top-1/2 left-[40%] transform -translate-x-1/2 -translate-y-1/2 space-y-[20px] ">
               <h1 className="text-[#daa520] md:text-3xl text-xl">
-                Plot Booking
+                Plot Booking Regulation
               </h1>
-              <p className="text-white text-xl">Regulation</p>
+
               <p className="text-white text-xl">
                 Welcome to{" "}
                 <span className="font-semibold">{dataPro[0]?.name}</span>! We
@@ -774,11 +798,14 @@ const PropertiesDetail = () => {
                   />
                 </svg>
               </button>
-              <form className="w-full max-h-[70vh] max-w-[80vw] mx-auto lg:py-[55px] md:py-[45px] py-[35px] p-0 m-0 -z-10 text-white ">
+              <form className="w-full max-h-[70vh] max-w-[80vw] mx-auto lg:py-[25px] md:py-[25px] py-[15px] p-0 m-0 -z-10 text-white ">
                 <div className="space-y-[13px] pb-[13px]">
+                  <h1 className="text-xl font-semibold text-center underline underline-offset-[12px]">
+                    Plot Booking Regulation of {dataPro[0]?.name}
+                  </h1>
                   <h1>
-                    Welcome to Mayakunjo Model Town! We are excited to have you
-                    as a potential plot buyer. To ensure a smooth and
+                    Welcome to <span>{dataPro[0]?.name}</span> We are excited to
+                    have you as a potential plot buyer. To ensure a smooth and
                     transparent process, we have established the following plot
                     booking regulations
                   </h1>
@@ -905,7 +932,7 @@ const PropertiesDetail = () => {
               src={book}
               alt=""
             />
-            <div className="absolute flex inset-0 z-10 items-center justify-center">
+            <div className="absolute flex inset-0 items-center justify-center">
               <a
                 className="px-[75px] py-[10px] text-white border-[2px] border-white hover:bg-black hover:text-white transition-all ease-in delay-100 duration-300"
                 href={dataPro[0]?.brochure}
@@ -949,7 +976,9 @@ const PropertiesDetail = () => {
       <div>
         <FormReuse></FormReuse>
       </div>
-      {id == "Dreams-Paradise" && <OurProjectSection></OurProjectSection>}
+      <div className="mb-[35px]">
+        {id == "Dreams-Paradise" && <OurProjectSection></OurProjectSection>}
+      </div>
     </div>
   );
 };

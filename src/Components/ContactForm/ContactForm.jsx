@@ -8,7 +8,7 @@ const ContactForm = () => {
     <>
       <FloatingButton></FloatingButton>
       <SharedFrontPage
-        backgroundImg="https://images.unsplash.com/photo-1542361345-89e58247f2d5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+        backgroundImg="https://firebasestorage.googleapis.com/v0/b/sm-realestate-project.appspot.com/o/grant-ritchie-FBkrQhnLQoY-unsplash.jpg?alt=media&token=edceb7c5-d050-4a20-8bc8-52af29220f5c"
         heading1="Contact"
         heading2="GET IN TOUCH"
       ></SharedFrontPage>
