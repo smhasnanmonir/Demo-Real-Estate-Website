@@ -2,6 +2,8 @@ import React from "react";
 
 import { createBrowserRouter } from "react-router-dom";
 import Main from "../Main/Main";
+import BusinessPage from "../Components/BusinessPage/BusinessPage";
+import BusinessDetailsPage from "../Components/BusinessPage/BusinessDetailsPage/BussinessDetailsPage";
 const Blog = React.lazy(() => import("../Components/Media/Blog"));
 const Media = React.lazy(() => import("../Components/Media/Media"));
 const Events = React.lazy(() => import("../Components/Media/Events"));
@@ -119,11 +121,11 @@ const router = createBrowserRouter([
       },
       {
         path: "/business",
-        element: (
-          <div>
-            <h1 className="text-center min-h-screen">This is business page</h1>
-          </div>
-        ),
+        element: <BusinessPage></BusinessPage>,
+      },
+      {
+        path: "/business/details/:id",
+        element: <BusinessDetailsPage></BusinessDetailsPage>,
       },
       {
         path: "/service",

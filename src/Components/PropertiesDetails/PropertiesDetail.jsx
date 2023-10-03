@@ -686,52 +686,125 @@ const PropertiesDetail = () => {
             Features of The Project
           </h1>
           <div className="grid lg:grid-cols-6 md:grid-cols-4 grid-cols-2 gap-x-4 lg:px-[25px]">
-            <div className="text-center hover:scale-110 hover:cursor-pointer transition-all duration-300 ease-in">
-              <img src={school} alt="" />
+            <div className="text-center ">
+              <div className="overflow-hidden">
+                <img
+                  className="hover:scale-110 hover:cursor-pointer transition-all duration-300 ease-in"
+                  src={school}
+                  alt=""
+                />
+              </div>
+
               <p className="py-2">School</p>
             </div>
-            <div className="text-center hover:scale-110 hover:cursor-pointer transition-all duration-300 ease-in">
-              <img src={college} alt="" />
+            <div className="text-center overflow-hidden">
+              <div className="overflow-hidden">
+                <img
+                  className="hover:scale-110 hover:cursor-pointer transition-all duration-300 ease-in"
+                  src={college}
+                  alt=""
+                />
+              </div>
               <p className="pt-1">College</p>
             </div>
-            <div className="text-center hover:scale-110 hover:cursor-pointer transition-all duration-300 ease-in">
-              <img src={university} alt="" />
+            <div className="text-center overflow-hidden">
+              <div className="overflow-hidden">
+                <img
+                  className="hover:scale-110 hover:cursor-pointer transition-all duration-300 ease-in"
+                  src={university}
+                  alt=""
+                />
+              </div>
               <p className="pt-1">University</p>
             </div>
-            <div className="text-center hover:scale-110 hover:cursor-pointer transition-all duration-300 ease-in">
-              <img src={hospital} alt="" />
+            <div className="text-center overflow-hidden">
+              <div className="overflow-hidden">
+                <img
+                  className="hover:scale-110 hover:cursor-pointer transition-all duration-300 ease-in"
+                  src={hospital}
+                  alt=""
+                />
+              </div>
               <p className="pt-1">Hospital</p>
             </div>
-            <div className="text-center hover:scale-110 hover:cursor-pointer transition-all duration-300 ease-in">
-              <img src={mall} alt="" />
+            <div className="text-center overflow-hidden">
+              <div className="overflow-hidden">
+                <img
+                  className="hover:scale-110 hover:cursor-pointer transition-all duration-300 ease-in"
+                  src={mall}
+                  alt=""
+                />
+              </div>
               <p className="pt-1">Shopping Mall</p>
             </div>
-            <div className="text-center hover:scale-110 hover:cursor-pointer transition-all duration-300 ease-in">
-              <img src={mosque} alt="" />
+            <div className="text-center overflow-hidden">
+              <div className="overflow-hidden">
+                <img
+                  className="hover:scale-110 hover:cursor-pointer transition-all duration-300 ease-in"
+                  src={mosque}
+                  alt=""
+                />
+              </div>
               <p className="pt-1">Mosque</p>
             </div>
-            <div className="text-center hover:scale-110 hover:cursor-pointer transition-all duration-300 ease-in">
-              <img src={helipad} alt="" />
+            <div className="text-center overflow-hidden">
+              <div className="overflow-hidden">
+                <img
+                  className="hover:scale-110 hover:cursor-pointer transition-all duration-300 ease-in"
+                  src={helipad}
+                  alt=""
+                />
+              </div>
               <p className="pt-1">Helipad</p>
             </div>
-            <div className="text-center hover:scale-110 hover:cursor-pointer transition-all duration-300 ease-in">
-              <img src={gym} alt="" />
+            <div className="text-center overflow-hidden">
+              <div className="overflow-hidden">
+                <img
+                  className="hover:scale-110 hover:cursor-pointer transition-all duration-300 ease-in"
+                  src={gym}
+                  alt=""
+                />
+              </div>
               <p className="pt-1">Gym</p>
             </div>
-            <div className="text-center hover:scale-110 hover:cursor-pointer transition-all duration-300 ease-in">
-              <img src={food} alt="" />
+            <div className="text-center overflow-hidden">
+              <div className="overflow-hidden">
+                <img
+                  className="hover:scale-110 hover:cursor-pointer transition-all duration-300 ease-in"
+                  src={food}
+                  alt=""
+                />
+              </div>
               <p className="pt-1">Food Court</p>
             </div>
-            <div className="text-center hover:scale-110 hover:cursor-pointer transition-all duration-300 ease-in">
-              <img src={convention} alt="" />
+            <div className="text-center overflow-hidden">
+              <div className="overflow-hidden">
+                <img
+                  className="hover:scale-110 hover:cursor-pointer transition-all duration-300 ease-in"
+                  src={convention}
+                  alt=""
+                />
+              </div>
               <p className="pt-1">Convention Center</p>
             </div>
-            <div className="text-center hover:scale-110 hover:cursor-pointer transition-all duration-300 ease-in">
-              <img src={park} alt="" />
+            <div className="text-center overflow-hidden">
+              <div className="overflow-hidden">
+                <img
+                  className="hover:scale-110 hover:cursor-pointer transition-all duration-300 ease-in"
+                  src={park}
+                  alt=""
+                />
+              </div>
               <p className="pt-1">Park</p>
             </div>
-            <div className="text-center hover:scale-110 hover:cursor-pointer transition-all duration-300 ease-in">
-              <img src={field} alt="" />
+            <div className="text-center overflow-hidden">
+              <div className="overflow-hidden">
+                <img
+                  className="hover:scale-110 hover:cursor-pointer transition-all duration-300 ease-in"
+                  src={field}
+                  alt=""
+                />
+              </div>
               <p className="pt-1">Field</p>
             </div>
           </div>

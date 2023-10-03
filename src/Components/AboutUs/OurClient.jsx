@@ -24,13 +24,55 @@ const OurClient = () => {
         </p>
       </div>
       <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-5 px-4 py-4 bg-[#e9ecef]">
-        <img src={img1} alt="" />
-        <img src={img2} alt="" />
-        <img src={img3} alt="" />
-        <img src={img4} alt="" />
-        <img src={img5} alt="" />
-        <img src={img6} alt="" />
-        <img src={img7} alt="" />
+        <div className="overflow-hidden">
+          <img
+            className="hover:scale-110 hover:cursor-pointer transition-all duration-300 ease-in grayscale hover:grayscale-0"
+            src={img1}
+            alt=""
+          />
+        </div>
+        <div className="overflow-hidden">
+          <img
+            className="hover:scale-110 hover:cursor-pointer transition-all duration-300 ease-in grayscale hover:grayscale-0"
+            src={img2}
+            alt=""
+          />
+        </div>
+        <div className="overflow-hidden">
+          <img
+            className="hover:scale-110 hover:cursor-pointer transition-all duration-300 ease-in grayscale hover:grayscale-0"
+            src={img3}
+            alt=""
+          />
+        </div>
+        <div className="overflow-hidden">
+          <img
+            className="hover:scale-110 hover:cursor-pointer transition-all duration-300 ease-in grayscale hover:grayscale-0"
+            src={img4}
+            alt=""
+          />
+        </div>
+        <div className="overflow-hidden">
+          <img
+            className="hover:scale-110 hover:cursor-pointer transition-all duration-300 ease-in grayscale hover:grayscale-0"
+            src={img5}
+            alt=""
+          />
+        </div>
+        <div className="overflow-hidden">
+          <img
+            className="hover:scale-110 hover:cursor-pointer transition-all duration-300 ease-in grayscale hover:grayscale-0"
+            src={img6}
+            alt=""
+          />
+        </div>
+        <div className="overflow-hidden">
+          <img
+            className="hover:scale-110 hover:cursor-pointer transition-all duration-300 ease-in grayscale hover:grayscale-0"
+            src={img7}
+            alt=""
+          />
+        </div>
       </div>
     </div>
   );
