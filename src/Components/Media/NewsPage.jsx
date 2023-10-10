@@ -1,6 +1,5 @@
 import { useState } from "react";
 import CoverPhoto from "./CoverPhoto";
-import MediaTemplate from "./MediaTemplate";
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
 

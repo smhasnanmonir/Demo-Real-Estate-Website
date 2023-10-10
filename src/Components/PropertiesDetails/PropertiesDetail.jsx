@@ -565,7 +565,7 @@ const PropertiesDetail = () => {
       {/* Overview and Spec */}
 
       {id != "Dreams-Paradise" && (
-        <div className="grid lg:grid-cols-2 grid-cols-1 border-y-[3px] border-black bg-[#212529] lg:px-[45px] md:px-[35px] px-[55px] lg:py-[105px] py-[65px] gap-[50px] text-white mx-auto place-items-center">
+        <div className="grid lg:grid-cols-2 grid-cols-1 border-y-[3px] border-black bg-[#212529] lg:px-[45px] md:px-[35px] px-[5%] lg:py-[105px] py-[65px] gap-[50px] text-white mx-auto place-items-center">
           <div className="space-y-5 w-11/12  lg:border-r-[2px] border-white lg:border-b-[0px] border-b-[2px] pb-[35px]">
             <h1 className="md:text-3xl text-2xl text-[#daa520]">Overview</h1>
             <p className="md:w-3/4 text-xl font-thin">
@@ -641,7 +641,7 @@ const PropertiesDetail = () => {
               </button>
               <form className="w-full max-h-[70vh] mx-auto lg:py-[55px] md:py-[45px] py-[35px] p-0 m-0 -z-10 text-white ">
                 <div className="space-y-[10px]">
-                  <h1 className="text-2xl font-semibold py-[10px] px-[5%] text-center max-w-fit mx-auto underline-offset-[12px] underline">
+                  <h1 className="md:text-2xl font-semibold py-[10px] px-[5%] text-center max-w-fit mx-auto underline-offset-[12px] md:underline">
                     Specification of {dataPro[0]?.name}
                   </h1>
                   {dataPro[0]?.keyFeatures?.map((features) => (
@@ -656,26 +656,24 @@ const PropertiesDetail = () => {
               </form>
             </Modal>
           </div>
-          <div className="space-y-3">
-            <div className=" space-y-5">
-              <h1 className="md:text-3xl text-2xl text-[#daa520]">
-                Specification
-              </h1>
+          <div className="space-y-5 w-full md:px-0 px-[12%]">
+            <h1 className="md:text-3xl text-2xl text-[#daa520]">
+              Specification
+            </h1>
 
-              {dataPro[0]?.keyFeatures?.map((features) => (
-                <div key={features?.feature}>
-                  <ul className="text-white text-xl">
-                    <li>{features?.feature}</li>
-                  </ul>
-                </div>
-              ))}
-              <button
-                onClick={openModal1}
-                className="px-[35px] py-[7px] text-white border-[2px] border-white hover:bg-black hover:text-white transition-all ease-in delay-100 duration-300"
-              >
-                Read More
-              </button>
-            </div>
+            {dataPro[0]?.keyFeatures?.map((features) => (
+              <div key={features?.feature}>
+                <ul className="text-white text-xl">
+                  <li>{features?.feature}</li>
+                </ul>
+              </div>
+            ))}
+            <button
+              onClick={openModal1}
+              className="px-[35px] py-[7px] text-white border-[2px] border-white hover:bg-black hover:text-white transition-all ease-in delay-100 duration-300"
+            >
+              Read More
+            </button>
           </div>
         </div>
       )}
@@ -811,10 +809,13 @@ const PropertiesDetail = () => {
         </div>
       )}
 
-      {id == "Mayakunjo-Model-Town" ||
-        (id == "Dream-Square-Model-Town" && (
+      {id === "Mayakunjo-Model-Town" || id === "Dream-Square-Model-Town" ? (
+        <>
           <LocalBenifits datas={dataPro[0]}></LocalBenifits>
-        ))}
+        </>
+      ) : (
+        <></>
+      )}
 
       {/* Brochure */}
       {id != "Dreams-Paradise" && (

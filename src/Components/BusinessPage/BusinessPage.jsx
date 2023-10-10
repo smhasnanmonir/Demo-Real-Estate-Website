@@ -38,7 +38,7 @@ const BusinessPage = () => {
                 to={`/business/details/${busi?.id}`}
                 key={i}
               >
-                <img src={busi?.img} alt="logo1" />
+                <img className="w-1/2 mx-auto" src={busi?.img} alt="logo1" />
               </Link>
             </SwiperSlide>
           ))}
@@ -64,32 +64,34 @@ const BusinessPage = () => {
             dignissimos assumenda repudiandae officia suscipit obcaecati,
           </p>
         </div>
-        <Swiper
-          navigation={false}
-          modules={[Autoplay, Pagination, Navigation]}
-          autoplay={{
-            delay: 2500,
-            disableOnInteraction: false,
-          }}
-          pagination={{
-            clickable: true,
-          }}
-          slidesPerView={2}
-          loop={true}
-          className="mySwiper"
-        >
-          {busiData?.map((busi, i) => (
-            <SwiperSlide key={i}>
-              <Link
-                className="cursor-pointer"
-                to={`/business/details/${busi?.id}`}
-                key={i}
-              >
-                <img src={busi?.img} alt="logo1" />
-              </Link>
-            </SwiperSlide>
-          ))}
-        </Swiper>
+        <div className="max-w-3xl mx-auto py-[30px]">
+          <Swiper
+            navigation={false}
+            modules={[Autoplay, Pagination, Navigation]}
+            autoplay={{
+              delay: 2500,
+              disableOnInteraction: false,
+            }}
+            pagination={{
+              clickable: true,
+            }}
+            slidesPerView={3}
+            loop={true}
+            className="mySwiper"
+          >
+            {busiData?.map((busi, i) => (
+              <SwiperSlide key={i}>
+                <Link
+                  className="cursor-pointer"
+                  to={`/business/details/${busi?.id}`}
+                  key={i}
+                >
+                  <img className="w-3/4" src={busi?.img} alt="logo1" />
+                </Link>
+              </SwiperSlide>
+            ))}
+          </Swiper>
+        </div>
       </div>
     </div>
   );

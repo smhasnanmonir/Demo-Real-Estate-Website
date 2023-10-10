@@ -1,10 +1,6 @@
 import { Tab } from "@headlessui/react";
 
 import CoverPhoto from "./CoverPhoto";
-import NewsPage from "./NewsPage";
-import { useState } from "react";
-import Blog from "./Blog";
-import { useEffect } from "react";
 import MediaTemplate from "./MediaTemplate";
 import UseMedia from "../Hooks/UseMedia";
 

@@ -2,8 +2,15 @@ import React from "react";
 
 import { createBrowserRouter } from "react-router-dom";
 import Main from "../Main/Main";
-import BusinessPage from "../Components/BusinessPage/BusinessPage";
-import BusinessDetailsPage from "../Components/BusinessPage/BusinessDetailsPage/BussinessDetailsPage";
+
+const BusinessPage = React.lazy(() =>
+  import("../Components/BusinessPage/BusinessPage")
+);
+const BusinessDetailsPage = React.lazy(() =>
+  import("../Components/BusinessPage/BusinessDetailsPage/BussinessDetailsPage")
+);
+// import BusinessPage from "../Components/BusinessPage/BusinessPage";
+// import BusinessDetailsPage from "../Components/BusinessPage/BusinessDetailsPage/BussinessDetailsPage";
 const Blog = React.lazy(() => import("../Components/Media/Blog"));
 const Media = React.lazy(() => import("../Components/Media/Media"));
 const Events = React.lazy(() => import("../Components/Media/Events"));
@@ -121,11 +128,33 @@ const router = createBrowserRouter([
       },
       {
         path: "/business",
-        element: <BusinessPage></BusinessPage>,
+        // element: <BusinessPage></BusinessPage>,
+        element: (
+          <React.Suspense
+            fallback={
+              <div className="grid place-items-center min-h-screen">
+                <span className="loading loading-dots loading-lg"></span>
+              </div>
+            }
+          >
+            <BusinessPage></BusinessPage>
+          </React.Suspense>
+        ),
       },
       {
         path: "/business/details/:id",
-        element: <BusinessDetailsPage></BusinessDetailsPage>,
+        // element: <BusinessDetailsPage></BusinessDetailsPage>,
+        element: (
+          <React.Suspense
+            fallback={
+              <div className="grid place-items-center min-h-screen">
+                <span className="loading loading-dots loading-lg"></span>
+              </div>
+            }
+          >
+            <BusinessDetailsPage></BusinessDetailsPage>
+          </React.Suspense>
+        ),
       },
       {
         path: "/service",

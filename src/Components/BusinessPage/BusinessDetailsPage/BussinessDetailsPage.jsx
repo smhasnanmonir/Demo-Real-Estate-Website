@@ -57,7 +57,7 @@ const BusinessDetailsPage = () => {
                 to={`/business/details/${busi?.id}`}
                 key={i}
               >
-                <img src={busi?.img} alt="logo1" />
+                <img className="w-[250px]" src={busi?.img} alt="logo1" />
               </Link>
             </SwiperSlide>
           ))}
