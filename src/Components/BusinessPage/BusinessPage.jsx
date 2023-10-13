@@ -24,42 +24,58 @@ const BusinessPage = () => {
             const anchor = document.querySelector("#mak");
             anchor.scrollIntoView({ behavior: "smooth", block: "center" });
           }}
-          className="bg-cyan-200 py-[15px] px-3 text-center cursor-pointer"
+          className="bg-cyan-200 py-2 px-2 text-center cursor-pointer overflow-hidden relative flex items-center justify-center"
         >
-          <h1 className="md:text-xl">Mak Inno Development Ltd</h1>
+          <img
+            className="w-full h-full object-cover hover:scale-105 transition-all duration-300 ease-linear"
+            src={mak}
+            alt="Mak"
+          />
         </div>
         <div
           onClick={() => {
             const anchor = document.querySelector("#dreams");
             anchor.scrollIntoView({ behavior: "smooth", block: "center" });
           }}
-          className="bg-cyan-200 py-[15px] px-3 text-center cursor-pointer"
+          className="bg-cyan-200 py-2 px-2 text-center cursor-pointer overflow-hidden"
         >
-          <h1 className="md:text-xl">Dreams Square Development</h1>
+          <img
+            className="w-full h-full object-cover hover:scale-105 transition-all duration-300 ease-linear"
+            src={dream}
+            alt="Dreams"
+          />
         </div>
         <div
           onClick={() => {
             const anchor = document.querySelector("#organic");
             anchor.scrollIntoView({ behavior: "smooth", block: "center" });
           }}
-          className="bg-cyan-200 py-[15px] px-3 text-center cursor-pointer"
+          className="bg-cyan-200 py-2 px-2 text-center cursor-pointer overflow-hidden"
         >
-          <h1 className="md:text-xl">Organic Labretories Ltd</h1>
+          <img
+            className="w-full h-full object-cover hover:scale-105 transition-all duration-300 ease-linear"
+            src={organic}
+            alt=""
+          />
         </div>
         <div
           onClick={() => {
             const anchor = document.querySelector("#universe");
             anchor.scrollIntoView({ behavior: "smooth", block: "center" });
           }}
-          className="bg-cyan-200 py-[15px] px-3 grid place-content-center cursor-pointer"
+          className="bg-cyan-200 py-2 px-2 grid place-content-center cursor-pointer overflow-hidden"
         >
-          <h1 className="md:text-xl ">Universe Group</h1>
+          <img
+            className="w-full h-full object-cover hover:scale-105 transition-all duration-300 ease-linear"
+            src={Universe}
+            alt=""
+          />
         </div>
       </div>
       {/* Mak div starts */}
       <div id="mak" className="md:flex items-center justify-center ">
         <div className="md:w-1/2">
-          <img className="w-full h-full object-cover" src={mak} alt="Mak" />
+          <img className="w-full h-full object-cover " src={mak} alt="Mak" />
         </div>
         <div className="md:w-1/2 px-[5%] py-[7%]">
           <h1 className="text-3xl font-bold py-[13px]">
@@ -83,7 +99,7 @@ const BusinessPage = () => {
         className="md:flex flex-row-reverse items-center justify-center"
       >
         <div className="md:w-1/2">
-          <img className="w-full h-full object-cover" src={dream} alt="Mak" />
+          <img className="w-full h-full object-cover " src={dream} alt="Mak" />
         </div>
         <div className="md:w-1/2 px-[5%] py-[7%]">
           <h1 className="text-3xl font-bold py-[13px]">

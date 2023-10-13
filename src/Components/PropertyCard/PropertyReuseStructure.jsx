@@ -5,7 +5,6 @@ import PropertyCard from "./PropertyCard";
 const PropertyReuseStructure = () => {
   const [datas] = UseData();
   const { selectedValue } = useParams();
-  console.log(selectedValue);
   const filterSelectedValueLocation = datas.filter(
     (data) => data?.location == selectedValue
   );

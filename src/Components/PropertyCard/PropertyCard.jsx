@@ -8,7 +8,7 @@ const PropertyCard = ({ type2Data, heading }) => {
   return (
     <div className="bg-[#e9ecef] text-black">
       <FloatingButton></FloatingButton>
-      <img src="https://i.imgur.com/FtFw0nN.jpg" alt="" />
+      <img src="https://i.ibb.co/DpvSdTR/FtFw0nN.jpg" alt="" />
       <IntroDuctionWhite></IntroDuctionWhite>
       {heading ? (
         <h1 className="font-semibold text-center text-2xl md:py-8 py-5">

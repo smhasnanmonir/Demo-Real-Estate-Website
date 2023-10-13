@@ -2,6 +2,7 @@ import React from "react";
 
 import { createBrowserRouter } from "react-router-dom";
 import Main from "../Main/Main";
+import ServicePage from "../Components/ServicePage/ServicePage";
 
 const BusinessPage = React.lazy(() =>
   import("../Components/BusinessPage/BusinessPage")
@@ -158,11 +159,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/service",
-        element: (
-          <div>
-            <h1 className="text-center min-h-screen">This is service page</h1>
-          </div>
-        ),
+        element: <ServicePage></ServicePage>,
       },
       {
         path: "/media",
