@@ -59,13 +59,15 @@ const ServicePage = () => {
       {/* Services we offer ends*/}
 
       {/* Service details Starts */}
-      <div className="md:grid md:grid-cols-2 py-[25px] px-[3%] gap-5 space-y-[15px]">
+      <div className="md:grid md:grid-cols-2 py-[3%] px-[3%] gap-5 space-y-[15px]">
         <div className="md:flex gap-3 justify-center items-center">
-          <img
-            className="w-full h-full object-cover"
-            src={construction}
-            alt="construction"
-          />
+          <div>
+            <img
+              className="w-full h-full object-cover"
+              src={construction}
+              alt="construction"
+            />
+          </div>
           <div className="">
             <h1 className="text-xl font-semibold py-[7px]">
               Construction Services
@@ -78,11 +80,13 @@ const ServicePage = () => {
           </div>
         </div>
         <div className="md:flex gap-3 justify-center items-center">
-          <img
-            className="w-full h-full object-cover"
-            src={interior}
-            alt="interior"
-          />
+          <div>
+            <img
+              className="w-full h-full object-cover"
+              src={interior}
+              alt="interior"
+            />
+          </div>
           <div>
             <h1 className="text-xl font-semibold py-[7px]">Interior Design</h1>
             <p>
@@ -94,11 +98,13 @@ const ServicePage = () => {
           </div>
         </div>
         <div className="md:flex gap-3 justify-center items-center">
-          <img
-            className="w-full h-full object-cover"
-            src={sitedesign}
-            alt="interior"
-          />
+          <div>
+            <img
+              className="w-full h-full object-cover"
+              src={sitedesign}
+              alt="interior"
+            />
+          </div>
           <div>
             <h1 className="text-xl font-semibold py-[7px]">Site Design</h1>
             <p>
@@ -110,11 +116,13 @@ const ServicePage = () => {
           </div>
         </div>
         <div className="md:flex gap-3 justify-center items-center">
-          <img
-            className="w-full h-full object-cover"
-            src={projectplanning}
-            alt="interior"
-          />
+          <div>
+            <img
+              className="w-full h-full object-cover"
+              src={projectplanning}
+              alt="interior"
+            />
+          </div>
           <div>
             <h1 className="text-xl font-semibold py-[7px]">Project Planning</h1>
             <p>
@@ -125,6 +133,9 @@ const ServicePage = () => {
             </p>
           </div>
         </div>
+      </div>
+      <div>
+        <div></div>
       </div>
       {/* Service details Ends */}
     </div>
