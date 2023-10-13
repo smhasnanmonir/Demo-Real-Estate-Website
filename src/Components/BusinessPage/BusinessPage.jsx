@@ -1,98 +1,153 @@
-import { Autoplay, Navigation, Pagination } from "swiper/modules";
-import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
-
-import { useState } from "react";
-import { useEffect } from "react";
-import { Link } from "react-router-dom";
+import coverPhoto from "../../assets/Business/Slide 16_9 - 1BusinessLow.jpg";
+import mak from "../../assets/Business/mak.jpg";
+import dream from "../../assets/Business/dream-square.jpg";
+import organic from "../../assets/Business/Organic.jpg";
+import Universe from "../../assets/Business/universe.jpg";
 const BusinessPage = () => {
-  const [busiData, setBusiData] = useState([]);
-  useEffect(() => {
-    fetch("/BusinessData.json")
-      .then((res) => res.json())
-      .then((data) => setBusiData(data));
-  }, []);
-  console.log;
   return (
     <div className="bg-white text-black">
-      <div className="max-w-6xl md:px-0 px-[5%] mx-auto">
-        <Swiper
-          navigation={false}
-          modules={[Autoplay, Pagination, Navigation]}
-          autoplay={{
-            delay: 2500,
-            disableOnInteraction: false,
-          }}
-          pagination={{
-            clickable: true,
-          }}
-          loop={true}
-          className="mySwiper"
-        >
-          {busiData?.map((busi, i) => (
-            <SwiperSlide key={i}>
-              <Link
-                className="cursor-pointer"
-                to={`/business/details/${busi?.id}`}
-                key={i}
-              >
-                <img className="w-1/2 mx-auto" src={busi?.img} alt="logo1" />
-              </Link>
-            </SwiperSlide>
-          ))}
-        </Swiper>
-        <div>
-          <h1 className="text-2xl font-semibold py-[25px]">Universe Group</h1>
-          <p className="py-[10px]">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Praesentium, ducimus voluptas veniam nulla libero voluptatem nam est
-            accusamus impedit ratione eligendi doloribus! Deserunt voluptatem
-            enim unde doloribus similique ipsum nemo! Eum, odit dignissimos rem
-            quam eius, nostrum soluta maiores sed alias enim non! Accusamus
-            perferendis rem provident magni repudiandae non praesentium
-            reiciendis, voluptas obcaecati, assumenda debitis, modi aliquam quia
-            laudantium? Vel eveniet non alias aliquam, soluta nemo voluptate
-            ipsum provident optio rem voluptas cupiditate architecto eaque!
-            Libero dicta rerum, hic repellat amet ut illo quod earum, provident
-            minus nulla deleniti. Molestiae possimus omnis excepturi vel
-            corrupti cupiditate exercitationem accusantium dicta repellat optio
-            ratione placeat nostrum necessitatibus, facere obcaecati eaque eum.
-            Blanditiis vero quis voluptatem odit iusto, ullam itaque ipsa eum.
-            Repellat et dolor ratione minima, dicta harum distinctio ut cum
-            dignissimos assumenda repudiandae officia suscipit obcaecati,
-          </p>
-        </div>
-        <div className="max-w-3xl mx-auto py-[30px]">
-          <Swiper
-            navigation={false}
-            modules={[Autoplay, Pagination, Navigation]}
-            autoplay={{
-              delay: 2500,
-              disableOnInteraction: false,
-            }}
-            pagination={{
-              clickable: true,
-            }}
-            slidesPerView={3}
-            loop={true}
-            className="mySwiper"
-          >
-            {busiData?.map((busi, i) => (
-              <SwiperSlide key={i}>
-                <Link
-                  className="cursor-pointer"
-                  to={`/business/details/${busi?.id}`}
-                  key={i}
-                >
-                  <img className="w-3/4" src={busi?.img} alt="logo1" />
-                </Link>
-              </SwiperSlide>
-            ))}
-          </Swiper>
+      <div className="relative">
+        <img
+          className="w-full md:h-[550px] object-cover brightness-50"
+          src={coverPhoto}
+          alt="Business Cover"
+        />
+        <div className="absolute flex items-center justify-center inset-0">
+          <h1 className="text-4xl border-l-[4px] border-cyan-300 pl-2 text-white">
+            Businesses
+          </h1>
         </div>
       </div>
+      <div className="py-[35px] px-[5%] grid md:grid-cols-4 grid-cols-2 gap-3">
+        <div
+          onClick={() => {
+            const anchor = document.querySelector("#mak");
+            anchor.scrollIntoView({ behavior: "smooth", block: "center" });
+          }}
+          className="bg-cyan-200 py-[15px] px-3 text-center cursor-pointer"
+        >
+          <h1 className="md:text-xl">Mak Inno Development Ltd</h1>
+        </div>
+        <div
+          onClick={() => {
+            const anchor = document.querySelector("#dreams");
+            anchor.scrollIntoView({ behavior: "smooth", block: "center" });
+          }}
+          className="bg-cyan-200 py-[15px] px-3 text-center cursor-pointer"
+        >
+          <h1 className="md:text-xl">Dreams Square Development</h1>
+        </div>
+        <div
+          onClick={() => {
+            const anchor = document.querySelector("#organic");
+            anchor.scrollIntoView({ behavior: "smooth", block: "center" });
+          }}
+          className="bg-cyan-200 py-[15px] px-3 text-center cursor-pointer"
+        >
+          <h1 className="md:text-xl">Organic Labretories Ltd</h1>
+        </div>
+        <div
+          onClick={() => {
+            const anchor = document.querySelector("#universe");
+            anchor.scrollIntoView({ behavior: "smooth", block: "center" });
+          }}
+          className="bg-cyan-200 py-[15px] px-3 grid place-content-center cursor-pointer"
+        >
+          <h1 className="md:text-xl ">Universe Group</h1>
+        </div>
+      </div>
+      {/* Mak div starts */}
+      <div id="mak" className="md:flex items-center justify-center ">
+        <div className="md:w-1/2">
+          <img className="w-full h-full object-cover" src={mak} alt="Mak" />
+        </div>
+        <div className="md:w-1/2 px-[5%] py-[7%]">
+          <h1 className="text-3xl font-bold py-[13px]">
+            Mak Inno Development Ltd
+          </h1>
+          <p className="text-xl">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. A iusto
+            totam quis eius dolore id nulla repudiandae tempore sed accusantium
+            reiciendis cupiditate neque ipsum, nemo magni atque? Id aperiam
+            possimus quia maxime in. Esse, tempore. Eaque, recusandae. Ipsam
+            minus odio perferendis fuga deserunt voluptas cumque, magni pariatur
+            voluptatum esse asperiores.
+          </p>
+        </div>
+      </div>
+      {/* Mak div Ends */}
+
+      {/* Dreams Square Development div starts */}
+      <div
+        id="dreams"
+        className="md:flex flex-row-reverse items-center justify-center"
+      >
+        <div className="md:w-1/2">
+          <img className="w-full h-full object-cover" src={dream} alt="Mak" />
+        </div>
+        <div className="md:w-1/2 px-[5%] py-[7%]">
+          <h1 className="text-3xl font-bold py-[13px]">
+            Dreams Square Development
+          </h1>
+          <p className="text-xl">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. A iusto
+            totam quis eius dolore id nulla repudiandae tempore sed accusantium
+            reiciendis cupiditate neque ipsum, nemo magni atque? Id aperiam
+            possimus quia maxime in. Esse, tempore. Eaque, recusandae. Ipsam
+            minus odio perferendis fuga deserunt voluptas cumque, magni pariatur
+            voluptatum esse asperiores.
+          </p>
+        </div>
+      </div>
+      {/* Dreams Square Development div ends */}
+
+      {/* Organic Labretories Ltd. div starts */}
+      <div id="organic" className="md:flex items-center justify-center">
+        <div className="md:w-1/2">
+          <img className="w-full h-full object-cover" src={organic} alt="Mak" />
+        </div>
+        <div className="md:w-1/2 px-[5%] py-[7%]">
+          <h1 className="text-3xl font-bold py-[13px]">
+            Organic Labretories Ltd.
+          </h1>
+          <p className="text-xl">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. A iusto
+            totam quis eius dolore id nulla repudiandae tempore sed accusantium
+            reiciendis cupiditate neque ipsum, nemo magni atque? Id aperiam
+            possimus quia maxime in. Esse, tempore. Eaque, recusandae. Ipsam
+            minus odio perferendis fuga deserunt voluptas cumque, magni pariatur
+            voluptatum esse asperiores.
+          </p>
+        </div>
+      </div>
+      {/* Organic Labretories Ltd. div ends */}
+      {/* Universe Group div starts */}
+      <div
+        id="universe"
+        className="md:flex flex-row-reverse items-center justify-center"
+      >
+        <div className="md:w-1/2">
+          <img
+            className="w-full h-full object-cover"
+            src={Universe}
+            alt="Mak"
+          />
+        </div>
+        <div className="md:w-1/2 px-[5%] py-[7%]">
+          <h1 className="text-3xl font-bold py-[13px]">
+            Universe Landmark Ltd
+          </h1>
+          <p className="text-xl">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. A iusto
+            totam quis eius dolore id nulla repudiandae tempore sed accusantium
+            reiciendis cupiditate neque ipsum, nemo magni atque? Id aperiam
+            possimus quia maxime in. Esse, tempore. Eaque, recusandae. Ipsam
+            minus odio perferendis fuga deserunt voluptas cumque, magni pariatur
+            voluptatum esse asperiores.
+          </p>
+        </div>
+      </div>
+      {/* Universe Group div ends */}
     </div>
   );
 };
