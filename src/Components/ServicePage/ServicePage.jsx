@@ -61,14 +61,14 @@ const ServicePage = () => {
       {/* Service details Starts */}
       <div className="md:grid md:grid-cols-2 py-[3%] px-[3%] gap-5 space-y-[15px]">
         <div className="md:flex gap-3 justify-center items-center">
-          <div>
+          <div className="w-full h-full object-cover">
             <img
               className="w-full h-full object-cover"
               src={construction}
               alt="construction"
             />
           </div>
-          <div className="">
+          <div>
             <h1 className="text-xl font-semibold py-[7px]">
               Construction Services
             </h1>
@@ -80,7 +80,7 @@ const ServicePage = () => {
           </div>
         </div>
         <div className="md:flex gap-3 justify-center items-center">
-          <div>
+          <div className="w-full h-full object-cover">
             <img
               className="w-full h-full object-cover"
               src={interior}
@@ -98,7 +98,7 @@ const ServicePage = () => {
           </div>
         </div>
         <div className="md:flex gap-3 justify-center items-center">
-          <div>
+          <div className="w-full h-full object-cover">
             <img
               className="w-full h-full object-cover"
               src={sitedesign}
@@ -116,7 +116,7 @@ const ServicePage = () => {
           </div>
         </div>
         <div className="md:flex gap-3 justify-center items-center">
-          <div>
+          <div className="w-full h-full object-cover">
             <img
               className="w-full h-full object-cover"
               src={projectplanning}
@@ -133,9 +133,6 @@ const ServicePage = () => {
             </p>
           </div>
         </div>
-      </div>
-      <div>
-        <div></div>
       </div>
       {/* Service details Ends */}
     </div>
