@@ -1,26 +1,70 @@
 [
   {
     "company_name": "Mak Inno Development Ltd.",
+    "cover": "https://i.ibb.co/w45wcSm/mak-inno.jpg",
     "id": "Mak-Inno-Development-Ltd",
     "img": "https://i.ibb.co/Pjvb8dD/01-01.jpg",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis enim lobortis scelerisque fermentum dui faucibus in. Viverra orci sagittis eu volutpat odio facilisis mauris sit. Aliquet eget sit amet tellus. Sed tempus urna et pharetra pharetra massa massa. Amet mattis vulputate enim nulla aliquet porttitor lacus. Cursus sit amet dictum sit. Diam quis enim lobortis scelerisque fermentum. Viverra ipsum nunc aliquet bibendum enim facilisis gravida neque convallis. At erat pellentesque adipiscing commodo. Ullamcorper velit sed ullamcorper morbi tincidunt ornare massa."
+    "description": [
+      {
+        "para": "Like any other developing nation, Bangladesh’s cities are facing typical problems, namely urban sprawl, affordable housing shortage, access to public transport and lack of equitable access to basic services adversely impacting productivity, mobility and quality of urban life.At the same time, modern townships with a minimal land area, wise planning and decentralized systems for optimizing basic services as the solution against accelerating urbanization. The study conceptualizes creation of a conceptual model for an integrated township with support from diverse States policy for amalgamation of residential, institutional and commercial land use patterns. Methodology integrates peculiar features of integrated township from various States policy, residential area distribution accordingly providing commercial, social and recreational facilities.An urban influx and the growing size of a prosperous middle class are provoking inflated aspirations and the way things are going, there is a chance that the way the current as well as future generations live is going to change dramatically.Imagine a shift from the apartment cluster culture of today where shopping options aren’t exactly in the neighborhood, and the workplace, medical facilities and schools could be as much as an hour away; to a culture where you and your wife walk to work, your children at most cycle to school, and retail spaces are just a stone’s throw away. Welcome to the world of integrated townships.Visit our modern township project “Maya Kunja” . We have designed it to be much better than living in any circumstance in an urban area"
+      },
+      {
+        "para": "At the same time, modern townships with a minimal land area, wise planning and decentralized systems for optimizing basic services as the solution against accelerating urbanization.The study conceptualizes creation of a conceptual model for an integrated township with support from diverse States policy for amalgamation of residential, institutional and commercial land use patterns. Methodology integrates peculiar features of integrated township from various States policy, residential area distribution accordingly providing commercial, social and recreational facilities."
+      },
+      {
+        "para": "An urban influx and the growing size of a prosperous middle class are provoking inflated aspirations and the way things are going, there is a chance that the way the current as well as future generations live is going to change dramatically."
+      },
+      {
+        "para": "Imagine a shift from the apartment cluster culture of today where shopping options aren’t exactly in the neighborhood, and the workplace, medical facilities and schools could be as much as an hour away; to a culture where you and your wife walk to work, your children at most cycle to school, and retail spaces are just a stone’s throw away. Welcome to the world of integrated townships."
+      },
+      {
+        "para": "Visit our modern township project “Maya Kunja” . We have designed it to be much better than living in any circumstance in an urban area."
+      }
+    ]
   },
   {
+    "cover": "https://i.ibb.co/sqzJ0tN/Dream-square.jpg",
     "company_name": "Dreams Square Development",
     "id": "Dreams-Square-Development",
     "img": "https://i.ibb.co/q9pf4vK/01-02-01.jpg",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis enim lobortis scelerisque fermentum dui faucibus in. Viverra orci sagittis eu volutpat odio facilisis mauris sit. Aliquet eget sit amet tellus. Sed tempus urna et pharetra pharetra massa massa. Amet mattis vulputate enim nulla aliquet porttitor lacus. Cursus sit amet dictum sit. Diam quis enim lobortis scelerisque fermentum. Viverra ipsum nunc aliquet bibendum enim facilisis gravida neque convallis. At erat pellentesque adipiscing commodo. Ullamcorper velit sed ullamcorper morbi tincidunt ornare massa."
+    "description": [
+      {
+        "para": "Today’s life has many difficulties and people are the victims, so they plan to make it as easy as they can. So they can reach a good position. They have more friends in the community since it is small. The modern township’s people always try to protect their traditional habits and culture. The modern township has clean air and the environment is very beautiful. It has less noise and rush. So the pollution is less. The modern township does not have a lot of vehicles. So roads are less dangerous for cycling. The environment of the modern township is pleasant and silent and it has scenic beauty."
+      },
+      {
+        "para": "Due to rapid urbanization, people are getting attracted towards the city and urban areas where they hope to get more and more facilities and amenities to survive in better living conditions. As a result of this trend the limits of the city increase day by day. Due to this, more development happens and they need to fulfill their demand for every sector and planning like housing, commercial and employment facilities as well as institutions and the health facilities. Increases in demand and development are dispersing and sprawling everywhere and which are not seen to be properly managed. Visit our Dream Square Model Town, a modern concept and fully facilitated township situated near Mega Dhaka City. It may fulfill your dream of living in an urban city and furthermore to live in a green, noise free, less polluted environment."
+      }
+    ]
   },
   {
-    "company_name": "Organic Labretories Ltd.",
-    "id": "Organic-Labretories-Ltd",
+    "cover": "https://i.ibb.co/JySWf87/organic-01.jpg",
+    "company_name": "Organic Laboratories Ltd.",
+    "id": "Organic-Laboratories-Ltd",
     "img": "https://i.ibb.co/6P84hBt/01-02-3-01.jpg",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis enim lobortis scelerisque fermentum dui faucibus in. Viverra orci sagittis eu volutpat odio facilisis mauris sit. Aliquet eget sit amet tellus. Sed tempus urna et pharetra pharetra massa massa. Amet mattis vulputate enim nulla aliquet porttitor lacus. Cursus sit amet dictum sit. Diam quis enim lobortis scelerisque fermentum. Viverra ipsum nunc aliquet bibendum enim facilisis gravida neque convallis. At erat pellentesque adipiscing commodo. Ullamcorper velit sed ullamcorper morbi tincidunt ornare massa."
+    "description": [
+      {
+        "para": "Health and Hygiene are two essential concepts when it comes to the human body. Health refers to the state of physical as well as mental wellbeing. Health also encompasses the social wellbeing of an individual. Health is not just about being fit but also having the appropriate resources to live. Having a sound body and mind is an indication of good health."
+      },
+      {
+        "para": "Hygiene refers to maintaining good health through practices that focus on cleanliness. Good Hygiene helps to prevent the spread of diseases and illnesses. Hygiene and health go hand in hand. In today’s world, where pollution levels are rising and numerous diseases are emerging, good health and hygiene are a necessity."
+      },
+      {
+        "para": "Our “Organic Laboratories Ltd” product gives health and hygiene safety in any type of germs & disease to you and your family."
+      }
+    ]
   },
   {
+    "cover": "https://i.ibb.co/zbY08Sn/Universe-landmark.jpg",
     "company_name": "Universe Group",
     "id": "Universe-Group",
     "img": "https://i.ibb.co/Z6BhvjK/01-02-3-4.jpg",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis enim lobortis scelerisque fermentum dui faucibus in. Viverra orci sagittis eu volutpat odio facilisis mauris sit. Aliquet eget sit amet tellus. Sed tempus urna et pharetra pharetra massa massa. Amet mattis vulputate enim nulla aliquet porttitor lacus. Cursus sit amet dictum sit. Diam quis enim lobortis scelerisque fermentum. Viverra ipsum nunc aliquet bibendum enim facilisis gravida neque convallis. At erat pellentesque adipiscing commodo. Ullamcorper velit sed ullamcorper morbi tincidunt ornare massa."
+    "description": [
+      {
+        "para": "Universe Landmark Ltd. is a leading real estate company dedicated to providing exceptional property services to clients in the residential, commercial, and industrial sectors. Established in 2021, our company has built a reputation for integrity, professionalism, and customer satisfaction in the real estate market."
+      },
+      {
+        "para": "Our mission at Universe Landmark Ltd. is to empower our clients with the knowledge and support they need to make informed real estate decisions. We strive to provide exceptional service, foster lasting relationships, and contribute positively to the communities we serve."
+      }
+    ]
   }
 ]

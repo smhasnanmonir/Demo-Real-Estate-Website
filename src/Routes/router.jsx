@@ -144,7 +144,6 @@ const router = createBrowserRouter([
       },
       {
         path: "/business/details/:id",
-        // element: <BusinessDetailsPage></BusinessDetailsPage>,
         element: (
           <React.Suspense
             fallback={

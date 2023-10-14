@@ -5,6 +5,7 @@ import construction from "../../assets/Service/construction.jpg";
 import interior from "../../assets/Service/intorior.jpg";
 import projectplanning from "../../assets/Service/project-planning.jpg";
 import sitedesign from "../../assets/Service/site-design.jpg";
+import WhyUs from "../../Home/WhyUs/WhyUs";
 const ServicePage = () => {
   return (
     <div className="bg-white text-black">
@@ -59,7 +60,7 @@ const ServicePage = () => {
       {/* Services we offer ends*/}
 
       {/* Service details Starts */}
-      <div className="md:grid md:grid-cols-2 py-[3%] px-[3%] gap-5 space-y-[15px]">
+      <div className="md:grid md:grid-cols-2 md:py-[3%] px-[3%] gap-5 space-y-[15px] place-items-center">
         <div className="md:flex gap-3 justify-center items-center">
           <div className="w-full h-full object-cover">
             <img
@@ -82,7 +83,7 @@ const ServicePage = () => {
         <div className="md:flex gap-3 justify-center items-center">
           <div className="w-full h-full object-cover">
             <img
-              className="w-full h-full object-cover"
+              className="w-[350px] h-full object-cover"
               src={interior}
               alt="interior"
             />
@@ -100,7 +101,7 @@ const ServicePage = () => {
         <div className="md:flex gap-3 justify-center items-center">
           <div className="w-full h-full object-cover">
             <img
-              className="w-full h-full object-cover"
+              className="w-[350px] h-full object-cover"
               src={sitedesign}
               alt="interior"
             />
@@ -118,7 +119,7 @@ const ServicePage = () => {
         <div className="md:flex gap-3 justify-center items-center">
           <div className="w-full h-full object-cover">
             <img
-              className="w-full h-full object-cover"
+              className="w-[350px] h-full object-cover"
               src={projectplanning}
               alt="interior"
             />
@@ -135,6 +136,7 @@ const ServicePage = () => {
         </div>
       </div>
       {/* Service details Ends */}
+      <WhyUs></WhyUs>
     </div>
   );
 };
