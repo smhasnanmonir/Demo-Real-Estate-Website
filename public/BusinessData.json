@@ -2,7 +2,9 @@
   {
     "company_name": "Mak Inno Development Ltd.",
     "cover": "https://i.ibb.co/w45wcSm/mak-inno.jpg",
+    "inner_img": "https://i.ibb.co/m8f2yGs/pexels-expect-best-323705-1.jpg",
     "id": "Mak-Inno-Development-Ltd",
+    "numberId": 1,
     "img": "https://i.ibb.co/Pjvb8dD/01-01.jpg",
     "description": [
       {
@@ -24,7 +26,9 @@
   },
   {
     "cover": "https://i.ibb.co/sqzJ0tN/Dream-square.jpg",
-    "company_name": "Dreams Square Development",
+    "inner_img": "https://i.ibb.co/8zh76Bm/pexels-ferdous-hasan-8863235.jpg",
+    "company_name": "Dreams Square Development Ltd.",
+    "numberId": 2,
     "id": "Dreams-Square-Development",
     "img": "https://i.ibb.co/q9pf4vK/01-02-01.jpg",
     "description": [
@@ -38,7 +42,9 @@
   },
   {
     "cover": "https://i.ibb.co/JySWf87/organic-01.jpg",
+    "inner_img": "https://i.ibb.co/fCDBxdn/organic-01.jpg",
     "company_name": "Organic Laboratories Ltd.",
+    "numberId": 3,
     "id": "Organic-Laboratories-Ltd",
     "img": "https://i.ibb.co/6P84hBt/01-02-3-01.jpg",
     "description": [
@@ -55,7 +61,9 @@
   },
   {
     "cover": "https://i.ibb.co/zbY08Sn/Universe-landmark.jpg",
+    "inner_img": "https://i.ibb.co/zV89qYS/pexels-ferdous-hasan-13525370.jpg",
     "company_name": "Universe Group",
+    "numberId": 4,
     "id": "Universe-Group",
     "img": "https://i.ibb.co/Z6BhvjK/01-02-3-4.jpg",
     "description": [
