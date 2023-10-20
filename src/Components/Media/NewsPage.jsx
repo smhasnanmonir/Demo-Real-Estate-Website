@@ -14,7 +14,7 @@ const NewsPage = () => {
     <div className="pb-[35px] bg-white text-black">
       <CoverPhoto datas="News"></CoverPhoto>
       <h1 className="uppercase font-light md:text-4xl text-2xl max-w-fit mx-auto border-b-2 border-cyan-600 pb-2 py-[25px]">
-        Assure Group in the News
+        Universe Group in the News
       </h1>
       <div>
         <div className="grid lg:grid-cols-4 md:grid-cols-3 grid-cols-1 gap-[12px] md:px-[45px] px-[25px] pt-[15px] place-items-center">

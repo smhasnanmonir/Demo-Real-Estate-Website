@@ -1,5 +1,6 @@
 import UseData from "../../Components/Hooks/UseData";
 import CollectionType from "../../SharedComponents/CollectionType/CollectionType";
+import CountNumberSection from "../CountNumberSection/CountNumberSection";
 import CustomerReview from "../CustomerReview/CustomerReview";
 import FloatingButton from "../FloatingButton/FloatingButton";
 import IntroDuction from "../IntroDuction/IntroDuction";
@@ -21,6 +22,7 @@ const Home = () => {
       <CollectionType></CollectionType>
       <OurProjectSection></OurProjectSection>
       <WhyUs></WhyUs>
+      <CountNumberSection></CountNumberSection>
     </div>
   );
 };

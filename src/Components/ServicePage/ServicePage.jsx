@@ -60,11 +60,11 @@ const ServicePage = () => {
       {/* Services we offer ends*/}
 
       {/* Service details Starts */}
-      <div className="md:grid md:grid-cols-2 md:py-[3%] px-[3%] gap-5 space-y-[15px] place-items-center">
+      <div className="md:grid lg:grid-cols-2 md:py-[3%] px-[3%] gap-5 space-y-[15px] place-items-center">
         <div className="md:flex gap-3 justify-center items-center">
-          <div className="w-full h-full object-cover">
+          <div className="w-full h-full object-cover pt-[25px]">
             <img
-              className="w-full h-full object-cover"
+              className="w-[350px] h-full object-cover"
               src={construction}
               alt="construction"
             />
