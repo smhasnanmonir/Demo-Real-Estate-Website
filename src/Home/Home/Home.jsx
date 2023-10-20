@@ -8,10 +8,11 @@ import OurProjectSection from "../OurProjectSection/OurProjectSection";
 import ReasonWhy from "../ReasonWhy/ReasonWhy";
 import SwipeBanner from "../SwipeBanner/SwipeBanner";
 import WhyUs from "../WhyUs/WhyUs";
+import YoutubeAndInstaSection from "../YoutubeAndInstaSection/YoutubeAndInstaSection";
 
 const Home = () => {
   return (
-    <div className=" overflow-hidden">
+    <div className="overflow-hidden">
       <div className="float-left">
         <FloatingButton></FloatingButton>
       </div>
@@ -21,8 +22,9 @@ const Home = () => {
       <CustomerReview></CustomerReview>
       <CollectionType></CollectionType>
       <OurProjectSection></OurProjectSection>
-      <WhyUs></WhyUs>
       <CountNumberSection></CountNumberSection>
+      <YoutubeAndInstaSection></YoutubeAndInstaSection>
+      <WhyUs></WhyUs>
     </div>
   );
 };
