@@ -45,7 +45,7 @@ const CollectionDetails = ({ building }) => {
           <h1 className="md:text-2xl text-[14px] font-semibold md:w-full w-[120px]">
             {building[0]?.name} COLLECTION
           </h1>
-          <div className="flex gap-3">
+          {/* <div className="flex gap-3">
             {building[0]?.location.map((loc) => (
               <Link
                 key={building[0]?.id}
@@ -54,7 +54,7 @@ const CollectionDetails = ({ building }) => {
                 {loc}
               </Link>
             ))}
-          </div>
+          </div> */}
         </div>
       </div>
       <div onClick={openModal} className="relative overflow-hidden group">

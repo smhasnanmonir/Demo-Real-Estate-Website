@@ -20,9 +20,9 @@ const Home = () => {
       <IntroDuction></IntroDuction>
       <ReasonWhy></ReasonWhy>
       <CustomerReview></CustomerReview>
+      <CountNumberSection></CountNumberSection>
       <CollectionType></CollectionType>
       <OurProjectSection></OurProjectSection>
-      <CountNumberSection></CountNumberSection>
       <YoutubeAndInstaSection></YoutubeAndInstaSection>
       <WhyUs></WhyUs>
     </div>
