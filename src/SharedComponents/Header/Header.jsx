@@ -6,7 +6,7 @@ const Header = () => {
   const [datas] = UseData();
   const commonNav = (
     <>
-      <li className="text-white">
+      <li className="text-white max-w-fit">
         <NavLink
           className={"navBarCustom"}
           to="/"
@@ -21,7 +21,7 @@ const Header = () => {
           Home
         </NavLink>
       </li>
-      <li className="text-white group">
+      <li className="text-white group ">
         <NavLink
           className={"navBarCustom"}
           style={({ isActive }) => {
@@ -35,11 +35,11 @@ const Header = () => {
           <div className="customDropdown group ">
             <label>About us</label>
             <div className="inline-block relative">
-              <ul className="absolute min-w-full top-full right-[-95px]  mt-[13px] bg-black bg-opacity-80 text-white rounded-lg hidden group-hover:inline">
+              <ul className="absolute min-w-full top-full right-[-85px]  mt-[13px] bg-black bg-opacity-80 text-white rounded-lg hidden group-hover:inline">
                 <div className="flex flex-col gap-[12px] w-full px-[50px] py-[25px]">
                   <Link
                     to="/aboutus/ourstory"
-                    className="navBarCustom w-1/2 hover:text-cyan-400"
+                    className="navBarCustom w-fit hover:text-cyan-400"
                   >
                     Our Story
                   </Link>
@@ -67,7 +67,7 @@ const Header = () => {
           </div>
         </NavLink>
       </li>{" "}
-      <li className="text-white">
+      <li className="text-white group">
         <NavLink
           className={"navBarCustom"}
           to="/business"
@@ -79,7 +79,41 @@ const Header = () => {
             };
           }}
         >
-          Business
+          <div className="dropdown inline-block dropdown-hover dropdown-left">
+            <div className="customDropdown group ">
+              <label>Business</label>
+              <div className="inline-block relative">
+                <ul className="absolute min-w-full top-full right-[-135px]  mt-[13px] bg-black bg-opacity-80 text-white rounded-lg hidden group-hover:inline">
+                  <div className="flex flex-col gap-[12px] w-full px-[50px] py-[25px]">
+                    <Link
+                      to="business/details/Mak-Inno-Development-Ltd"
+                      className="navBarCustom hover:text-cyan-400 block max-w-fit"
+                    >
+                      Mak Inno Development Ltd
+                    </Link>
+                    <Link
+                      to="business/details/Dreams-Square-Development"
+                      className="navBarCustom hover:text-cyan-400 block max-w-fit"
+                    >
+                      Dream Square Development ltd.
+                    </Link>
+                    <Link
+                      to="business/details/Organic-Laboratories-Ltd"
+                      className="navBarCustom hover:text-cyan-400 block max-w-fit"
+                    >
+                      Organic Laboratories Ltd.
+                    </Link>
+                    <Link
+                      to="business/details/Universe-Group"
+                      className="navBarCustom hover:text-cyan-400 block max-w-fit"
+                    >
+                      Universe Group
+                    </Link>
+                  </div>
+                </ul>
+              </div>
+            </div>
+          </div>
         </NavLink>
       </li>
       <li className="text-white group pb-2">
@@ -108,19 +142,19 @@ const Header = () => {
                     <h1 className="font-semibold">Phase</h1>
                     <Link
                       to="allproperties/ongoing"
-                      className="hover:text-cyan-400 font-normal navBarCustom w-1/2"
+                      className="hover:text-cyan-400 font-normal navBarCustom w-fit"
                     >
                       Ongoing
                     </Link>
                     <Link
                       to="allproperties/upcoming"
-                      className="hover:text-cyan-400 font-normal navBarCustom w-1/2"
+                      className="hover:text-cyan-400 font-normal navBarCustom w-fit"
                     >
                       Upcoming
                     </Link>
                     <Link
                       to="allproperties/completed"
-                      className="hover:text-cyan-400 font-normal navBarCustom w-1/2"
+                      className="hover:text-cyan-400 font-normal navBarCustom w-fit"
                     >
                       Completed
                     </Link>
@@ -129,13 +163,13 @@ const Header = () => {
                     <h1 className="font-semibold">Types</h1>
                     <Link
                       to="/allproperties/residential"
-                      className="hover:text-cyan-400 font-normal navBarCustom w-1/2"
+                      className="hover:text-cyan-400 font-normal navBarCustom w-fit"
                     >
                       Residential
                     </Link>
                     <Link
                       to="/allproperties/commercial"
-                      className="hover:text-cyan-400 font-normal navBarCustom w-1/2"
+                      className="hover:text-cyan-400 font-normal navBarCustom w-fit"
                     >
                       Commercial
                     </Link>
@@ -144,13 +178,13 @@ const Header = () => {
                     <h1 className="font-semibold">Location</h1>
                     <Link
                       to="/allproperties/dhanmondi"
-                      className="hover:text-cyan-400 font-normal navBarCustom w-1/2"
+                      className="hover:text-cyan-400 font-normal navBarCustom w-fit"
                     >
                       Dhanmondi
                     </Link>
                     <Link
                       to="/allproperties/keraniganj"
-                      className="hover:text-cyan-400 font-normal navBarCustom w-1/2"
+                      className="hover:text-cyan-400 font-normal navBarCustom w-fit"
                     >
                       Keraniganj
                     </Link>
@@ -222,7 +256,7 @@ const Header = () => {
             </div>
           </div>
         </NavLink>
-      </li>{" "}
+      </li>
       <li className="text-white">
         <NavLink
           className={"navBarCustom"}

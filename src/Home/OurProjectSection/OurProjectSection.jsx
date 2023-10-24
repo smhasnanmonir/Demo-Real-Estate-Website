@@ -16,7 +16,7 @@ import UseData from "../../Components/Hooks/UseData";
 const OurProjectSection = () => {
   const [datas] = UseData();
   return (
-    <div id="choice" className="z-[0] relative ">
+    <div id="choice" className="z-[0] relative md:pb-[55px] pb-[25px]">
       <h1 className="OurProjects text-center text-3xl font-semibold text-white md:my-[45px] my-[25px]">
         Our Projects
       </h1>
@@ -46,7 +46,7 @@ const OurProjectSection = () => {
         >
           {datas.map((data) => (
             <SwiperSlide className=" md:p-6 rounded-lg" key={data?.img}>
-              <div className="md:p-5 md:shadow-[0_10px_20px_rgba(8,_112,_184,_0.7)] text-white">
+              <div className="md:p-5 md:shadow-[0_3px_12px_rgba(8,_112,_184,_0.7)] text-white">
                 <img className="rounded-lg" src={data?.img} alt="" />
                 <h1 className="text-[16px] font-semibold mt-3 md:hidden block">
                   {data?.name.slice(0, 15)} ...

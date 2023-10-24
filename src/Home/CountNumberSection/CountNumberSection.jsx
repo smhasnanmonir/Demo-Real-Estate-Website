@@ -2,7 +2,7 @@ import CountUp from "react-countup";
 
 const CountNumberSection = () => {
   return (
-    <div className="bg-white text-black py-[35px] lg:py-[65px] px-[3%] lg:grid grid-cols-3 gap-[13px]">
+    <div className="bg-white text-black py-[35px] lg:py-[65px] lg:px-[3%] px-[7%] lg:grid grid-cols-3 gap-[13px]">
       <div className="lg:space-y-6 space-y-3">
         <h1 className="text-xl md:w-3/4 font-semibold">
           Trusted by Corporate and Local buyer Nation wide.

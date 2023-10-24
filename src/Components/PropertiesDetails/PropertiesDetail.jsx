@@ -153,7 +153,7 @@ const PropertiesDetail = () => {
     setLoader(false);
   };
 
-  setInterval(time_out, 1500);
+  setInterval(time_out, 500);
 
   return (
     <>
@@ -583,121 +583,136 @@ const PropertiesDetail = () => {
             {/* Overview and Spec */}
 
             {id != "Dreams-Paradise" && (
-              <div className="grid lg:grid-cols-2 grid-cols-1 border-y-[3px] border-black bg-[#212529] lg:px-[45px] md:px-[35px] px-[5%] lg:py-[105px] py-[65px] gap-[50px] text-white mx-auto place-items-center">
-                <div className="space-y-5 w-11/12  lg:border-r-[2px] border-white lg:border-b-[0px] border-b-[2px] pb-[35px]">
-                  <h1 className="md:text-3xl text-2xl text-[#daa520]">
-                    Overview
-                  </h1>
-                  <p className="md:w-3/4 text-xl font-thin">
-                    Green Living with urban lifestyle is no more a myth for
-                    tranquility mongers. The urban dwellers of Dhaka city are
-                    always dreaming of living accommodations accompanied by
-                    gardens with plants, open spaces for wandering, trees for
-                    oxygen and lakes for boating & fishing..............
-                  </p>
-                  <Modal
-                    className=""
-                    isOpen={modalIsOpen}
-                    onAfterOpen={afterOpenModal}
-                    onRequestClose={closeModal}
-                    style={customStyles}
-                    contentLabel="Example Modal"
-                  >
-                    <button
-                      className="btn btn-circle btn-outline lg:btn-md btn-sm absolute md:left-[94%] lg:left-[95%] left-[85%] top-2 text-white"
-                      onClick={closeModal}
-                    >
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        className="h-6 w-6"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor"
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth="2"
-                          d="M6 18L18 6M6 6l12 12"
-                        />
-                      </svg>
-                    </button>
-                    <form className=" w-full max-h-[70vh] mx-auto lg:py-[75px] md:py-[65px] py-[55px] grid place-items-center p-0 m-0 -z-10 text-white">
-                      <p className="">{descriptionText}</p>
-                    </form>
-                  </Modal>
-                  <button
-                    onClick={openModal}
-                    className="px-[35px] py-[7px] text-white border-[2px] border-white hover:bg-black hover:text-white transition-all ease-in delay-100 duration-300"
-                  >
-                    Read More
-                  </button>
-                  <Modal
-                    className=""
-                    isOpen={modalIsOpen1}
-                    onAfterOpen={afterOpenModal}
-                    onRequestClose={closeModal1}
-                    style={customStyles}
-                    contentLabel="Example Modal"
-                  >
-                    <button
-                      className="btn btn-circle btn-outline lg:btn-md btn-sm absolute md:left-[94%] lg:left-[95%] left-[85%] top-2 text-white"
-                      onClick={closeModal1}
-                    >
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        className="h-6 w-6"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor"
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth="2"
-                          d="M6 18L18 6M6 6l12 12"
-                        />
-                      </svg>
-                    </button>
-                    <form className="w-full max-h-[70vh] mx-auto lg:py-[55px] md:py-[45px] py-[35px] p-0 m-0 -z-10 text-white ">
-                      <div className="space-y-[10px]">
-                        <h1 className="md:text-2xl font-semibold py-[10px] px-[5%] text-center max-w-fit mx-auto underline-offset-[12px] md:underline">
-                          Specification of {dataPro[0]?.name}
+              <>
+                <>
+                  <div className="md:flex items-start bg-[#212529] px-[5%] border-y-[2px] border-black">
+                    <div className="flex-1 border-b md:border-b-0 md:border-r border-b">
+                      <div className=" flex flex-col lg:px-[45px] md:px-[35px] px-[5%] lg:py-[105px] py-[65px] gap-[50px] text-white">
+                        <h1 className="md:text-3xl text-2xl text-[#daa520]">
+                          Overview
                         </h1>
-                        {dataPro[0]?.keyFeatures?.map((features) => (
-                          <div key={features?.feature} className="px-[5%] ">
-                            <p className="text-xl">
-                              <span className="font-bold">
-                                {features?.feature}:{" "}
-                              </span>
-                              {features?.description}
-                            </p>
-                          </div>
-                        ))}
+                        <p className="md:w-3/4 text-xl font-thin">
+                          Green Living with urban lifestyle is no more a myth
+                          for tranquility mongers. The urban dwellers of Dhaka
+                          city are always dreaming of living accommodations
+                          accompanied by gardens with plants, open spaces for
+                          wandering, trees for oxygen and lakes for boating &
+                          fishing..............
+                        </p>
+                        <Modal
+                          className=""
+                          isOpen={modalIsOpen}
+                          onAfterOpen={afterOpenModal}
+                          onRequestClose={closeModal}
+                          style={customStyles}
+                          contentLabel="Example Modal"
+                        >
+                          <button
+                            className="btn btn-circle btn-outline lg:btn-md btn-sm absolute md:left-[94%] lg:left-[95%] left-[85%] top-2 text-white"
+                            onClick={closeModal}
+                          >
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              className="h-6 w-6"
+                              fill="none"
+                              viewBox="0 0 24 24"
+                              stroke="currentColor"
+                            >
+                              <path
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                                strokeWidth="2"
+                                d="M6 18L18 6M6 6l12 12"
+                              />
+                            </svg>
+                          </button>
+                          <form className=" w-full max-h-[70vh] mx-auto lg:py-[75px] md:py-[65px] py-[55px] grid place-items-center p-0 m-0 -z-10 text-white">
+                            <p className="">{descriptionText}</p>
+                          </form>
+                        </Modal>
+                        <button
+                          onClick={openModal}
+                          className="w-[180px] px-[35px] py-[7px] text-white border-[2px] border-white hover:bg-black hover:text-white transition-all ease-in delay-100 duration-300"
+                        >
+                          Read More
+                        </button>
+                        <Modal
+                          className=""
+                          isOpen={modalIsOpen1}
+                          onAfterOpen={afterOpenModal}
+                          onRequestClose={closeModal1}
+                          style={customStyles}
+                          contentLabel="Example Modal"
+                        >
+                          <button
+                            className="btn btn-circle btn-outline lg:btn-md btn-sm absolute md:left-[94%] lg:left-[95%] left-[85%] top-2 text-white"
+                            onClick={closeModal1}
+                          >
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              className="h-6 w-6"
+                              fill="none"
+                              viewBox="0 0 24 24"
+                              stroke="currentColor"
+                            >
+                              <path
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                                strokeWidth="2"
+                                d="M6 18L18 6M6 6l12 12"
+                              />
+                            </svg>
+                          </button>
+                          <form className="w-full max-h-[70vh] mx-auto lg:py-[55px] md:py-[45px] py-[35px] p-0 m-0 -z-10 text-white ">
+                            <div className="space-y-[10px]">
+                              <h1 className="md:text-2xl font-semibold py-[10px] px-[5%] text-center max-w-fit mx-auto underline-offset-[12px] md:underline">
+                                Specification of {dataPro[0]?.name}
+                              </h1>
+                              {dataPro[0]?.keyFeatures?.map((features) => (
+                                <div
+                                  key={features?.feature}
+                                  className="px-[5%] "
+                                >
+                                  <p className="text-xl">
+                                    <span className="font-bold">
+                                      {features?.feature}:{" "}
+                                    </span>
+                                    {features?.description}
+                                  </p>
+                                </div>
+                              ))}
+                            </div>
+                          </form>
+                        </Modal>
                       </div>
-                    </form>
-                  </Modal>
-                </div>
-                <div className="space-y-5 w-full md:px-0 px-[12%]">
-                  <h1 className="md:text-3xl text-2xl text-[#daa520]">
-                    Specification
-                  </h1>
-
-                  {dataPro[0]?.keyFeatures?.map((features) => (
-                    <div key={features?.feature}>
-                      <ul className="text-white text-xl">
-                        <li>{features?.feature}</li>
-                      </ul>
                     </div>
-                  ))}
-                  <button
-                    onClick={openModal1}
-                    className="px-[35px] py-[7px] text-white border-[2px] border-white hover:bg-black hover:text-white transition-all ease-in delay-100 duration-300"
-                  >
-                    Read More
-                  </button>
-                </div>
-              </div>
+                    <div className="w-[2px] h-full bg-white"></div>
+                    <div className="flex-1">
+                      <div className="flex lg:px-[25%] md:px-[35px] lg:py-[105px] py-[65px] text-white">
+                        <div className="space-y-5  md:px-0 px-[12%]">
+                          <h1 className="md:text-3xl text-2xl text-[#daa520]">
+                            Specification
+                          </h1>
+
+                          {dataPro[0]?.keyFeatures?.map((features) => (
+                            <div key={features?.feature}>
+                              <ul className="text-white text-xl">
+                                <li>{features?.feature}</li>
+                              </ul>
+                            </div>
+                          ))}
+                          <button
+                            onClick={openModal1}
+                            className="px-[35px] py-[7px] text-white border-[2px] border-white hover:bg-black hover:text-white transition-all ease-in delay-100 duration-300"
+                          >
+                            Read More
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </>
+              </>
             )}
             {/* Feature of the city */}
             {id != "Dreams-Paradise" && (
