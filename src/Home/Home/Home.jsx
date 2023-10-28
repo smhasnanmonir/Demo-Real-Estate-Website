@@ -1,4 +1,3 @@
-import UseData from "../../Components/Hooks/UseData";
 import CollectionType from "../../SharedComponents/CollectionType/CollectionType";
 import CountNumberSection from "../CountNumberSection/CountNumberSection";
 import CustomerReview from "../CustomerReview/CustomerReview";

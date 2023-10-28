@@ -13,6 +13,7 @@
     "@emailjs/browser": "^3.11.0",
     "@fullpage/react-fullpage": "^0.1.40",
     "@headlessui/react": "^1.7.17",
+    "@heroicons/react": "^2.0.18",
     "@tanstack/react-query": "^4.32.1",
     "axios": "^1.4.0",
     "firebase": "^10.0.0",
