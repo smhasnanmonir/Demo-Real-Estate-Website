@@ -912,7 +912,7 @@ const PropertiesDetail = () => {
                     </button>
                     <form className="w-full max-h-[70vh] max-w-[80vw] mx-auto lg:py-[25px] md:py-[25px] py-[15px] p-0 m-0 -z-10 text-white ">
                       <div className="space-y-[13px] pb-[13px]">
-                        <h1 className="text-xl font-semibold text-center underline underline-offset-[12px]">
+                        <h1 className="md:text-xl font-semibold text-center md:underline underline-offset-[12px]">
                           Plot Booking Regulation of {dataPro[0]?.name}
                         </h1>
                         <h1>

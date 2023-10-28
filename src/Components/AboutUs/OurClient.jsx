@@ -13,7 +13,7 @@ const OurClient = () => {
       <SharedFrontPage
         backgroundImg={clientCover}
         heading1="AboutUs"
-        heading2="Our Clients"
+        heading2="Our Corporate Clients"
       ></SharedFrontPage>
       <div className="lg:px-[250px] text-black md:px-[120px] px-[75px] lg:py-[120px] md:py-[80px] py-[65px] text-center bg-white">
         <h1 className="md:text-3xl">A FOOTPRINT OF RENOWNED NAMES</h1>
