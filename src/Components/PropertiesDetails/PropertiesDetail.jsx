@@ -213,8 +213,8 @@ const PropertiesDetail = () => {
             )}
             {id == "Dreams-Paradise" && (
               <div className="w-3/4 mx-auto">
-                <img className="mx-auto" src={dreamsCover} alt="" />
-                <h1 className="md:text-3xl text-2xl py-[25px] text-white font-semibold">
+                <img className="" src={dreamsCover} alt="" />
+                <h1 className="md:text-3xl text-2xl md:py-[25px] py-[15px] text-white font-semibold">
                   Dream's paradise
                 </h1>
               </div>
@@ -226,7 +226,7 @@ const PropertiesDetail = () => {
               </h1>
             )}
 
-            <div className="bg-[#1d1d21] w-3/4 mx-auto  md:py-[35px] py-[25px] lg:py-[15px]">
+            <div className="bg-[#1d1d21] w-3/4 mx-auto  md:py-[35px] lg:py-[15px] md:pb-0 pb-[25px]">
               <div className=" text-white md:py-[28px] py-[15px] lg:py-[35px] grid lg:grid-cols-5 gap-y-[15px] place-items-center border-y-[1px] border-white">
                 <div className="text-center">
                   <h1 className="font-light">Location</h1>
@@ -299,7 +299,7 @@ const PropertiesDetail = () => {
             {id == "Dreams-Paradise" && (
               <div
                 id="glance"
-                className="bg-white grid md:grid-cols-2 grid-cols-1 md:px-[150px] px-[25px] md:py-[50px] gap-[35px] items-center"
+                className="bg-white grid md:grid-cols-2 grid-cols-1 md:px-[150px] px-[25px] md:py-[50px] py-[25px] gap-[35px] items-center"
               >
                 <div>
                   <img

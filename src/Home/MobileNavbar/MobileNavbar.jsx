@@ -55,7 +55,7 @@ const MobileNavbar = () => {
                  
                 </div>
              <li onClick={()=>setOpenBusi(!openBusi)} className="py-[7px] cursor-pointer list-none ">
-                <div className="flex justify-between gap-2  py-[7px] border-b-[1px] border-cyan-100 border-opacity-50">
+                <div className="flex justify-between gap-2 border-b-[1px] border-cyan-100 border-opacity-50">
                 <h1 className="text-xl">Business</h1>
                 {
                     openBusi? <ArrowUpIcon className="w-[15px] mt-[3px]"></ArrowUpIcon> : <ArrowDownIcon className="w-[15px] mt-[3px]"></ArrowDownIcon>
@@ -63,7 +63,7 @@ const MobileNavbar = () => {
                 </div>
              
              </li>
-             <div className={`flex flex-col gap-1 ml-[8px]  ${openBusi? 'block transition-all duration-300 ease-linear' : 'transition-all duration-300 ease-linear hidden'}`}>
+             <div className={`flex flex-col gap-1 ml-[8px] transition-all duration-300 ease-linear  ${openBusi? 'block transition-all duration-300 ease-linear' : 'transition-all duration-300 ease-linear hidden'}`}>
                   
                         <Link onClick={()=>setOpen(!open)} to="/business" className="py-[7px] block border-b-[1px] border-cyan-100 border-opacity-50 text-xl">All Business</Link>
                   
@@ -80,7 +80,7 @@ const MobileNavbar = () => {
                         <Link onClick={()=>setOpen(!open)} to={"/business/details/Universe-Group"} className="py-[7px] block border-b-[1px] border-cyan-100 border-opacity-50 text-xl">Universe Group</Link>
                  
                 </div>
-             <li onClick={()=>setOpenProperties(!openProperties)} className="py-[5px] cursor-pointer list-none ">
+             <li onClick={()=>setOpenProperties(!openProperties)} className=" cursor-pointer list-none ">
                 <div className="flex justify-between gap-2 py-[7px] border-b-[1px] border-cyan-100 border-opacity-50">
                 <h1 className="text-xl">Properties</h1>
                 {
@@ -167,9 +167,9 @@ const MobileNavbar = () => {
                                 <Link to={"/media/events"} onClick={()=>setOpen(!open)} className="py-[7px] block border-b-[1px] border-cyan-100 border-opacity-50 text-xl">Event</Link>
                         
                         </div>
-             <Link to={"/service"} onClick={()=>setOpen(!open)} className="py-[7px] block border-b-[1px] border-cyan-100 border-opacity-50 text-xl">Service</Link>
-             <Link to={"/career"} onClick={()=>setOpen(!open)} className="py-[7px] block border-b-[1px] border-cyan-100 border-opacity-50 text-xl">Career</Link>
-             <Link to={"/contact"} onClick={()=>setOpen(!open)} className="py-[7px] block border-b-[1px] border-cyan-100 border-opacity-50 text-xl">Contact</Link>
+             <Link to={"/service"} onClick={()=>setOpen(!open)} className="py-[9px] block border-b-[1px] border-cyan-100 border-opacity-50 text-xl">Service</Link>
+             <Link to={"/career"} onClick={()=>setOpen(!open)} className="py-[9px] block border-b-[1px] border-cyan-100 border-opacity-50 text-xl">Career</Link>
+             <Link to={"/contact"} onClick={()=>setOpen(!open)} className="py-[9px] block border-b-[1px] border-cyan-100 border-opacity-50 text-xl">Contact</Link>
             </ul>
            </div>
         </div>
