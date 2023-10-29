@@ -102,7 +102,6 @@ const PropertiesDetail = () => {
   }
 
   function afterOpenModal() {
-    // references are now sync'd and can be accessed.
     subtitle.style.color = "black";
   }
 
@@ -1097,11 +1096,13 @@ const PropertiesDetail = () => {
             <div>
               <FormReuse></FormReuse>
             </div>
-            <div className="mb-[35px]">
+           
               {id == "Dreams-Paradise" && (
-                <OurProjectSection></OurProjectSection>
+                <div className="py-[35px]">
+                  <OurProjectSection></OurProjectSection>
+                </div>
               )}
-            </div>
+        
           </div>
         </>
       )}

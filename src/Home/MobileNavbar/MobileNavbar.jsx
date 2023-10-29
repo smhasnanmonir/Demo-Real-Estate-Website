@@ -29,148 +29,148 @@ const MobileNavbar = () => {
                 }
             </div>
             {/* linke items */}
-            <ul className={`flex flex-col pb-8 absolute bg-[#28282B] text-white z-[10] left-0 w-full pl-9 pr-9 transition-all duration-300 ease-in ${open ? 'top-[63px] transition-all duration-300 ease-linear' : 'top-[-720px] transition-all duration-300 ease-linear'}`}>
+            <ul className={`pt-[15px] flex flex-col pb-8 absolute bg-[#28282B] text-white z-[10] left-0 w-full pl-9 pr-9 transition-all duration-300 ease-in ${open ? 'top-[63px] transition-all duration-300 ease-linear' : 'top-[-720px] transition-all duration-300 ease-linear'}`}>
             
-             <Link className="py-[5px] inline-block border-b-[1px] border-blue-500" onClick={()=>setOpen(!open)} to="/">Home</Link>
+             <Link className="py-[7px] inline-block border-b-[1px] border-cyan-100 border-opacity-50 text-xl" onClick={()=>setOpen(!open)} to="/">Home</Link>
              <li onClick={()=>setOpenAbout(!openAbout)} className="py-[7px] cursor-pointer list-none ">
                 <div className="flex justify-between gap-2 border-b-[1px] border-cyan-100 border-opacity-50 py-[7px]">
-                <h1 className="">About us</h1>
+                <h1 className="text-xl">About us</h1>
                 {
-                    openAbout? <ArrowUpIcon className="w-[12px] mt-[3px]"></ArrowUpIcon> : <ArrowDownIcon className="w-[12px] mt-[3px]"></ArrowDownIcon>
+                    openAbout? <ArrowUpIcon className="w-[15px] mt-[3px]"></ArrowUpIcon> : <ArrowDownIcon className="w-[15px] mt-[3px]"></ArrowDownIcon>
                 }
                 </div>
              </li>
-                <div className={`flex py-[7px] flex-col gap-1 ml-[8px] ${openAbout? 'block' : 'hidden'}`}>
-                    <li>
-                        <Link onClick={()=>setOpen(!open)} to="/aboutus/ourstory" className="py-[7px] block border-b-[1px] border-cyan-100 border-opacity-50">Our Story</Link>
-                    </li>
-                    <li>
-                        <Link onClick={()=>setOpen(!open)} to="/aboutus/missionVision" className="py-[7px] block border-b-[1px] border-cyan-100 border-opacity-50">Mission,Visson and Values</Link>
-                    </li>
-                    <li>
-                        <Link onClick={()=>setOpen(!open)} to="/aboutus/ourclients" className="py-[7px] block border-b-[1px] border-cyan-100 border-opacity-50">Corporate clients</Link>
-                    </li>
-                    <li>
-                        <Link onClick={()=>setOpen(!open)} to="/aboutus/ourteam" className="py-[7px] block border-b-[1px] border-cyan-100 border-opacity-50">Our Team</Link>
-                    </li>
+                <div className={` flex py-[7px] flex-col gap-1 ml-[8px] ${openAbout? 'block' : 'hidden'}`}>
+                  
+                        <Link onClick={()=>setOpen(!open)} to="/aboutus/ourstory" className="py-[7px] block border-b-[1px] border-cyan-100 border-opacity-50 text-xl">Our Story</Link>
+                   
+                 
+                        <Link onClick={()=>setOpen(!open)} to="/aboutus/missionVision" className="py-[7px] block border-b-[1px] border-cyan-100 border-opacity-50 text-xl">Mission,Visson and Values</Link>
+                   
+                   
+                        <Link onClick={()=>setOpen(!open)} to="/aboutus/ourclients" className="py-[7px] block border-b-[1px] border-cyan-100 border-opacity-50 text-xl">Corporate clients</Link>
+                 
+               
+                        <Link onClick={()=>setOpen(!open)} to="/aboutus/ourteam" className="py-[7px] block border-b-[1px] border-cyan-100 border-opacity-50 text-xl">Our Team</Link>
+                 
                 </div>
              <li onClick={()=>setOpenBusi(!openBusi)} className="py-[7px] cursor-pointer list-none ">
                 <div className="flex justify-between gap-2  py-[7px] border-b-[1px] border-cyan-100 border-opacity-50">
-                <h1 className="">Business</h1>
+                <h1 className="text-xl">Business</h1>
                 {
-                    openBusi? <ArrowUpIcon className="w-[12px] mt-[3px]"></ArrowUpIcon> : <ArrowDownIcon className="w-[12px] mt-[3px]"></ArrowDownIcon>
+                    openBusi? <ArrowUpIcon className="w-[15px] mt-[3px]"></ArrowUpIcon> : <ArrowDownIcon className="w-[15px] mt-[3px]"></ArrowDownIcon>
                 }
                 </div>
              
              </li>
              <div className={`flex flex-col gap-1 ml-[8px]  ${openBusi? 'block transition-all duration-300 ease-linear' : 'transition-all duration-300 ease-linear hidden'}`}>
-                    <li>
-                        <Link onClick={()=>setOpen(!open)} to="/business" className="py-[7px] block border-b-[1px] border-cyan-100 border-opacity-50">All Business</Link>
-                    </li>
-                    <li>
-                        <Link onClick={()=>setOpen(!open)} to="/business/details/Mak-Inno-Development-Ltd" className="py-[7px] block border-b-[1px] border-cyan-100 border-opacity-50">Mak Inno Development Ltd.</Link>
-                    </li>
-                    <li>
-                        <Link onClick={()=>setOpen(!open)} to={"/business/details/Dreams-Square-Development"} className="py-[7px] block border-b-[1px] border-cyan-100 border-opacity-50">Dreams Square Development Ltd.</Link>
-                    </li>
-                    <li>
-                        <Link onClick={()=>setOpen(!open)} to={"/business/details/Organic-Laboratories-Ltd"} className="py-[7px] block border-b-[1px] border-cyan-100 border-opacity-50">Organic Laboratories Ltd.</Link>
-                    </li>
-                    <li>
-                        <Link onClick={()=>setOpen(!open)} to={"/business/details/Universe-Group"} className="py-[7px] block border-b-[1px] border-cyan-100 border-opacity-50">Universe Group</Link>
-                    </li>
+                  
+                        <Link onClick={()=>setOpen(!open)} to="/business" className="py-[7px] block border-b-[1px] border-cyan-100 border-opacity-50 text-xl">All Business</Link>
+                  
+                  
+                        <Link onClick={()=>setOpen(!open)} to="/business/details/Mak-Inno-Development-Ltd" className="py-[7px] block border-b-[1px] border-cyan-100 border-opacity-50 text-xl">Mak Inno Development Ltd.</Link>
+                 
+                 
+                        <Link onClick={()=>setOpen(!open)} to={"/business/details/Dreams-Square-Development"} className="py-[7px] block border-b-[1px] border-cyan-100 border-opacity-50 text-xl">Dreams Square Development Ltd.</Link>
+                
+                
+                        <Link onClick={()=>setOpen(!open)} to={"/business/details/Organic-Laboratories-Ltd"} className="py-[7px] block border-b-[1px] border-cyan-100 border-opacity-50 text-xl">Organic Laboratories Ltd.</Link>
+                 
+                  
+                        <Link onClick={()=>setOpen(!open)} to={"/business/details/Universe-Group"} className="py-[7px] block border-b-[1px] border-cyan-100 border-opacity-50 text-xl">Universe Group</Link>
+                 
                 </div>
              <li onClick={()=>setOpenProperties(!openProperties)} className="py-[5px] cursor-pointer list-none ">
                 <div className="flex justify-between gap-2 py-[7px] border-b-[1px] border-cyan-100 border-opacity-50">
-                <h1 className="">Properties</h1>
+                <h1 className="text-xl">Properties</h1>
                 {
-                    openProperties? <ArrowUpIcon className="w-[12px] mt-[3px]"></ArrowUpIcon> : <ArrowDownIcon className="w-[12px] mt-[3px]"></ArrowDownIcon>
+                    openProperties? <ArrowUpIcon className="w-[15px] mt-[3px]"></ArrowUpIcon> : <ArrowDownIcon className="w-[15px] mt-[3px]"></ArrowDownIcon>
                 }                </div>
              
              </li>
              <div className={`flex flex-col gap-1 ml-[8px]  ${openProperties? 'block transition-all duration-300 ease-linear' : 'transition-all duration-300 ease-linear hidden'}`}>
-                    <li className="cursor-pointer" onClick={()=>setOpenPhase(!openPhase)}>
+                    <li className="cursor-pointer list-none" onClick={()=>setOpenPhase(!openPhase)}>
                         <div className="flex gap-2 py-[7px] border-b-[1px] border-cyan-100 border-opacity-50">
-                            <h1 className="">Phase</h1>
+                            <h1 className="text-xl">Phase</h1>
                             {
-                    openPhase? <ArrowUpIcon className="w-[12px] mt-[3px]"></ArrowUpIcon> : <ArrowDownIcon className="w-[12px] mt-[3px]"></ArrowDownIcon>
+                    openPhase? <ArrowUpIcon className="w-[15px] mt-[3px]"></ArrowUpIcon> : <ArrowDownIcon className="w-[15px] mt-[3px]"></ArrowDownIcon>
                 }
                         </div>
                
                     </li>
                     <div className={`ml-3 ${openPhase? 'block': 'hidden'}`}>
-                        <li>
-                        <Link to="/allproperties" onClick={()=>setOpen(!open)} className="py-[7px] block border-b-[1px] border-cyan-100 border-opacity-50">All Projects</Link>
-                        </li>
-                            <li>
-                                <Link to={"/allproperties/ongoing"} onClick={()=>setOpen(!open)} className="py-[7px] block border-b-[1px] border-cyan-100 border-opacity-50">Ongoing</Link>
-                            </li>
-                            <li>
-                                <Link to={"/allproperties/upcoming"} onClick={()=>setOpen(!open)} className="py-[7px] block border-b-[1px] border-cyan-100 border-opacity-50">Upcoming</Link>
-                            </li>
-                            <li>
-                                <Link to={"/allproperties/completed"} onClick={()=>setOpen(!open)} className="py-[7px] block border-b-[1px] border-cyan-100 border-opacity-50">Completed</Link>
-                            </li>
+                       
+                        <Link to="/allproperties" onClick={()=>setOpen(!open)} className="py-[7px] block border-b-[1px] border-cyan-100 border-opacity-50 text-xl">All Projects</Link>
+                  
+                           
+                                <Link to={"/allproperties/ongoing"} onClick={()=>setOpen(!open)} className="py-[7px] block border-b-[1px] border-cyan-100 border-opacity-50 text-xl">Ongoing</Link>
+                
+                                <Link to={"/allproperties/upcoming"} onClick={()=>setOpen(!open)} className="py-[7px] block border-b-[1px] border-cyan-100 border-opacity-50 text-xl">Upcoming</Link>
+                          
+                          
+                                <Link to={"/allproperties/completed"} onClick={()=>setOpen(!open)} className="py-[7px] block border-b-[1px] border-cyan-100 border-opacity-50 text-xl">Completed</Link>
+                         
                         </div>
-                    <li className="cursor-pointer" onClick={()=>setOpenType(!openType)}>
+                    <li className="cursor-pointer list-none" onClick={()=>setOpenType(!openType)}>
                         <div className="flex gap-2 py-[7px] border-b-[1px] border-cyan-100 border-opacity-50">
-                            <h1 className="">Type</h1>
+                            <h1 className="text-xl">Type</h1>
                             {
-                    openType? <ArrowUpIcon className="w-[12px] mt-[3px]"></ArrowUpIcon> : <ArrowDownIcon className="w-[12px] mt-[3px]"></ArrowDownIcon>
+                    openType? <ArrowUpIcon className="w-[15px] mt-[3px]"></ArrowUpIcon> : <ArrowDownIcon className="w-[15px] mt-[3px]"></ArrowDownIcon>
                 }
                         </div>
                
                     </li>
                     <div className={`ml-3 ${openType? 'block': 'hidden'}`}>
-                            <li>
-                                <Link to={"/allproperties/residential"} onClick={()=>setOpen(!open)} className="py-[7px] block border-b-[1px] border-cyan-100 border-opacity-50">Residential</Link>
-                            </li>
-                            <li>
-                                <Link to={"/allproperties/commercial"} onClick={()=>setOpen(!open)} className="py-[7px] block border-b-[1px] border-cyan-100 border-opacity-50">Commercial</Link>
-                            </li>
+                        
+                                <Link to={"/allproperties/residential"} onClick={()=>setOpen(!open)} className="py-[7px] block border-b-[1px] border-cyan-100 border-opacity-50 text-xl">Residential</Link>
+                        
+                         
+                                <Link to={"/allproperties/commercial"} onClick={()=>setOpen(!open)} className="py-[7px] block border-b-[1px] border-cyan-100 border-opacity-50 text-xl">Commercial</Link>
+                         
                         </div>
-                    <li className="cursor-pointer" onClick={()=>setOpenLocation(!openLocation)}>
+                    <li className="cursor-pointer list-none" onClick={()=>setOpenLocation(!openLocation)}>
                         <div className="flex gap-2 py-[7px] border-b-[1px] border-cyan-100 border-opacity-50">
-                            <h1 className="">Location</h1>
+                            <h1 className="text-xl">Location</h1>
                             {
-                    openLocation? <ArrowUpIcon className="w-[12px] mt-[3px]"></ArrowUpIcon> : <ArrowDownIcon className="w-[12px] mt-[3px]"></ArrowDownIcon>
+                    openLocation? <ArrowUpIcon className="w-[15px] mt-[3px]"></ArrowUpIcon> : <ArrowDownIcon className="w-[15px] mt-[3px]"></ArrowDownIcon>
                 }
                         </div>
                
                     </li>
                         <div className={`ml-3 ${openLocation? 'block': 'hidden'}`}>
-                            <li>
-                                <Link to={"/allproperties/dhanmondi"} onClick={()=>setOpen(!open)} className="py-[7px] block border-b-[1px] border-cyan-100 border-opacity-50">Dhanmondi</Link>
-                            </li>
-                            <li>
-                                <Link to={"/allproperties/keraniganj"} onClick={()=>setOpen(!open)} className="py-[7px] block border-b-[1px] border-cyan-100 border-opacity-50">Keraniganj</Link>
-                            </li>
-                            <li>
-                                <Link to={"/allproperties/mohammadpur"} onClick={()=>setOpen(!open)}>Mohammadpur</Link>
-                            </li>
+                       
+                                <Link to={"/allproperties/dhanmondi"} onClick={()=>setOpen(!open)} className="py-[7px] block border-b-[1px] border-cyan-100 border-opacity-50 text-xl">Dhanmondi</Link>
+                    
+                         
+                                <Link to={"/allproperties/keraniganj"} onClick={()=>setOpen(!open)} className="py-[7px] block border-b-[1px] border-cyan-100 border-opacity-50 text-xl">Keraniganj</Link>
+                     
+                        
+                                <Link className="py-[7px] block border-b-[1px] border-cyan-100 border-opacity-50 text-xl" to={"/allproperties/mohammadpur"} onClick={()=>setOpen(!open)}>Mohammadpur</Link>
+                       
                         </div>
                 </div>
-                <li className="cursor-pointer" onClick={()=>setOpenMedia(!openMedia)}>
+                <li className="cursor-pointer list-none" onClick={()=>setOpenMedia(!openMedia)}>
                 <div className="flex justify-between gap-2 py-[7px] border-b-[1px] border-cyan-100 border-opacity-50">
-                <h1 className="">Media</h1>
+                <h1 className="text-xl">Media</h1>
                 {
-                    openMedia? <ArrowUpIcon className="w-[12px] mt-[3px]"></ArrowUpIcon> : <ArrowDownIcon className="w-[12px] mt-[3px]"></ArrowDownIcon>
+                    openMedia? <ArrowUpIcon className="w-[15px] mt-[3px]"></ArrowUpIcon> : <ArrowDownIcon className="w-[15px] mt-[3px]"></ArrowDownIcon>
                 }
                 </div>
                 </li>
                 <div className={`ml-3 ${openMedia? 'block': 'hidden'}`}>
-                            <li>
-                                <Link to={"/media/blog"} onClick={()=>setOpen(!open)} className="py-[7px] block border-b-[1px] border-cyan-100 border-opacity-50">Blog</Link>
-                            </li>
-                            <li>
-                                <Link to={"/media/news"} onClick={()=>setOpen(!open)} className="py-[7px] block border-b-[1px] border-cyan-100 border-opacity-50">News</Link>
-                            </li>
-                            <li>
-                                <Link to={"/media/events"} onClick={()=>setOpen(!open)} className="py-[7px] block border-b-[1px] border-cyan-100 border-opacity-50">Event</Link>
-                            </li>
+                        
+                                <Link to={"/media/blog"} onClick={()=>setOpen(!open)} className="py-[7px] block border-b-[1px] border-cyan-100 border-opacity-50 text-xl">Blog</Link>
+                          
+                          
+                                <Link to={"/media/news"} onClick={()=>setOpen(!open)} className="py-[7px] block border-b-[1px] border-cyan-100 border-opacity-50 text-xl">News</Link>
+                          
+                                <Link to={"/media/events"} onClick={()=>setOpen(!open)} className="py-[7px] block border-b-[1px] border-cyan-100 border-opacity-50 text-xl">Event</Link>
+                        
                         </div>
+             <Link to={"/service"} onClick={()=>setOpen(!open)} className="py-[7px] block border-b-[1px] border-cyan-100 border-opacity-50 text-xl">Service</Link>
+             <Link to={"/career"} onClick={()=>setOpen(!open)} className="py-[7px] block border-b-[1px] border-cyan-100 border-opacity-50 text-xl">Career</Link>
+             <Link to={"/contact"} onClick={()=>setOpen(!open)} className="py-[7px] block border-b-[1px] border-cyan-100 border-opacity-50 text-xl">Contact</Link>
             </ul>
-            {/* button */}
            </div>
         </div>
     )
