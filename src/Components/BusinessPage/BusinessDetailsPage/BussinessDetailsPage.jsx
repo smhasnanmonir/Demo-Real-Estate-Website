@@ -8,7 +8,7 @@ const BussinessDetailsPage = () => {
   const [side, setSide] = useState(null);
   useEffect(() => {
     setLoading(true);
-    fetch("/BusinessData.json")
+    fetch("https://raw.githubusercontent.com/monirsmtest/api-for-web/main/business-api.json")
       .then((res) => res.json())
       .then((data) => {
         setDatas(data);

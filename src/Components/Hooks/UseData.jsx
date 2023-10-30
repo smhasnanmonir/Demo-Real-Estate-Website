@@ -4,7 +4,7 @@ const UseData = () => {
   const { refetch, data: datas = [] } = useQuery({
     queryKey: ["datas"],
     queryFn: async () => {
-      const res = await fetch("/OurProject.json");
+      const res = await fetch("https://raw.githubusercontent.com/monirsmtest/api-for-web/main/RealEstateProject.json");
       return res.json();
     },
   });
