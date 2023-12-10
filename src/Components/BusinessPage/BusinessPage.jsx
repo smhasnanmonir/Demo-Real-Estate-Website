@@ -104,7 +104,7 @@ const BusinessPage = () => {
                 to="/business/details/Mak-Inno-Development-Ltd"
                 className="mt-[7px] text-[#74c0fc] underline underline-offset-4 decoration-dashed"
               >
-                Discover more >
+                Discover more
               </Link>
             </div>
           </div>
@@ -137,7 +137,7 @@ const BusinessPage = () => {
                 to="/business/details/Dreams-Square-Development"
                 className="mt-[7px] text-[#74c0fc] underline underline-offset-4 decoration-dashed"
               >
-                Discover more >
+                Discover more
               </Link>
             </div>
           </div>
@@ -171,7 +171,7 @@ const BusinessPage = () => {
                 to="/business/details/Organic-Laboratories-Ltd"
                 className="mt-[7px] text-[#74c0fc] underline underline-offset-4 decoration-dashed"
               >
-                Discover more >
+                Discover more
               </Link>
             </div>
           </div>
@@ -204,7 +204,7 @@ const BusinessPage = () => {
                 to="/business/details/Universe-Group"
                 className="mt-[7px] text-[#74c0fc] underline underline-offset-4 decoration-dashed"
               >
-                Discover more >
+                Discover more
               </Link>
             </div>
           </div>
