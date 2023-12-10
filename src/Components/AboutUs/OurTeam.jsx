@@ -13,11 +13,10 @@ const OurTeam = () => {
       <div className="bgColorGray2 lg:px-[65px] md:px-[45px] px-[25px] lg:py-[50px]">
         <div className="">
           <h1 className="font-thin text-2xl py-[40px]">Managing Director</h1>
-          <div className="grid lg:grid-cols-2 grid-cols-1 md:gap-[35px] gap-3">
-            <img className="w-[550px] h-full object-cover" src={ceo} alt="" />
+          <div className="">
             <div className="flex flex-col">
               <div className="mb-[25px] md:py-0 py-[15px]">
-                <h1 className="md:text-2xl font-semibold">Mr. X</h1>
+                <h1 className="md:text-2xl font-semibold">Asif Iqbal</h1>
                 <p className="font-thin opacity-40">Managing Director</p>
                 <div className="bg-slate-500 opacity-40 h-[1px] w-full"></div>
               </div>
