@@ -1,9 +1,8 @@
 import { Link, NavLink } from "react-router-dom";
 import logo from "../../../src/assets/whiteLogo.png";
-import UseData from "../../Components/Hooks/UseData";
 import "./Header.css";
+
 const Header = () => {
-  const [datas] = UseData();
   const commonNav = (
     <>
       <li className="text-white max-w-fit">
@@ -21,7 +20,7 @@ const Header = () => {
           Home
         </NavLink>
       </li>
-      <li className="text-white group ">
+      <li className="text-white modern-dropdown">
         <NavLink
           className={"navBarCustom"}
           style={({ isActive }) => {
@@ -32,42 +31,29 @@ const Header = () => {
             };
           }}
         >
-          <div className="customDropdown group ">
+          <div className="customDropdown">
             <label>About us</label>
-            <div className="inline-block relative">
-              <ul className="absolute min-w-full top-full right-[-85px]  mt-[13px] bg-black bg-opacity-80 text-white rounded-lg hidden group-hover:inline">
-                <div className="flex flex-col gap-[12px] w-full px-[50px] py-[25px]">
-                  <Link
-                    to="/aboutus/ourstory"
-                    className="navBarCustom w-fit hover:text-cyan-400"
-                  >
-                    Our Story
-                  </Link>
-                  <Link
-                    to="/aboutus/missionVision"
-                    className="navBarCustom hover:text-cyan-400"
-                  >
-                    Misson, Vision and <br /> Values
-                  </Link>
-                  <Link
-                    to="/aboutus/ourclients"
-                    className="navBarCustom hover:text-cyan-400"
-                  >
-                    Corporate Clients
-                  </Link>
-                  <Link
-                    to="/aboutus/ourteam"
-                    className="navBarCustom w-1/2 hover:text-cyan-400"
-                  >
-                    Our Team
-                  </Link>
-                </div>
-              </ul>
+            <div className="modern-dropdown-menu">
+              <Link to="/aboutus/ourstory" className="modern-dropdown-link">
+                Our Story
+              </Link>
+              <Link
+                to="/aboutus/missionVision"
+                className="modern-dropdown-link"
+              >
+                Mission, Vision and Values
+              </Link>
+              <Link to="/aboutus/ourclients" className="modern-dropdown-link">
+                Corporate Clients
+              </Link>
+              <Link to="/aboutus/ourteam" className="modern-dropdown-link">
+                Our Team
+              </Link>
             </div>
           </div>
         </NavLink>
-      </li>{" "}
-      <li className="text-white group">
+      </li>
+      <li className="text-white modern-dropdown">
         <NavLink
           className={"navBarCustom"}
           to="/business"
@@ -79,44 +65,38 @@ const Header = () => {
             };
           }}
         >
-          <div className="dropdown inline-block dropdown-hover dropdown-left">
-            <div className="customDropdown group ">
-              <label>Business</label>
-              <div className="inline-block relative">
-                <ul className="absolute min-w-full top-full right-[-135px]  mt-[13px] bg-black bg-opacity-80 text-white rounded-lg hidden group-hover:inline">
-                  <div className="flex flex-col gap-[12px] w-full px-[50px] py-[25px]">
-                    <Link
-                      to="business/details/Mak-Inno-Development-Ltd"
-                      className="navBarCustom hover:text-cyan-400 block max-w-fit"
-                    >
-                      Mak Inno Development Ltd
-                    </Link>
-                    <Link
-                      to="business/details/Dreams-Square-Development"
-                      className="navBarCustom hover:text-cyan-400 block max-w-fit"
-                    >
-                      Dream Square Development ltd.
-                    </Link>
-                    <Link
-                      to="business/details/Organic-Laboratories-Ltd"
-                      className="navBarCustom hover:text-cyan-400 block max-w-fit"
-                    >
-                      Organic Laboratories Ltd.
-                    </Link>
-                    <Link
-                      to="business/details/Universe-Group"
-                      className="navBarCustom hover:text-cyan-400 block max-w-fit"
-                    >
-                      Universe Group
-                    </Link>
-                  </div>
-                </ul>
-              </div>
+          <div className="customDropdown">
+            <label>Business</label>
+            <div className="modern-dropdown-menu">
+              <Link
+                to="business/details/Mak-Inno-Development-Ltd"
+                className="modern-dropdown-link"
+              >
+                Mak Inno Development Ltd
+              </Link>
+              <Link
+                to="business/details/Dreams-Square-Development"
+                className="modern-dropdown-link"
+              >
+                Dream Square Development ltd.
+              </Link>
+              <Link
+                to="business/details/Organic-Laboratories-Ltd"
+                className="modern-dropdown-link"
+              >
+                Organic Laboratories Ltd.
+              </Link>
+              <Link
+                to="business/details/Universe-Group"
+                className="modern-dropdown-link"
+              >
+                Universe Group
+              </Link>
             </div>
           </div>
         </NavLink>
       </li>
-      <li className="text-white group pb-2">
+      <li className="text-white properties-dropdown">
         <NavLink
           className={"navBarCustom"}
           to="/allproperties"
@@ -128,93 +108,75 @@ const Header = () => {
             };
           }}
         >
-          <div className="dropdown dropdown-hover dropdown-left">
+          <div className="customDropdown">
             <label tabIndex={0} className="">
               Properties
             </label>
-            <ul
-              tabIndex={0}
-              className="dropdown-content z-[1] menu rounded-box w-52 mt-[25px]"
-            >
-              <ul className="px-20 py-12 md:absolute hidden text-gray-700 bg-opacity-80 group-hover:block transition-all duration-1000 delay-200 space-y-4 bg-black rounded-lg z-50 relative ">
-                <div className=" text-white grid grid-cols-3 w-[380px] h-[140px]">
-                  <div className="flex flex-col gap-4">
-                    <h1 className="font-semibold">Phase</h1>
-                    <Link
-                      to="allproperties/ongoing"
-                      className="hover:text-cyan-400 font-normal navBarCustom w-fit"
-                    >
-                      Ongoing
+            <div className="properties-dropdown-menu">
+              <div className="properties-grid">
+                <div className="properties-section">
+                  <h3>Phase</h3>
+                  <Link to="allproperties/ongoing" className="properties-link">
+                    Ongoing
+                  </Link>
+                  <Link to="allproperties/upcoming" className="properties-link">
+                    Upcoming
+                  </Link>
+                  <Link
+                    to="allproperties/completed"
+                    className="properties-link"
+                  >
+                    Completed
+                  </Link>
+                </div>
+                <div className="properties-section">
+                  <h3>Types</h3>
+                  <Link
+                    to="/allproperties/residential"
+                    className="properties-link"
+                  >
+                    Residential
+                  </Link>
+                  <Link
+                    to="/allproperties/commercial"
+                    className="properties-link"
+                  >
+                    Commercial
+                  </Link>
+                </div>
+                <div className="properties-section">
+                  <h3>Location</h3>
+                  <Link
+                    to="/allproperties/dhanmondi"
+                    className="properties-link"
+                  >
+                    Dhanmondi
+                  </Link>
+                  <Link
+                    to="/allproperties/keraniganj"
+                    className="properties-link"
+                  >
+                    Keraniganj
+                  </Link>
+                  <Link
+                    to="/allproperties/mohammadpur"
+                    className="properties-link"
+                  >
+                    Mohammadpur
+                  </Link>
+                  <div className="view-all-link">
+                    <img src="https://i.ibb.co/Cv26NmB/right.png" alt="" />
+                    <Link to="/allproperties" className="properties-link">
+                      All properties
                     </Link>
-                    <Link
-                      to="allproperties/upcoming"
-                      className="hover:text-cyan-400 font-normal navBarCustom w-fit"
-                    >
-                      Upcoming
-                    </Link>
-                    <Link
-                      to="allproperties/completed"
-                      className="hover:text-cyan-400 font-normal navBarCustom w-fit"
-                    >
-                      Completed
-                    </Link>
-                  </div>
-                  <div className="flex flex-col gap-4">
-                    <h1 className="font-semibold">Types</h1>
-                    <Link
-                      to="/allproperties/residential"
-                      className="hover:text-cyan-400 font-normal navBarCustom w-fit"
-                    >
-                      Residential
-                    </Link>
-                    <Link
-                      to="/allproperties/commercial"
-                      className="hover:text-cyan-400 font-normal navBarCustom w-fit"
-                    >
-                      Commercial
-                    </Link>
-                  </div>
-                  <div className="flex flex-col gap-4">
-                    <h1 className="font-semibold">Location</h1>
-                    <Link
-                      to="/allproperties/dhanmondi"
-                      className="hover:text-cyan-400 font-normal navBarCustom w-fit"
-                    >
-                      Dhanmondi
-                    </Link>
-                    <Link
-                      to="/allproperties/keraniganj"
-                      className="hover:text-cyan-400 font-normal navBarCustom w-fit"
-                    >
-                      Keraniganj
-                    </Link>
-                    <Link
-                      to="/allproperties/mohammadpur"
-                      className="hover:text-cyan-400 font-normal navBarCustom w-3/4"
-                    >
-                      Mohammadpur
-                    </Link>
-                    <div className="flex group">
-                      <img
-                        className="ml-0 group-hover:ml-3"
-                        src="https://i.ibb.co/Cv26NmB/right.png"
-                        alt=""
-                      />
-                      <Link
-                        to="/allproperties"
-                        className="font-normal text-white hover:text-cyan-500 inline-block "
-                      >
-                        All properties
-                      </Link>
-                    </div>
                   </div>
                 </div>
-              </ul>
-            </ul>
+              </div>
+            </div>
           </div>
         </NavLink>
       </li>
-      <li className="text-white group">
+      <li className="text-white modern-dropdown">
         <NavLink
           className={"navBarCustom"}
           to="/media"
@@ -226,33 +188,18 @@ const Header = () => {
             };
           }}
         >
-          <div className="dropdown inline-block dropdown-hover dropdown-left">
-            <div className="customDropdown group ">
-              <label>Media</label>
-              <div className="inline-block relative">
-                <ul className="absolute min-w-full top-full right-[-55px]  mt-[13px] bg-black bg-opacity-80 text-white rounded-lg hidden group-hover:inline">
-                  <div className="flex flex-col gap-[12px] w-full px-[50px] py-[25px]">
-                    <Link
-                      to="media/blog"
-                      className="navBarCustom hover:text-cyan-400"
-                    >
-                      Blog
-                    </Link>
-                    <Link
-                      to="media/news"
-                      className="navBarCustom hover:text-cyan-400"
-                    >
-                      News
-                    </Link>
-                    <Link
-                      to="media/events"
-                      className="navBarCustom hover:text-cyan-400"
-                    >
-                      Event
-                    </Link>
-                  </div>
-                </ul>
-              </div>
+          <div className="customDropdown">
+            <label>Media</label>
+            <div className="modern-dropdown-menu">
+              <Link to="media/blog" className="modern-dropdown-link">
+                Blog
+              </Link>
+              <Link to="media/news" className="modern-dropdown-link">
+                News
+              </Link>
+              <Link to="media/events" className="modern-dropdown-link">
+                Event
+              </Link>
             </div>
           </div>
         </NavLink>
@@ -286,7 +233,7 @@ const Header = () => {
         >
           Career
         </NavLink>
-      </li>{" "}
+      </li>
       <li className="text-white">
         <NavLink
           className={"navBarCustom"}
